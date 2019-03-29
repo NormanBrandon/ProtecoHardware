@@ -1,27 +1,22 @@
 # Robot Vehiculo Autonomo
-
-## Obvejetivos:
-- Generar mediante el uso de inteligencia artificial un robot movil capaz de adaotarse a distintos entornos controlados para recorrerlos sin chocar
-- Crear hadaware con con la arquitectura pa soportar el procesamirnyo ......
-- Generar conociemiento para futruras generaciones
-- Hacer un modelo con fines educayivos disponible para cualquier usuario ineteresado en la ropbotica
+(Este documento se hace entre todos los participantes de este proyecto)
+## Objetivos:
+- Diseñar y construir un robot móvil capaz de adaptarse a distintos entornos para recorrerlos con un comportamiento inteligente basado en algoritmos de IA
+- Generar el conocimiento a partir de la investigaciòn para obtener un patron de diseño de este tipo de robots
+- Hacer un modelo con fines educativos disponible para cualquier usuario ineteresado en la Inteligencia Artificial aplicada a robòtica
 
 ## Justificacion 
-Generar conocimiento a partir de la investigacion ya que es uno de los objetivos del oproteco.
-Generar ingresos al programa
-Generar herramientas fisicas para uso didactiuco de los becarios de proteco, elincluso demostraciones en los intersemestrales
-y ademas para pruebas para robots futuros de concurso
-
+- Cumplir con uno de los objetivos del Programa en Tecnológia de Cómputo referente a la investigaciòn
+- Generar una nueva fuente de ingresos al programa con la comercializaciòn de los modelos de este robot
+- Generar herramientas fisicas para uso didactiuco disponible para los becarios de Proteco,y puedan ser usadas para : - Desarrollo de los mismos becarios, herramientas demostrativas en cursos Intersemestrales, modelo de pruebas para futuros concursos de robotica
 
 ## Estado del Arte
 
-
-
-INvestigacion mamamlona de diferentes proyectos parecidos y su alcanze ademas de su impacto social
-
+Investigacion mamamlona de diferentes proyectos parecidos y su alcanze ademas de su impacto social
+Investigar proyectos de vehiculos autonomos y emplicar los mas importante de cada uno( hadware usado p.e Radar, sensores laser, mapeos, etc  y software: librerias, frameworks, tecnologias de computo y algoritmos en gral).
+Poner imagenes
 
 # Propuesta de desarrollo de hadware
-
-Pues lemetos esto, esto y el otro a partir del anterior.
-
+Como se pretende desarrollar el robot en cuanto a hadware,BASANDOSE EN EL ESTADO DEL ARTE PREVIAMENTE INVESTIGADO, DE AHI SALEN LAS IDEAS
 # Propuesta de sopftware
+Lo mismo pero con software
