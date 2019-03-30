@@ -60,7 +60,7 @@
 <packages>
 <package name="JST">
 <description>Salidas con headers hembra a motores dc</description>
-<pad name="OUTB" x="-3.81" y="0" drill="0.8" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="OUTB" x="-1.27" y="0" drill="0.8" diameter="1.4224" shape="long" rot="R90"/>
 <pad name="VCC" x="1.27" y="0" drill="0.8" diameter="1.4224" shape="long" rot="R90"/>
 <wire x1="-7.62" y1="3.81" x2="7.62" y2="3.81" width="0.127" layer="21"/>
 <wire x1="7.62" y1="3.81" x2="7.62" y2="-2.54" width="0.127" layer="21"/>
@@ -68,7 +68,7 @@
 <wire x1="-7.62" y1="-2.54" x2="-7.62" y2="3.81" width="0.127" layer="21"/>
 <text x="-3.81" y="3.81" size="1.27" layer="25">&gt;NAME</text>
 <pad name="GND" x="-6.35" y="0" drill="0.6" diameter="1.4224" shape="long" rot="R90"/>
-<pad name="OUTA" x="-1.27" y="0" drill="0.6" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="OUTA" x="-3.81" y="0" drill="0.6" diameter="1.4224" shape="long" rot="R90"/>
 <pad name="M2" x="3.81" y="0" drill="0.6" diameter="1.4224" shape="long" rot="R90"/>
 <pad name="M1" x="6.35" y="0" drill="0.6" diameter="1.4224" shape="long" rot="R90"/>
 </package>
@@ -246,11 +246,7 @@
 <deviceset name="POLOLU-MICROMOTOR">
 <description>Este motorreductor es un motor de CC de 6 V con escobillas de alta potencia en miniatura , con escobillas de carbón de larga duración y una caja de engranajes de metal de 51.45: 1 . Tiene una sección transversal de 10 × 12 mm y el eje de salida de la caja de engranajes en forma de D tiene 9 mm de largo y 3 mm de 
 diámetro
-6 V	650 RPM, 100 mA	0.74 kg⋅cm (10 oz⋅in), 1.5 A
-Agregue codificadores de cuadratura a sus motorreductores de metal, MP o HP (se requiere una versión con eje trasero extendido) con este kit que utiliza un disco magnético y sensores de efecto hall para proporcionar 12 conteos por revolución del eje del motor. Los sensores funcionan de 2.7 V a 18 V y proporcionan salidas digitales que se pueden conectar directamente a un microcontrolador u otro circuito digital. 
-
-Nota: esta versión no es compatible con los motorreductores de metal micro HPCB; Solo es compatible con motorreductores de metal micro LP, MP y HP de doble eje.
-https://www.pololu.com/product/2598</description>
+6 V	650 RPM, 100 mA	0.74 kg⋅cm (10 oz⋅in), 1.5 A</description>
 <gates>
 <gate name="G$1" symbol="POLOLUMICROMOTOR" x="0" y="0"/>
 </gates>

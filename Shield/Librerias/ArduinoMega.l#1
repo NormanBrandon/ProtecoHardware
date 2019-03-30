@@ -544,7 +544,7 @@ Clock Speed: 16 MHz</description>
 </deviceset>
 <deviceset name="NANO">
 <gates>
-<gate name="G$1" symbol="NANO" x="12.7" y="-5.08"/>
+<gate name="G$1" symbol="NANO" x="7.62" y="-2.54"/>
 </gates>
 <devices>
 <device name="" package="NANO">

@@ -60,7 +60,7 @@
 <packages>
 <package name="JST">
 <description>Salidas con headers hembra a motores dc</description>
-<pad name="OUTB" x="-3.81" y="0" drill="0.8" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="OUTB" x="-1.27" y="0" drill="0.8" diameter="1.4224" shape="long" rot="R90"/>
 <pad name="VCC" x="1.27" y="0" drill="0.8" diameter="1.4224" shape="long" rot="R90"/>
 <wire x1="-7.62" y1="3.81" x2="7.62" y2="3.81" width="0.127" layer="21"/>
 <wire x1="7.62" y1="3.81" x2="7.62" y2="-2.54" width="0.127" layer="21"/>
@@ -68,7 +68,7 @@
 <wire x1="-7.62" y1="-2.54" x2="-7.62" y2="3.81" width="0.127" layer="21"/>
 <text x="-3.81" y="3.81" size="1.27" layer="25">&gt;NAME</text>
 <pad name="GND" x="-6.35" y="0" drill="0.6" diameter="1.4224" shape="long" rot="R90"/>
-<pad name="OUTA" x="-1.27" y="0" drill="0.6" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="OUTA" x="-3.81" y="0" drill="0.6" diameter="1.4224" shape="long" rot="R90"/>
 <pad name="M2" x="3.81" y="0" drill="0.6" diameter="1.4224" shape="long" rot="R90"/>
 <pad name="M1" x="6.35" y="0" drill="0.6" diameter="1.4224" shape="long" rot="R90"/>
 </package>

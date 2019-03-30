@@ -226,7 +226,7 @@ Compatible con tensión de 5V ya que dispone de regulador de tensión en placa
 Conexión Shield para Arduino UNO
 Tamaño: 71 x 52 x 7 mm (L x A x H)</description>
 <gates>
-<gate name="G$1" symbol="TFT-ARDUINO-UNO-MEGA" x="-35.56" y="-22.86"/>
+<gate name="G$1" symbol="TFT-ARDUINO-UNO-MEGA" x="-43.18" y="-25.4"/>
 </gates>
 <devices>
 <device name="" package="TFT-ARDUINO-UNO-MEGA">

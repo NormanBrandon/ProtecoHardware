@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -59,62 +59,25 @@
 <library>
 <packages>
 <package name="SLIDE-3">
-<pad name="COM" x="0" y="0" drill="0.6" diameter="1.6764" shape="long" rot="R90"/>
-<pad name="P1" x="-2.54" y="0" drill="0.6" diameter="1.6764" shape="long" rot="R90"/>
-<pad name="P2" x="2.54" y="0" drill="0.6" diameter="1.6764" shape="long" rot="R90"/>
+<pad name="P$1" x="0" y="0" drill="0.6" diameter="1.6764" shape="long" rot="R90"/>
+<pad name="P$2" x="-2.54" y="0" drill="0.6" diameter="1.6764" shape="long" rot="R90"/>
+<pad name="P$3" x="2.54" y="0" drill="0.6" diameter="1.6764" shape="long" rot="R90"/>
 <wire x1="4.445" y1="1.905" x2="4.445" y2="-1.905" width="0.1524" layer="21"/>
 <wire x1="4.445" y1="-1.905" x2="-4.445" y2="-1.905" width="0.1524" layer="21"/>
 <wire x1="-4.445" y1="-1.905" x2="-4.445" y2="1.905" width="0.1524" layer="21"/>
 <wire x1="-4.445" y1="1.905" x2="-0.635" y2="1.905" width="0.1524" layer="21"/>
 <wire x1="-0.635" y1="1.905" x2="0.635" y2="1.905" width="0.1524" layer="21"/>
 <wire x1="0.635" y1="1.905" x2="4.445" y2="1.905" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.905" x2="-0.635" y2="6.35" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="6.35" x2="0.635" y2="6.35" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="6.35" x2="0.635" y2="1.905" width="0.1524" layer="21"/>
-<text x="-4.445" y="-3.81" size="1.778" layer="21">&gt;NAME</text>
+<wire x1="-0.635" y1="1.905" x2="-0.635" y2="6.985" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="6.985" x2="0.635" y2="6.985" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="6.985" x2="0.635" y2="1.905" width="0.1524" layer="21"/>
 </package>
 </packages>
 <symbols>
 <symbol name="SLIDE-3">
-<wire x1="-12.7" y1="-4.445" x2="12.065" y2="-4.445" width="0.1524" layer="94"/>
-<wire x1="12.065" y1="-4.445" x2="12.065" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="-12.7" y1="-4.445" x2="-12.7" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="-12.7" y1="5.08" x2="-7.62" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="-7.62" y1="5.08" x2="-1.905" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="-1.905" y1="5.08" x2="1.27" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="12.065" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="-1.905" y1="5.08" x2="-1.905" y2="16.51" width="0.1524" layer="94"/>
-<wire x1="-1.905" y1="16.51" x2="1.27" y2="16.51" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="16.51" x2="1.27" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="-7.62" y1="5.08" x2="-7.62" y2="1.905" width="0.1524" layer="94"/>
-<wire x1="-7.62" y1="1.905" x2="7.62" y2="1.905" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="1.905" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
-<pin name="P1" x="-17.78" y="0" length="middle"/>
-<pin name="COM" x="0" y="-9.525" length="middle" rot="R90"/>
-<pin name="P2" x="17.145" y="0" length="middle" rot="R180"/>
-<text x="-12.7" y="10.16" size="1.778" layer="94">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SLIDE-3">
-<description>Interruptor deslizante de uso fácil</description>
-<gates>
-<gate name="G$1" symbol="SLIDE-3" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SLIDE-3">
-<connects>
-<connect gate="G$1" pin="COM" pad="COM"/>
-<connect gate="G$1" pin="P1" pad="P1"/>
-<connect gate="G$1" pin="P2" pad="P2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 </drawing>

@@ -424,7 +424,7 @@
 <pin name="D11~" x="17.78" y="-20.32" length="middle" rot="R90"/>
 <pin name="D12" x="22.86" y="-20.32" length="middle" rot="R90"/>
 <pin name="D13" x="12.7" y="25.4" length="middle" rot="R270"/>
-<text x="-38.1" y="10.16" size="1.778" layer="94">&gt;NAME</text>
+<text x="-5.08" y="7.62" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -544,7 +544,7 @@ Clock Speed: 16 MHz</description>
 </deviceset>
 <deviceset name="NANO">
 <gates>
-<gate name="G$1" symbol="NANO" x="12.7" y="-5.08"/>
+<gate name="G$1" symbol="NANO" x="7.62" y="-2.54"/>
 </gates>
 <devices>
 <device name="" package="NANO">
