@@ -84,7 +84,7 @@
 <symbols>
 <symbol name="POLOLUMICROMOTOR">
 <description>Salidas hembra o macho headers a motor de cd</description>
-<text x="-2.54" y="0" size="1.27" layer="94">&gt;NAME</text>
+<text x="-20.32" y="10.16" size="1.27" layer="94">&gt;NAME</text>
 <pin name="PWM" x="11.43" y="5.08" length="middle" rot="R180"/>
 <pin name="GND" x="11.43" y="-5.08" length="middle" rot="R180"/>
 <wire x1="-19.05" y1="8.89" x2="6.35" y2="8.89" width="0.254" layer="94"/>

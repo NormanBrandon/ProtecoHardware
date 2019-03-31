@@ -74,6 +74,16 @@
 <wire x1="11.43" y1="-2.54" x2="-11.43" y2="-2.54" width="0.1524" layer="21"/>
 <wire x1="-11.43" y1="-2.54" x2="-11.43" y2="2.54" width="0.1524" layer="21"/>
 </package>
+<package name="SHARP">
+<pad name="GND" x="0" y="0" drill="0.6" diameter="1.6764" shape="long" rot="R90"/>
+<pad name="VCC" x="2.54" y="0" drill="0.6" diameter="1.6764" shape="long" rot="R90"/>
+<pad name="DIST" x="-2.54" y="0" drill="0.6" diameter="1.6764" shape="long" rot="R90"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-3.81" x2="-5.08" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-3.81" x2="-5.08" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="3.81" x2="5.08" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="3.81" x2="5.08" y2="2.54" width="0.1524" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SHARP">
@@ -282,6 +292,7 @@
 <pin name="SSD" x="6" y="-35.5" length="middle" rot="R90"/>
 <pin name="SCD" x="9" y="-35.5" length="middle" rot="R90"/>
 <pin name="SF" x="12" y="-35.5" length="middle" rot="R90"/>
+<text x="-22.86" y="17.78" size="1.778" layer="94">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -298,11 +309,30 @@
 </devices>
 </deviceset>
 <deviceset name="CNY70-ARRAY">
+<description>Arreglo de sensores reflexivos para seguimiento de linea, señal digital de 1 cm a 1.5 cm.  
+SCI -&gt;Sensor Central Izquierdo ;
+SSI -&gt;Sensor  Superior Izquierdo ; 
+SII -&gt;Sensor Inferior Izquierdo ;
+SID -&gt;Sensor Inferior Derecho ;
+SSD -&gt;Sensor Superior Derecho ; 
+SCD -&gt;Sensor Central Derecho ;
+SF -&gt; Sensor Frontal;</description>
 <gates>
 <gate name="G$1" symbol="CNY70-ARRAY" x="0" y="7.62"/>
 </gates>
 <devices>
 <device name="" package="CNY70-ARRAY">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SCD" pad="SCD"/>
+<connect gate="G$1" pin="SCI" pad="SCI"/>
+<connect gate="G$1" pin="SF" pad="SF"/>
+<connect gate="G$1" pin="SID" pad="SID"/>
+<connect gate="G$1" pin="SII" pad="SII"/>
+<connect gate="G$1" pin="SSD" pad="SSD"/>
+<connect gate="G$1" pin="SSI" pad="SSI"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>

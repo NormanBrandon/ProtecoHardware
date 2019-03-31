@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -78,11 +78,36 @@
 <pad name="GND" x="0" y="0" drill="0.6" diameter="1.6764" shape="long" rot="R90"/>
 <pad name="VCC" x="2.54" y="0" drill="0.6" diameter="1.6764" shape="long" rot="R90"/>
 <pad name="DIST" x="-2.54" y="0" drill="0.6" diameter="1.6764" shape="long" rot="R90"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="-2.54" x2="-5.08" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="3.81" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="3.81" x2="5.08" y2="3.81" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="3.81" x2="5.08" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="5.207" y1="3.302" x2="5.207" y2="-2.032" width="0.1524" layer="21"/>
+<wire x1="5.207" y1="-2.032" x2="1.778" y2="-2.032" width="0.1524" layer="21"/>
+<wire x1="1.778" y1="-2.032" x2="-1.778" y2="-2.032" width="0.1524" layer="21"/>
+<wire x1="-1.778" y1="-2.032" x2="-5.207" y2="-2.032" width="0.1524" layer="21"/>
+<wire x1="-5.207" y1="-2.032" x2="-5.207" y2="3.302" width="0.1524" layer="21"/>
+<wire x1="-5.207" y1="3.302" x2="5.207" y2="3.302" width="0.1524" layer="21"/>
+<wire x1="-4.318" y1="-1.397" x2="-4.318" y2="2.667" width="0.1524" layer="21"/>
+<wire x1="-4.318" y1="2.667" x2="4.318" y2="2.667" width="0.1524" layer="21"/>
+<wire x1="4.318" y1="2.667" x2="4.318" y2="-1.397" width="0.1524" layer="21"/>
+<wire x1="4.318" y1="-1.397" x2="3.429" y2="-1.397" width="0.1524" layer="21"/>
+<wire x1="3.429" y1="-1.397" x2="2.921" y2="-1.397" width="0.1524" layer="21"/>
+<wire x1="2.921" y1="-1.397" x2="-3.048" y2="-1.397" width="0.1524" layer="21"/>
+<wire x1="-3.048" y1="-1.397" x2="-3.556" y2="-1.397" width="0.1524" layer="21"/>
+<wire x1="-3.556" y1="-1.397" x2="-4.318" y2="-1.397" width="0.1524" layer="21"/>
+<wire x1="-1.778" y1="-2.032" x2="-1.778" y2="-4.445" width="0.1524" layer="21"/>
+<wire x1="-1.778" y1="-4.445" x2="0.508" y2="-4.445" width="0.1524" layer="21"/>
+<wire x1="0.508" y1="-4.445" x2="1.778" y2="-4.445" width="0.1524" layer="21"/>
+<wire x1="1.778" y1="-4.445" x2="1.778" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="1.778" y1="-2.667" x2="1.778" y2="-2.032" width="0.1524" layer="21"/>
+<wire x1="-1.778" y1="-2.667" x2="1.778" y2="-2.667" width="0.1524" layer="21"/>
+<wire x1="1.778" y1="-2.667" x2="1.778" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="1.778" y1="-3.81" x2="-1.778" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="-3.556" y1="-1.397" x2="-3.556" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-3.048" y1="-1.397" x2="-3.048" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="2.921" y1="-1.397" x2="2.921" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="3.429" y1="-1.397" x2="3.429" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-0.508" y1="-3.81" x2="-0.508" y2="-4.445" width="0.1524" layer="21"/>
+<wire x1="-0.508" y1="-4.445" x2="-0.254" y2="-4.445" width="0.1524" layer="21"/>
+<wire x1="0.508" y1="-3.81" x2="0.508" y2="-4.445" width="0.1524" layer="21"/>
+<text x="-4.699" y="3.937" size="1.778" layer="21">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -301,7 +326,12 @@
 <gate name="G$1" symbol="SHARP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="SHARP">
+<connects>
+<connect gate="G$1" pin="DISTANCE" pad="DIST"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>

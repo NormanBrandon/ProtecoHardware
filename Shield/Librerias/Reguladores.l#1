@@ -75,13 +75,6 @@
 <text x="-8.89" y="-10.16" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="-6.35" y="6.35" size="1.27" layer="21">IN+</text>
 <text x="-6.35" y="-7.62" size="1.27" layer="21">OUT+</text>
-<wire x1="-1.27" y1="7.62" x2="1.27" y2="7.62" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="7.62" x2="1.27" y2="-3.81" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-3.81" x2="3.81" y2="-3.81" width="0.1524" layer="21"/>
-<wire x1="3.81" y1="-3.81" x2="0" y2="-7.62" width="0.1524" layer="21"/>
-<wire x1="0" y1="-7.62" x2="-3.81" y2="-3.81" width="0.1524" layer="21"/>
-<wire x1="-3.81" y1="-3.81" x2="-1.27" y2="-3.81" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-3.81" x2="-1.27" y2="7.62" width="0.1524" layer="21"/>
 </package>
 </packages>
 <symbols>

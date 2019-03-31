@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -303,35 +303,6 @@ your overall design/development cycle.</description>
 <connects>
 <connect gate="G$1" pin="EN" pad="EN"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="RX" pad="RXD"/>
-<connect gate="G$1" pin="STATE" pad="STATE"/>
-<connect gate="G$1" pin="TX" pad="TXD"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="HC-05-PROG">
-<description>Con funcion adicional para programar arduino remotamente.
-HC-05 module is an easy to use Bluetooth SPP (Serial Port Protocol) module, designed for
-transparent wireless serial connection setup.
-Serial port Bluetooth module is fully qualified Bluetooth V2.0+EDR (Enhanced Data Rate) 3Mbps
-Modulation with complete 2.4GHz radio transceiver and baseband. It uses CSR Bluecore
-04-External single chip Bluetooth system with CMOS technology and with AFH(Adaptive
-Frequency Hopping Feature). It has the footprint as small as 12.7mmx27mm. Hope it will simplify
-your overall design/development cycle.</description>
-<gates>
-<gate name="G$1" symbol="HC-05-PROG" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="HC-05-PROG">
-<connects>
-<connect gate="G$1" pin="EN" pad="EN"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="RESET" pad="RESET"/>
 <connect gate="G$1" pin="RX" pad="RXD"/>
 <connect gate="G$1" pin="STATE" pad="STATE"/>
 <connect gate="G$1" pin="TX" pad="TXD"/>

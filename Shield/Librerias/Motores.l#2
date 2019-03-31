@@ -249,7 +249,8 @@ diámetro
 6 V	650 RPM, 100 mA	0.74 kg⋅cm (10 oz⋅in), 1.5 A
 Agregue codificadores de cuadratura a sus motorreductores de metal, MP o HP (se requiere una versión con eje trasero extendido) con este kit que utiliza un disco magnético y sensores de efecto hall para proporcionar 12 conteos por revolución del eje del motor. Los sensores funcionan de 2.7 V a 18 V y proporcionan salidas digitales que se pueden conectar directamente a un microcontrolador u otro circuito digital. 
 
-Nota: esta versión no es compatible con los motorreductores de metal micro HPCB; Solo es compatible con motorreductores de metal micro LP, MP y HP de doble eje.</description>
+Nota: esta versión no es compatible con los motorreductores de metal micro HPCB; Solo es compatible con motorreductores de metal micro LP, MP y HP de doble eje.
+https://www.pololu.com/product/2598</description>
 <gates>
 <gate name="G$1" symbol="POLOLUMICROMOTOR" x="0" y="0"/>
 </gates>
