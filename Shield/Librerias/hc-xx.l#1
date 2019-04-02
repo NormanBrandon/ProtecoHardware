@@ -315,6 +315,14 @@ your overall design/development cycle.</description>
 </devices>
 </deviceset>
 <deviceset name="HC-05-PROG">
+<description>Con funcion adicional para programar arduino remotamente.
+HC-05 module is an easy to use Bluetooth SPP (Serial Port Protocol) module, designed for
+transparent wireless serial connection setup.
+Serial port Bluetooth module is fully qualified Bluetooth V2.0+EDR (Enhanced Data Rate) 3Mbps
+Modulation with complete 2.4GHz radio transceiver and baseband. It uses CSR Bluecore
+04-External single chip Bluetooth system with CMOS technology and with AFH(Adaptive
+Frequency Hopping Feature). It has the footprint as small as 12.7mmx27mm. Hope it will simplify
+your overall design/development cycle.</description>
 <gates>
 <gate name="G$1" symbol="HC-05-PROG" x="0" y="0"/>
 </gates>
