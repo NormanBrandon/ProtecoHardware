@@ -22,12 +22,12 @@ Hay varias maneras de controlar un robot via Wifi, y en este [proyecto](https://
 Entre las plataformas con las que funcionan estan:
 - Raspberry Pi
 - Arduino + Ethernet Shield 
-- ESP8266. 
+- ESP8266 
 
 Con Blynk podemos controlar nuestro hardware remotamente, mostrar información obtenida de sensores conectados a nuestro hardware y puede almacenar dicha información. __La unica limitante para conectar la app a nuestro dispositivo es necesario que ambos estén conectados a Internet.__
 
-###  Robot con Camara controlado por Wifi (Raspberry - Raspberry/Arduino)
-Este [robot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/ENGLISH) nos da una solida referencia de como ir modelando, diseñando y planeando un robot controlado por wifi con camara y streaming en vivo. Proporcionandonos desde su modelo del carro hasta los codigos que usaron tanto de las plataformas (Raspberry - Arduino) y desde donde se controlan.
+###  Robot controlado por Wifi con Camara y Streaming en Vivo (Raspberry - Raspberry/Arduino)
+Este [robot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/ENGLISH) nos da una solida referencia de como ir modelando, diseñando y planeando un propio. Proporcionandonos desde su modelo del carro hasta los codigos que usaron tanto de las plataformas (Raspberry - Arduino) y desde donde se controlan.
 
 Este proyecto consta de tres versiones donde las principales diferencias son:
 - Las primeras dos versiones usaron tanto Raspberry y Arduino, controlados por un dispositivo movil (Android).
