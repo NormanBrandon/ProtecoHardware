@@ -13,7 +13,8 @@
 ## Estado del Arte
 
 ### Uso de Camara en Arduino
-El siguiente [proyecto](https://create.arduino.cc/demo/ctc/101/course/view.php?id=217) nos da una introduccion al uso basico de una camara en Arduino. 
+El siguiente [proyecto](https://create.arduino.cc/demo/ctc/101/course/view.php?id=217) nos da una introduccion al uso basico de una camara en Arduino, donde se tendria una base para adentrarse a obtener imagenes en vivo de dicha camara.
+**Cabe recalcar el uso de la libreria processing de Arudino, donde desde el 2018 el PlaygroundArduino de donde se consultaba y accedia a dicha libreria cambio y pueda ser dificil acceder a ella**
 
 
 # Propuesta de desarrollo de hadware
