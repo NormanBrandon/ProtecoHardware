@@ -1,4 +1,4 @@
-# Robot Vehiculo Autonomo
+# Robot con Camara controlado por Wifi 
 
 ## Objetivos:
 - Diseñar y construir un robot móvil capaz de controlarse mediante wifi a traves de un dispositivo movil mientras muestra en pantalla imagenes en vivo de su camara. 
@@ -13,7 +13,7 @@
 ## Estado del Arte
 
 ### Uso de Camara en Arduino
-El siguiente [proyecto] (https://create.arduino.cc/demo/ctc/101/course/view.php?id=217) nos da una introduccion al uso basico de una camara en Arduino. 
+El siguiente [proyecto](https://create.arduino.cc/demo/ctc/101/course/view.php?id=217) nos da una introduccion al uso basico de una camara en Arduino. 
 
 
 # Propuesta de desarrollo de hadware
