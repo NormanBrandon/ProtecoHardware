@@ -2384,7 +2384,7 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="1824860" x="97.155" y="47.625" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="79R6078" x="97.155" y="47.625" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U$10" library="Motores" package="SERVO" value="SERVOMOTORES" x="-17.78" y="-6.985"/>
+<element name="U$10" library="Motores" package="SERVO" value="SERVOMOTORES" x="38.735" y="10.16"/>
 </elements>
 <signals>
 <signal name="VCC">
@@ -2440,7 +2440,7 @@ design rules under a new name.</description>
 <wire x1="99.06" y1="5.715" x2="90.17" y2="5.235" width="0" layer="19" extent="1-1"/>
 <wire x1="52.07" y1="38.735" x2="31.115" y2="52.07" width="0" layer="19" extent="1-1"/>
 <wire x1="12.065" y1="71.12" x2="31.115" y2="52.07" width="0" layer="19" extent="1-1"/>
-<wire x1="-17.78" y1="-6.985" x2="5.715" y2="10.795" width="0" layer="19" extent="1-1"/>
+<wire x1="38.735" y1="10.16" x2="5.715" y2="10.795" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="SW1" pad="1"/>
@@ -2540,7 +2540,7 @@ design rules under a new name.</description>
 <wire x1="43.18" y1="3.175" x2="24.765" y2="10.795" width="0" layer="19" extent="1-1"/>
 <wire x1="53.975" y1="3.175" x2="43.18" y2="3.175" width="0" layer="19" extent="1-1"/>
 <wire x1="64.77" y1="3.175" x2="53.975" y2="3.175" width="0" layer="19" extent="1-1"/>
-<wire x1="-15.24" y1="-6.985" x2="3.175" y2="2.54" width="0" layer="19" extent="1-1"/>
+<wire x1="41.275" y1="10.16" x2="3.175" y2="2.54" width="0" layer="19" extent="1-1"/>
 <wire x1="41.91" y1="76.835" x2="22.86" y2="60.96" width="0" layer="19" extent="1-1"/>
 <wire x1="70.485" y1="76.835" x2="41.91" y2="76.835" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -2827,7 +2827,7 @@ design rules under a new name.</description>
 <signal name="N$77">
 <contactref element="U$17" pad="SIGNAL"/>
 <contactref element="U$10" pad="SIGNAL"/>
-<wire x1="8.255" y1="10.795" x2="-20.32" y2="-6.985" width="0" layer="19" extent="1-1"/>
+<wire x1="8.255" y1="10.795" x2="36.195" y2="10.16" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$29">
 <contactref element="U$14" pad="5V_1"/>
@@ -2969,6 +2969,42 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$105">
 <contactref element="U$7" pad="M1"/>
+</signal>
+<signal name="N$106">
+<contactref element="U$8" pad="OUTA"/>
+</signal>
+<signal name="N$107">
+<contactref element="U$8" pad="OUTB"/>
+</signal>
+<signal name="N$108">
+<contactref element="U$8" pad="M2"/>
+</signal>
+<signal name="N$109">
+<contactref element="U$8" pad="M1"/>
+</signal>
+<signal name="N$110">
+<contactref element="U$9" pad="3V3"/>
+</signal>
+<signal name="N$111">
+<contactref element="ARDUINO-MEGA" pad="12"/>
+</signal>
+<signal name="N$112">
+<contactref element="ARDUINO-MEGA" pad="11"/>
+</signal>
+<signal name="N$113">
+<contactref element="ARDUINO-MEGA" pad="10"/>
+</signal>
+<signal name="N$114">
+<contactref element="ARDUINO-MEGA" pad="9"/>
+</signal>
+<signal name="N$115">
+<contactref element="ARDUINO-MEGA" pad="8"/>
+</signal>
+<signal name="N$116">
+<contactref element="ARDUINO-MEGA" pad="7"/>
+</signal>
+<signal name="N$117">
+<contactref element="ARDUINO-MEGA" pad="6"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
