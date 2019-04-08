@@ -73,16 +73,6 @@
 </layers>
 <library>
 <packages>
-<package name="XT60">
-<pad name="P$1" x="0" y="0" drill="3.81" diameter="5.588"/>
-<pad name="P$2" x="7.112" y="0" drill="3.81" diameter="5.588"/>
-<wire x1="8.382" y1="-4.064" x2="-4.572" y2="-4.064" width="0.1524" layer="21"/>
-<wire x1="11.684" y1="-1.524" x2="11.684" y2="1.524" width="0.1524" layer="21"/>
-<wire x1="8.382" y1="4.064" x2="-4.572" y2="4.064" width="0.1524" layer="21"/>
-<wire x1="-4.572" y1="4.064" x2="-4.572" y2="-4.064" width="0.1524" layer="21"/>
-<wire x1="8.382" y1="4.064" x2="11.684" y2="1.524" width="0.1524" layer="21"/>
-<wire x1="8.382" y1="-4.064" x2="11.684" y2="-1.524" width="0.1524" layer="21"/>
-</package>
 </packages>
 <symbols>
 <symbol name="ZIPPY-7.4V">
@@ -129,19 +119,6 @@ SERIES 1000MAh</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ZIIPY-7.4V">
-<description>BATERIA POLIMERO DE LITIO 7.4V</description>
-<gates>
-<gate name="G$1" symbol="ZIPPY-7.4V" x="-7.62" y="-5.08"/>
-</gates>
-<devices>
-<device name="" package="XT60">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 </drawing>

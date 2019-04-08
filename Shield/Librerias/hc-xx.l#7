@@ -83,7 +83,7 @@
 <wire x1="-7.62" y1="-3.556" x2="-7.62" y2="1.27" width="0.127" layer="21"/>
 <wire x1="-7.62" y1="1.27" x2="-7.62" y2="5.842" width="0.127" layer="21"/>
 <wire x1="-7.62" y1="5.842" x2="7.62" y2="5.842" width="0.127" layer="21"/>
-<text x="-7.112" y="3.81" size="0.8128" layer="25">&gt;NAME</text>
+<text x="-7.112" y="3.81" size="1.27" layer="25">&gt;NAME</text>
 <pad name="STATE" x="-6.35" y="-1.27" drill="0.6" diameter="1.4224" shape="long" rot="R90"/>
 <pad name="EN" x="6.35" y="-1.27" drill="0.6" diameter="1.4224" shape="long" rot="R90"/>
 <wire x1="-7.62" y1="1.27" x2="-5.08" y2="1.27" width="0.127" layer="21"/>
@@ -118,7 +118,7 @@
 <wire x1="-7.62" y1="-3.556" x2="-7.62" y2="1.27" width="0.127" layer="21"/>
 <wire x1="-7.62" y1="1.27" x2="-7.62" y2="5.842" width="0.127" layer="21"/>
 <wire x1="-7.62" y1="5.842" x2="7.62" y2="5.842" width="0.127" layer="21"/>
-<text x="-7.112" y="3.81" size="0.8128" layer="25">&gt;NAME</text>
+<text x="-7.112" y="3.81" size="1.27" layer="25">&gt;NAME</text>
 <pad name="STATE" x="-6.35" y="-1.27" drill="0.6" diameter="1.4224" shape="long" rot="R90"/>
 <pad name="EN" x="6.35" y="-1.27" drill="0.6" diameter="1.4224" shape="long" rot="R90"/>
 <wire x1="-7.62" y1="1.27" x2="-5.08" y2="1.27" width="0.127" layer="21"/>
@@ -303,35 +303,6 @@ your overall design/development cycle.</description>
 <connects>
 <connect gate="G$1" pin="EN" pad="EN"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="RX" pad="RXD"/>
-<connect gate="G$1" pin="STATE" pad="STATE"/>
-<connect gate="G$1" pin="TX" pad="TXD"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="HC-05-PROG">
-<description>Con funcion adicional para programar arduino remotamente.
-HC-05 module is an easy to use Bluetooth SPP (Serial Port Protocol) module, designed for
-transparent wireless serial connection setup.
-Serial port Bluetooth module is fully qualified Bluetooth V2.0+EDR (Enhanced Data Rate) 3Mbps
-Modulation with complete 2.4GHz radio transceiver and baseband. It uses CSR Bluecore
-04-External single chip Bluetooth system with CMOS technology and with AFH(Adaptive
-Frequency Hopping Feature). It has the footprint as small as 12.7mmx27mm. Hope it will simplify
-your overall design/development cycle.</description>
-<gates>
-<gate name="G$1" symbol="HC-05-PROG" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="HC-05-PROG">
-<connects>
-<connect gate="G$1" pin="EN" pad="EN"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="RESET" pad="RESET"/>
 <connect gate="G$1" pin="RX" pad="RXD"/>
 <connect gate="G$1" pin="STATE" pad="STATE"/>
 <connect gate="G$1" pin="TX" pad="TXD"/>
