@@ -14391,15 +14391,15 @@ Source:  FDD4141.pdf</description>
 <instance part="SW1" gate="A" x="-146.05" y="78.74" rot="R270"/>
 <instance part="P+1" gate="VCC" x="-147.32" y="95.25"/>
 <instance part="GND1" gate="1" x="-147.32" y="46.99"/>
-<instance part="BUZZER" gate="G$1" x="-101.6" y="76.2" rot="R270"/>
-<instance part="GND2" gate="1" x="-106.68" y="54.61"/>
-<instance part="BC547" gate="G$1" x="-106.68" y="64.77"/>
-<instance part="P+2" gate="VCC" x="-104.14" y="83.82"/>
+<instance part="BUZZER" gate="G$1" x="-64.77" y="76.2" rot="R270"/>
+<instance part="GND2" gate="1" x="-69.85" y="54.61"/>
+<instance part="BC547" gate="G$1" x="-69.85" y="64.77"/>
+<instance part="P+2" gate="VCC" x="-67.31" y="83.82"/>
 <instance part="R1" gate="G$1" x="-153.67" y="55.88" rot="R90"/>
 <instance part="R2" gate="G$1" x="-149.86" y="55.88" rot="R90"/>
 <instance part="R3" gate="G$1" x="-144.78" y="55.88" rot="R90"/>
 <instance part="R4" gate="G$1" x="-140.97" y="57.15" rot="R90"/>
-<instance part="R5" gate="G$1" x="-115.57" y="64.77"/>
+<instance part="R5" gate="G$1" x="-78.74" y="64.77"/>
 <instance part="P+3" gate="VCC" x="29.21" y="77.47"/>
 <instance part="P+4" gate="VCC" x="80.01" y="80.01"/>
 <instance part="P+5" gate="VCC" x="130.81" y="78.74"/>
@@ -14535,7 +14535,7 @@ Source:  FDD4141.pdf</description>
 </segment>
 <segment>
 <pinref part="BUZZER" gate="G$1" pin="1"/>
-<wire x1="-104.14" y1="78.74" x2="-104.14" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="-67.31" y1="78.74" x2="-67.31" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
@@ -14749,10 +14749,10 @@ Source:  FDD4141.pdf</description>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="-106.68" y1="57.15" x2="-106.68" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="-106.68" y1="58.42" x2="-104.14" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-69.85" y1="57.15" x2="-69.85" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-69.85" y1="58.42" x2="-67.31" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="BC547" gate="G$1" pin="E"/>
-<wire x1="-104.14" y1="58.42" x2="-104.14" y2="59.69" width="0.1524" layer="91"/>
+<wire x1="-67.31" y1="58.42" x2="-67.31" y2="59.69" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
@@ -14940,21 +14940,21 @@ Source:  FDD4141.pdf</description>
 <segment>
 <pinref part="BUZZER" gate="G$1" pin="2"/>
 <pinref part="BC547" gate="G$1" pin="C"/>
-<wire x1="-104.14" y1="69.85" x2="-104.14" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-67.31" y1="69.85" x2="-67.31" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="BC547" gate="G$1" pin="B"/>
 <pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="-110.49" y1="64.77" x2="-109.22" y2="64.77" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="64.77" x2="-72.39" y2="64.77" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BUZZER" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="-120.65" y1="64.77" x2="-121.92" y2="64.77" width="0.1524" layer="91"/>
-<label x="-121.92" y="64.77" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-83.82" y1="64.77" x2="-85.09" y2="64.77" width="0.1524" layer="91"/>
+<label x="-85.09" y="64.77" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$7" class="0">

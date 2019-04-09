@@ -16115,6 +16115,41 @@ Source:  FDD4141.pdf</description>
 <label x="-101.6" y="-71.12" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
+<net name="N$129" class="0">
+<segment>
+<pinref part="U$9" gate="G$1" pin="E9"/>
+<wire x1="177.8" y1="-30.48" x2="196.85" y2="-30.48" width="0.1524" layer="91"/>
+<label x="196.85" y="-30.48" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$130" class="0">
+<segment>
+<pinref part="U$9" gate="G$1" pin="E10"/>
+<wire x1="177.8" y1="-35.56" x2="182.88" y2="-35.56" width="0.1524" layer="91"/>
+<label x="182.88" y="-35.56" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$131" class="0">
+<segment>
+<pinref part="U$9" gate="G$1" pin="E11"/>
+<wire x1="177.8" y1="-40.64" x2="196.85" y2="-40.64" width="0.1524" layer="91"/>
+<label x="196.85" y="-40.64" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$132" class="0">
+<segment>
+<pinref part="U$9" gate="G$1" pin="E12"/>
+<wire x1="177.8" y1="-45.72" x2="182.88" y2="-45.72" width="0.1524" layer="91"/>
+<label x="182.88" y="-45.72" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$133" class="0">
+<segment>
+<pinref part="U$9" gate="G$1" pin="E13"/>
+<wire x1="177.8" y1="-50.8" x2="196.85" y2="-50.8" width="0.1524" layer="91"/>
+<label x="196.85" y="-50.8" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>

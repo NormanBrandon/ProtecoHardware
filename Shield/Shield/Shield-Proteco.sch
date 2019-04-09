@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -15023,6 +15023,11 @@ SERIES 1000MAh</text>
 <pinref part="GND36" gate="1" pin="GND"/>
 <wire x1="-316.23" y1="180.34" x2="-316.23" y2="175.26" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="ARDUINO-MEGA" gate="G$1" pin="GND_2"/>
+<wire x1="46.99" y1="-15.24" x2="29.21" y2="-15.24" width="0.1524" layer="91"/>
+<label x="29.21" y="-15.24" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="N$5" class="0">
 <segment>
@@ -15361,7 +15366,7 @@ SERIES 1000MAh</text>
 <label x="278.13" y="-2.54" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$39" class="0">
+<net name="3V3" class="0">
 <segment>
 <pinref part="ARDUINO-MEGA" gate="G$1" pin="3V3"/>
 <wire x1="46.99" y1="-10.16" x2="29.21" y2="-10.16" width="0.1524" layer="91"/>
@@ -15373,13 +15378,6 @@ SERIES 1000MAh</text>
 <pinref part="ARDUINO-MEGA" gate="G$1" pin="5V_1"/>
 <wire x1="46.99" y1="-12.7" x2="39.37" y2="-12.7" width="0.1524" layer="91"/>
 <label x="39.37" y="-12.7" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="N$41" class="0">
-<segment>
-<pinref part="ARDUINO-MEGA" gate="G$1" pin="GND_2"/>
-<wire x1="46.99" y1="-15.24" x2="29.21" y2="-15.24" width="0.1524" layer="91"/>
-<label x="29.21" y="-15.24" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$42" class="0">

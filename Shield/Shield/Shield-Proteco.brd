@@ -2617,6 +2617,7 @@ design rules under a new name.</description>
 <contactref element="U$20" pad="GND"/>
 <contactref element="U$21" pad="GND"/>
 <contactref element="U$23" pad="GND"/>
+<contactref element="ARDUINO-MEGA" pad="GND_2"/>
 <wire x1="90.04" y1="43.815" x2="100.965" y2="55.245" width="0" layer="19" extent="1-1"/>
 <wire x1="93.345" y1="35.43" x2="90.04" y2="43.815" width="0" layer="19" extent="1-1"/>
 <wire x1="88.9" y1="34.16" x2="93.345" y2="35.43" width="0" layer="19" extent="1-1"/>
@@ -2642,20 +2643,21 @@ design rules under a new name.</description>
 <wire x1="43.18" y1="3.175" x2="53.975" y2="3.175" width="0" layer="19" extent="1-1"/>
 <wire x1="40.64" y1="10.795" x2="43.18" y2="3.175" width="0" layer="19" extent="1-1"/>
 <wire x1="24.765" y1="10.795" x2="40.64" y2="10.795" width="0" layer="19" extent="1-1"/>
+<wire x1="22.479" y1="17.145" x2="24.765" y2="10.795" width="0" layer="19" extent="1-1"/>
 <wire x1="22.225" y1="3.175" x2="24.765" y2="10.795" width="0" layer="19" extent="1-1"/>
-<wire x1="13.97" y1="10.795" x2="24.765" y2="10.795" width="0" layer="19" extent="1-1"/>
+<wire x1="22.86" y1="26.67" x2="22.479" y2="17.145" width="0" layer="19" extent="1-1"/>
+<wire x1="13.97" y1="10.795" x2="22.479" y2="17.145" width="0" layer="19" extent="1-1"/>
 <wire x1="3.175" y1="10.795" x2="13.97" y2="10.795" width="0" layer="19" extent="1-1"/>
 <wire x1="3.175" y1="3.175" x2="3.175" y2="10.795" width="0" layer="19" extent="1-1"/>
-<wire x1="22.86" y1="26.67" x2="24.765" y2="10.795" width="0" layer="19" extent="1-1"/>
 <wire x1="31.115" y1="34.925" x2="22.86" y2="26.67" width="0" layer="19" extent="1-1"/>
 <wire x1="22.86" y1="39.37" x2="31.115" y2="34.925" width="0" layer="19" extent="1-1"/>
 <wire x1="22.86" y1="48.26" x2="22.86" y2="39.37" width="0" layer="19" extent="1-1"/>
 <wire x1="22.86" y1="60.96" x2="22.86" y2="48.26" width="0" layer="19" extent="1-1"/>
 <wire x1="20.32" y1="71.12" x2="22.86" y2="60.96" width="0" layer="19" extent="1-1"/>
+<wire x1="29.337" y1="76.2" x2="20.32" y2="71.12" width="0" layer="19" extent="1-1"/>
 <wire x1="5.08" y1="74.93" x2="20.32" y2="71.12" width="0" layer="19" extent="1-1"/>
 <wire x1="5.08" y1="60.96" x2="5.08" y2="74.93" width="0" layer="19" extent="1-1"/>
 <wire x1="5.08" y1="39.37" x2="22.86" y2="39.37" width="0" layer="19" extent="1-1"/>
-<wire x1="29.337" y1="76.2" x2="3.175" y2="3.175" width="0" layer="19" extent="1-1"/>
 <wire x1="55.88" y1="72.771" x2="52.07" y2="48.26" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
@@ -2773,14 +2775,11 @@ design rules under a new name.</description>
 <signal name="N$38">
 <contactref element="U$14" pad="A5"/>
 </signal>
-<signal name="N$39">
+<signal name="3V3">
 <contactref element="ARDUINO-MEGA" pad="3V3"/>
 </signal>
 <signal name="N$40">
 <contactref element="ARDUINO-MEGA" pad="5V_1"/>
-</signal>
-<signal name="N$41">
-<contactref element="ARDUINO-MEGA" pad="GND_2"/>
 </signal>
 <signal name="N$42">
 <contactref element="ARDUINO-MEGA" pad="GND_1"/>

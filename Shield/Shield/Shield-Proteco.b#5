@@ -3146,16 +3146,16 @@ design rules under a new name.</description>
 <signal name="DRAIN">
 <contactref element="Q1" pad="3"/>
 </signal>
-<signal name="N$129">
+<signal name="SERVO4">
 <contactref element="D4" pad="C"/>
 </signal>
-<signal name="N$130">
+<signal name="SERVO3">
 <contactref element="D3" pad="C"/>
 </signal>
-<signal name="N$131">
+<signal name="SERVO2">
 <contactref element="D2" pad="C"/>
 </signal>
-<signal name="N$132">
+<signal name="SERVO1">
 <contactref element="D1" pad="C"/>
 </signal>
 </signals>
