@@ -13808,7 +13808,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pad name="P3" x="-4.064" y="0" drill="0.6" diameter="1.27" shape="long" rot="R90"/>
 <pad name="P4" x="4.064" y="0" drill="0.6" diameter="1.27" shape="long" rot="R90"/>
 </package>
-<package name="1X02" urn="urn:adsk.eagle:footprint:22309/1">
+<package name="1X02" urn="urn:adsk.eagle:footprint:22309/1" locally_modified="yes">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
 <wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
@@ -13827,10 +13827,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
 <pad name="1" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
 <pad name="2" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
-<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-2.6162" y="3.0988" size="0.8128" layer="25" ratio="10">&gt;NAME</text>
 <rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
 <rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.127" layer="21"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -13883,81 +13886,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="Ventilador">
-<packages>
-<package name="1X02" urn="urn:adsk.eagle:footprint:22309/1" locally_modified="yes">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<pad name="VCC" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="GND" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
-<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
-<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="FAN">
-<circle x="0" y="0" radius="8.032184375" width="0.1524" layer="94"/>
-<pin name="VCC" x="-10.16" y="5.08" length="middle"/>
-<pin name="GND" x="-10.16" y="-5.08" length="middle"/>
-<wire x1="-7.62" y1="5.08" x2="-10.16" y2="7.62" width="0.1524" layer="94"/>
-<wire x1="-10.16" y1="7.62" x2="-7.62" y2="10.16" width="0.1524" layer="94" curve="-180"/>
-<wire x1="-7.62" y1="10.16" x2="-5.08" y2="7.62" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="7.62" x2="-5.08" y2="5.08" width="0.1524" layer="94" curve="-90"/>
-<wire x1="-5.08" y1="5.08" x2="-7.62" y2="5.08" width="0.1524" layer="94" curve="-90"/>
-<wire x1="10.16" y1="7.62" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="5.08" y2="7.62" width="0.1524" layer="94" curve="-180"/>
-<wire x1="5.08" y1="7.62" x2="7.62" y2="10.16" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="10.16" x2="10.16" y2="10.16" width="0.1524" layer="94" curve="-90"/>
-<wire x1="10.16" y1="10.16" x2="10.16" y2="7.62" width="0.1524" layer="94" curve="-90"/>
-<wire x1="7.62" y1="-10.16" x2="5.08" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-7.62" x2="7.62" y2="-5.08" width="0.1524" layer="94" curve="-180"/>
-<wire x1="7.62" y1="-5.08" x2="10.16" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="10.16" y2="-10.16" width="0.1524" layer="94" curve="-90"/>
-<wire x1="10.16" y1="-10.16" x2="7.62" y2="-10.16" width="0.1524" layer="94" curve="-90"/>
-<wire x1="-5.08" y1="-7.62" x2="-7.62" y2="-10.16" width="0.1524" layer="94"/>
-<wire x1="-7.62" y1="-10.16" x2="-10.16" y2="-7.62" width="0.1524" layer="94" curve="-180"/>
-<wire x1="-10.16" y1="-7.62" x2="-7.62" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="-7.62" y1="-5.08" x2="-5.08" y2="-5.08" width="0.1524" layer="94" curve="-90"/>
-<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="-7.62" width="0.1524" layer="94" curve="-90"/>
-<circle x="0" y="0" radius="2.54" width="0.1524" layer="94"/>
-<text x="-7.62" y="12.7" size="1.4224" layer="94">&gt;NAME</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="FAN-MOLEX">
-<gates>
-<gate name="G$1" symbol="FAN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="1X02">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -14247,6 +14175,84 @@ SERIES 1000MAh</text>
 </deviceset>
 </devicesets>
 </library>
+<library name="Ventilador">
+<packages>
+<package name="1X02" urn="urn:adsk.eagle:footprint:22309/1" locally_modified="yes">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="VCC" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="GND" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-2.6162" y="3.0988" size="0.8128" layer="25" ratio="10">&gt;NAME</text>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<wire x1="-2.54" y1="-2.54" x2="2.54" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="2.54" width="0.127" layer="21"/>
+<wire x1="2.54" y1="2.54" x2="-2.54" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="FAN">
+<circle x="0" y="0" radius="8.032184375" width="0.1524" layer="94"/>
+<pin name="VCC" x="-10.16" y="5.08" length="middle"/>
+<pin name="GND" x="-10.16" y="-5.08" length="middle"/>
+<wire x1="-7.62" y1="5.08" x2="-10.16" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="7.62" x2="-7.62" y2="10.16" width="0.1524" layer="94" curve="-180"/>
+<wire x1="-7.62" y1="10.16" x2="-5.08" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="5.08" width="0.1524" layer="94" curve="-90"/>
+<wire x1="-5.08" y1="5.08" x2="-7.62" y2="5.08" width="0.1524" layer="94" curve="-90"/>
+<wire x1="10.16" y1="7.62" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="5.08" y2="7.62" width="0.1524" layer="94" curve="-180"/>
+<wire x1="5.08" y1="7.62" x2="7.62" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="10.16" y2="10.16" width="0.1524" layer="94" curve="-90"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="7.62" width="0.1524" layer="94" curve="-90"/>
+<wire x1="7.62" y1="-10.16" x2="5.08" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="7.62" y2="-5.08" width="0.1524" layer="94" curve="-180"/>
+<wire x1="7.62" y1="-5.08" x2="10.16" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="-10.16" width="0.1524" layer="94" curve="-90"/>
+<wire x1="10.16" y1="-10.16" x2="7.62" y2="-10.16" width="0.1524" layer="94" curve="-90"/>
+<wire x1="-5.08" y1="-7.62" x2="-7.62" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="-10.16" y2="-7.62" width="0.1524" layer="94" curve="-180"/>
+<wire x1="-10.16" y1="-7.62" x2="-7.62" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-5.08" y2="-5.08" width="0.1524" layer="94" curve="-90"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="-7.62" width="0.1524" layer="94" curve="-90"/>
+<circle x="0" y="0" radius="2.54" width="0.1524" layer="94"/>
+<text x="-7.62" y="12.7" size="1.4224" layer="94">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FAN-MOLEX">
+<gates>
+<gate name="G$1" symbol="FAN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X02">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -14365,11 +14371,8 @@ SERIES 1000MAh</text>
 <part name="DS3" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="DO-214AC" package3d_urn="urn:adsk.eagle:package:43416/2"/>
 <part name="DS4" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="DO-214AC" package3d_urn="urn:adsk.eagle:package:43416/2"/>
 <part name="POWER-SW" library="Interruptores" deviceset="SLIDE-3" device=""/>
-<part name="TFT-SW" library="Interruptores" deviceset="SLIDE-3" device=""/>
 <part name="SW_FAN1" library="Interruptores" deviceset="SW-HEAD" device=""/>
 <part name="SW_FAN_AUX" library="Interruptores" deviceset="SW-HEAD" device=""/>
-<part name="FAN1" library="Ventilador" deviceset="FAN-MOLEX" device=""/>
-<part name="FAN_AUX" library="Ventilador" deviceset="FAN-MOLEX" device=""/>
 <part name="GND34" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND35" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
@@ -14378,6 +14381,8 @@ SERIES 1000MAh</text>
 <part name="Q1" library="transistor-fet" library_urn="urn:adsk.eagle:library:396" deviceset="FDD4141" device="TO252" package3d_urn="urn:adsk.eagle:package:28537/2"/>
 <part name="U$23" library="Baterias" deviceset="ZIIPY-7.4V" device=""/>
 <part name="GND36" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="FAN1" library="Ventilador" deviceset="FAN-MOLEX" device=""/>
+<part name="FAN_AUX" library="Ventilador" deviceset="FAN-MOLEX" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14573,11 +14578,8 @@ SERIES 1000MAh</text>
 <instance part="DS3" gate="G$1" x="-92.71" y="-203.2"/>
 <instance part="DS4" gate="G$1" x="-93.98" y="-232.41"/>
 <instance part="POWER-SW" gate="G$1" x="-273.05" y="189.23"/>
-<instance part="TFT-SW" gate="G$1" x="256.54" y="66.04"/>
 <instance part="SW_FAN1" gate="G$1" x="-2.54" y="-176.53"/>
 <instance part="SW_FAN_AUX" gate="G$1" x="-2.54" y="-190.5"/>
-<instance part="FAN1" gate="G$1" x="26.67" y="-170.18"/>
-<instance part="FAN_AUX" gate="G$1" x="26.67" y="-199.39"/>
 <instance part="GND34" gate="1" x="8.89" y="-209.55"/>
 <instance part="GND35" gate="1" x="12.7" y="-181.61"/>
 <instance part="P+25" gate="VCC" x="-11.43" y="-168.91"/>
@@ -14586,6 +14588,8 @@ SERIES 1000MAh</text>
 <instance part="Q1" gate="G$1" x="203.2" y="-157.48"/>
 <instance part="U$23" gate="G$1" x="-330.2" y="105.41" rot="R90"/>
 <instance part="GND36" gate="1" x="-316.23" y="172.72"/>
+<instance part="FAN1" gate="G$1" x="26.67" y="-170.18"/>
+<instance part="FAN_AUX" gate="G$1" x="26.67" y="-199.39"/>
 </instances>
 <busses>
 </busses>
@@ -14726,9 +14730,11 @@ SERIES 1000MAh</text>
 <segment>
 <pinref part="P+21" gate="VCC" pin="VCC"/>
 <wire x1="241.3" y1="57.15" x2="241.3" y2="54.61" width="0.1524" layer="91"/>
-<pinref part="TFT-SW" gate="G$1" pin="COM"/>
-<wire x1="256.54" y1="58.42" x2="256.54" y2="54.61" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="54.61" x2="241.3" y2="54.61" width="0.1524" layer="91"/>
+<pinref part="U$14" gate="G$1" pin="5V"/>
+<wire x1="284.48" y1="27.94" x2="255.27" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="255.27" y1="27.94" x2="255.27" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="54.61" x2="255.27" y2="54.61" width="0.1524" layer="91"/>
+<wire x1="255.27" y1="54.61" x2="255.27" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="284.48" y1="-52.07" x2="271.78" y2="-52.07" width="0.1524" layer="91"/>
@@ -14759,6 +14765,11 @@ SERIES 1000MAh</text>
 <pinref part="SW_FAN_AUX" gate="G$1" pin="1"/>
 <wire x1="-11.43" y1="-186.69" x2="-11.43" y2="-190.5" width="0.1524" layer="91"/>
 <wire x1="-11.43" y1="-190.5" x2="-7.62" y2="-190.5" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="ARDUINO-MEGA" gate="G$1" pin="5V_1"/>
+<wire x1="46.99" y1="-12.7" x2="39.37" y2="-12.7" width="0.1524" layer="91"/>
+<label x="39.37" y="-12.7" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="DIP1" class="0">
@@ -14998,15 +15009,15 @@ SERIES 1000MAh</text>
 </segment>
 <segment>
 <pinref part="GND35" gate="1" pin="GND"/>
-<pinref part="FAN1" gate="G$1" pin="GND"/>
 <wire x1="12.7" y1="-179.07" x2="12.7" y2="-175.26" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="-175.26" x2="16.51" y2="-175.26" width="0.1524" layer="91"/>
+<pinref part="FAN1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND34" gate="1" pin="GND"/>
-<pinref part="FAN_AUX" gate="G$1" pin="GND"/>
 <wire x1="8.89" y1="-207.01" x2="8.89" y2="-204.47" width="0.1524" layer="91"/>
 <wire x1="8.89" y1="-204.47" x2="16.51" y2="-204.47" width="0.1524" layer="91"/>
+<pinref part="FAN_AUX" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="U$23" gate="G$1" pin="GND"/>
@@ -15029,6 +15040,21 @@ SERIES 1000MAh</text>
 <pinref part="U$14" gate="G$1" pin="NC_7"/>
 <wire x1="342.9" y1="38.1" x2="359.41" y2="38.1" width="0.1524" layer="91"/>
 <label x="359.41" y="38.1" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="ARDUINO-MEGA" gate="G$1" pin="GND_1"/>
+<wire x1="46.99" y1="-17.78" x2="39.37" y2="-17.78" width="0.1524" layer="91"/>
+<label x="39.37" y="-17.78" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$14" gate="G$1" pin="NC_3"/>
+<wire x1="284.48" y1="25.4" x2="278.13" y2="25.4" width="0.1524" layer="91"/>
+<label x="278.13" y="25.4" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$14" gate="G$1" pin="GND"/>
+<wire x1="284.48" y1="22.86" x2="270.51" y2="22.86" width="0.1524" layer="91"/>
+<label x="270.51" y="22.86" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -15329,25 +15355,16 @@ SERIES 1000MAh</text>
 <wire x1="-109.22" y1="177.8" x2="-109.22" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$30" class="0">
-<segment>
-<pinref part="U$14" gate="G$1" pin="NC_3"/>
-<wire x1="284.48" y1="25.4" x2="278.13" y2="25.4" width="0.1524" layer="91"/>
-<label x="278.13" y="25.4" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="N$31" class="0">
-<segment>
-<pinref part="U$14" gate="G$1" pin="GND"/>
-<wire x1="284.48" y1="22.86" x2="270.51" y2="22.86" width="0.1524" layer="91"/>
-<label x="270.51" y="22.86" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="VIN" class="0">
 <segment>
 <pinref part="U$14" gate="G$1" pin="NC_2"/>
 <wire x1="284.48" y1="20.32" x2="278.13" y2="20.32" width="0.1524" layer="91"/>
 <label x="278.13" y="20.32" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="ARDUINO-MEGA" gate="G$1" pin="VIN"/>
+<wire x1="46.99" y1="-20.32" x2="29.21" y2="-20.32" width="0.1524" layer="91"/>
+<label x="29.21" y="-20.32" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="LCD_RD" class="0">
@@ -15432,27 +15449,6 @@ SERIES 1000MAh</text>
 <wire x1="284.48" y1="-62.23" x2="276.86" y2="-62.23" width="0.1524" layer="91"/>
 <label x="276.86" y="-62.23" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$9" gate="G$1" pin="3.3V"/>
-</segment>
-</net>
-<net name="N$40" class="0">
-<segment>
-<pinref part="ARDUINO-MEGA" gate="G$1" pin="5V_1"/>
-<wire x1="46.99" y1="-12.7" x2="39.37" y2="-12.7" width="0.1524" layer="91"/>
-<label x="39.37" y="-12.7" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="N$42" class="0">
-<segment>
-<pinref part="ARDUINO-MEGA" gate="G$1" pin="GND_1"/>
-<wire x1="46.99" y1="-17.78" x2="39.37" y2="-17.78" width="0.1524" layer="91"/>
-<label x="39.37" y="-17.78" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="N$43" class="0">
-<segment>
-<pinref part="ARDUINO-MEGA" gate="G$1" pin="VIN"/>
-<wire x1="46.99" y1="-20.32" x2="29.21" y2="-20.32" width="0.1524" layer="91"/>
-<label x="29.21" y="-20.32" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$49" class="0">
@@ -15604,13 +15600,6 @@ SERIES 1000MAh</text>
 <label x="114.3" y="-25.4" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$67" class="0">
-<segment>
-<pinref part="U$14" gate="G$1" pin="NC_8"/>
-<wire x1="342.9" y1="40.64" x2="346.71" y2="40.64" width="0.1524" layer="91"/>
-<label x="346.71" y="40.64" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="SD_SCK" class="0">
 <segment>
 <pinref part="U$14" gate="G$1" pin="SD_SCK"/>
@@ -15629,12 +15618,22 @@ SERIES 1000MAh</text>
 <wire x1="342.9" y1="33.02" x2="359.41" y2="33.02" width="0.1524" layer="91"/>
 <label x="359.41" y="33.02" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="ARDUINO-MEGA" gate="G$1" pin="12"/>
+<wire x1="110.49" y1="-10.16" x2="127" y2="-10.16" width="0.1524" layer="91"/>
+<label x="127" y="-10.16" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="SD_DI" class="0">
 <segment>
 <pinref part="U$14" gate="G$1" pin="SD_DI"/>
 <wire x1="342.9" y1="30.48" x2="346.71" y2="30.48" width="0.1524" layer="91"/>
 <label x="346.71" y="30.48" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="ARDUINO-MEGA" gate="G$1" pin="11"/>
+<wire x1="110.49" y1="-12.7" x2="114.3" y2="-12.7" width="0.1524" layer="91"/>
+<label x="114.3" y="-12.7" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SD_SS" class="0">
@@ -15643,6 +15642,11 @@ SERIES 1000MAh</text>
 <wire x1="342.9" y1="27.94" x2="359.41" y2="27.94" width="0.1524" layer="91"/>
 <label x="359.41" y="27.94" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="ARDUINO-MEGA" gate="G$1" pin="10"/>
+<wire x1="110.49" y1="-15.24" x2="127" y2="-15.24" width="0.1524" layer="91"/>
+<label x="127" y="-15.24" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="LCD_D0" class="0">
 <segment>
@@ -15650,23 +15654,22 @@ SERIES 1000MAh</text>
 <wire x1="342.9" y1="22.86" x2="359.41" y2="22.86" width="0.1524" layer="91"/>
 <label x="359.41" y="22.86" size="1.778" layer="95" xref="yes"/>
 </segment>
-</net>
-<net name="N$29" class="0">
 <segment>
-<pinref part="U$14" gate="G$1" pin="5V"/>
-<wire x1="284.48" y1="27.94" x2="255.27" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="255.27" y1="27.94" x2="255.27" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="255.27" y1="38.1" x2="265.43" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="265.43" y1="38.1" x2="265.43" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="TFT-SW" gate="G$1" pin="2"/>
-<wire x1="265.43" y1="66.04" x2="261.62" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="ARDUINO-MEGA" gate="G$1" pin="8"/>
+<wire x1="110.49" y1="-20.32" x2="127" y2="-20.32" width="0.1524" layer="91"/>
+<label x="127" y="-20.32" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$80" class="0">
+<net name="AREF" class="0">
 <segment>
 <pinref part="ARDUINO-MEGA" gate="G$1" pin="AREF"/>
 <wire x1="110.49" y1="-2.54" x2="115.57" y2="-2.54" width="0.1524" layer="91"/>
 <label x="115.57" y="-2.54" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$14" gate="G$1" pin="NC_8"/>
+<wire x1="342.9" y1="40.64" x2="346.71" y2="40.64" width="0.1524" layer="91"/>
+<label x="346.71" y="40.64" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$69" class="0">
@@ -15947,41 +15950,6 @@ SERIES 1000MAh</text>
 <label x="-83.82" y="-16.51" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$111" class="0">
-<segment>
-<pinref part="ARDUINO-MEGA" gate="G$1" pin="12"/>
-<wire x1="110.49" y1="-10.16" x2="127" y2="-10.16" width="0.1524" layer="91"/>
-<label x="127" y="-10.16" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="N$112" class="0">
-<segment>
-<pinref part="ARDUINO-MEGA" gate="G$1" pin="11"/>
-<wire x1="110.49" y1="-12.7" x2="114.3" y2="-12.7" width="0.1524" layer="91"/>
-<label x="114.3" y="-12.7" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="N$113" class="0">
-<segment>
-<pinref part="ARDUINO-MEGA" gate="G$1" pin="10"/>
-<wire x1="110.49" y1="-15.24" x2="127" y2="-15.24" width="0.1524" layer="91"/>
-<label x="127" y="-15.24" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="N$114" class="0">
-<segment>
-<pinref part="ARDUINO-MEGA" gate="G$1" pin="9"/>
-<wire x1="110.49" y1="-17.78" x2="114.3" y2="-17.78" width="0.1524" layer="91"/>
-<label x="114.3" y="-17.78" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="N$115" class="0">
-<segment>
-<pinref part="ARDUINO-MEGA" gate="G$1" pin="8"/>
-<wire x1="110.49" y1="-20.32" x2="127" y2="-20.32" width="0.1524" layer="91"/>
-<label x="127" y="-20.32" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="N$119" class="0">
 <segment>
 <pinref part="ARDUINO-MEGA" gate="G$1" pin="14-TX3"/>
@@ -16069,8 +16037,8 @@ SERIES 1000MAh</text>
 <pinref part="SW_FAN_AUX" gate="G$1" pin="2"/>
 <wire x1="2.54" y1="-190.5" x2="12.7" y2="-190.5" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="-190.5" x2="12.7" y2="-194.31" width="0.1524" layer="91"/>
-<pinref part="FAN_AUX" gate="G$1" pin="VCC"/>
 <wire x1="12.7" y1="-194.31" x2="16.51" y2="-194.31" width="0.1524" layer="91"/>
+<pinref part="FAN_AUX" gate="G$1" pin="VCC"/>
 </segment>
 </net>
 <net name="N$128" class="0">
@@ -16078,8 +16046,8 @@ SERIES 1000MAh</text>
 <pinref part="SW_FAN1" gate="G$1" pin="2"/>
 <wire x1="2.54" y1="-176.53" x2="6.35" y2="-176.53" width="0.1524" layer="91"/>
 <wire x1="6.35" y1="-176.53" x2="6.35" y2="-165.1" width="0.1524" layer="91"/>
-<pinref part="FAN1" gate="G$1" pin="VCC"/>
 <wire x1="6.35" y1="-165.1" x2="16.51" y2="-165.1" width="0.1524" layer="91"/>
+<pinref part="FAN1" gate="G$1" pin="VCC"/>
 </segment>
 </net>
 <net name="SOURCE" class="0">
@@ -16169,9 +16137,14 @@ SERIES 1000MAh</text>
 <net name="N$134" class="0">
 <segment>
 <pinref part="U$23" gate="G$1" pin="7.4V"/>
-<pinref part="POWER-SW" gate="G$1" pin="1"/>
 <wire x1="-337.82" y1="173.99" x2="-337.82" y2="189.23" width="0.1524" layer="91"/>
-<wire x1="-337.82" y1="189.23" x2="-278.13" y2="189.23" width="0.1524" layer="91"/>
+<pinref part="POWER-SW" gate="G$1" pin="COM"/>
+<wire x1="-273.05" y1="181.61" x2="-273.05" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="-273.05" y1="175.26" x2="-280.67" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="-280.67" y1="175.26" x2="-290.83" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="-290.83" y1="175.26" x2="-290.83" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="-290.83" y1="187.96" x2="-290.83" y2="189.23" width="0.1524" layer="91"/>
+<wire x1="-290.83" y1="189.23" x2="-337.82" y2="189.23" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LCD_D1" class="0">
@@ -16179,6 +16152,11 @@ SERIES 1000MAh</text>
 <pinref part="U$14" gate="G$1" pin="LCD_D1"/>
 <wire x1="342.9" y1="25.4" x2="346.71" y2="25.4" width="0.1524" layer="91"/>
 <label x="346.71" y="25.4" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="ARDUINO-MEGA" gate="G$1" pin="9"/>
+<wire x1="110.49" y1="-17.78" x2="114.3" y2="-17.78" width="0.1524" layer="91"/>
+<label x="114.3" y="-17.78" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>

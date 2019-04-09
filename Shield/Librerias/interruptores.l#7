@@ -93,6 +93,7 @@
 <pin name="P1" x="-17.78" y="0" length="middle"/>
 <pin name="COM" x="0" y="-9.525" length="middle" rot="R90"/>
 <pin name="P2" x="17.145" y="0" length="middle" rot="R180"/>
+<text x="-12.7" y="10.16" size="1.778" layer="94">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
