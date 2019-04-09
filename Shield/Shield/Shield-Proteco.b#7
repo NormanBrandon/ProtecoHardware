@@ -3146,6 +3146,33 @@ design rules under a new name.</description>
 <signal name="DRAIN">
 <contactref element="Q1" pad="3"/>
 </signal>
+<signal name="SERVO4">
+<contactref element="D4" pad="C"/>
+</signal>
+<signal name="SERVO3">
+<contactref element="D3" pad="C"/>
+</signal>
+<signal name="SERVO2">
+<contactref element="D2" pad="C"/>
+</signal>
+<signal name="SERVO1">
+<contactref element="D1" pad="C"/>
+</signal>
+<signal name="N$129">
+<contactref element="U$9" pad="E9"/>
+</signal>
+<signal name="N$130">
+<contactref element="U$9" pad="E10"/>
+</signal>
+<signal name="N$131">
+<contactref element="U$9" pad="E11"/>
+</signal>
+<signal name="N$132">
+<contactref element="U$9" pad="E12"/>
+</signal>
+<signal name="N$133">
+<contactref element="U$9" pad="E13"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>

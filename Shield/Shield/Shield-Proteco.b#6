@@ -2453,9 +2453,9 @@ design rules under a new name.</description>
 <element name="U$1" library="Motores" package="SERVO" value="SERVOMOTORES" x="27.305" y="10.795" rot="R180"/>
 <element name="U$16" library="Motores" package="SERVO" value="SERVOMOTORES" x="16.51" y="10.795" rot="R180"/>
 <element name="U$17" library="Motores" package="SERVO" value="SERVOMOTORES" x="5.715" y="10.795" rot="R180"/>
-<element name="LED6" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2" value="" x="90.17" y="6.985"/>
-<element name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" package="M1206" package3d_urn="urn:adsk.eagle:package:23566/1" value="" x="90.17" y="1.905">
-<attribute name="SPICEPREFIX" value="R" x="83.82" y="8.255" size="1.778" layer="27" display="off"/>
+<element name="LED6" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2" value="" x="85.725" y="9.525"/>
+<element name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" package="M1206" package3d_urn="urn:adsk.eagle:package:23566/1" value="" x="85.725" y="3.81" rot="R270">
+<attribute name="SPICEPREFIX" value="R" x="92.075" y="10.16" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="U$10" library="Motores" package="SERVO" value="SERVOMOTORES" x="38.1" y="10.795"/>
 <element name="U$11" library="Sensores" package="ACELEROMETER-MPU6050-JST-5" value="ACELEROMETER-JST-5" x="7.62" y="74.93"/>
@@ -2467,7 +2467,7 @@ design rules under a new name.</description>
 <element name="D3" library="diode" library_urn="urn:adsk.eagle:library:210" package="DO-214AC" package3d_urn="urn:adsk.eagle:package:43416/2" value="" x="54.61" y="10.16" rot="R90"/>
 <element name="D4" library="diode" library_urn="urn:adsk.eagle:library:210" package="DO-214AC" package3d_urn="urn:adsk.eagle:package:43416/2" value="" x="58.42" y="10.16" rot="R90"/>
 <element name="U$2" library="Interruptores" package="SLIDE-3" value="SLIDE-3" x="77.47" y="77.47"/>
-<element name="U$15" library="Interruptores" package="SLIDE-3" value="SLIDE-3" x="96.52" y="5.08" rot="R180"/>
+<element name="U$15" library="Interruptores" package="SLIDE-3" value="SLIDE-3" x="97.79" y="3.81" rot="R180"/>
 <element name="U$18" library="Interruptores" package="1X02" value="SW-HEAD" x="66.04" y="12.065"/>
 <element name="U$19" library="Interruptores" package="1X02" value="SW-HEAD" x="66.04" y="8.89"/>
 <element name="U$20" library="Ventilador" package="1X02" value="FAN-MOLEX" x="93.345" y="10.16"/>
@@ -2526,8 +2526,8 @@ design rules under a new name.</description>
 <wire x1="76.2" y1="3.175" x2="73.66" y2="3.175" width="0" layer="19" extent="1-1"/>
 <wire x1="78.74" y1="3.175" x2="76.2" y2="3.175" width="0" layer="19" extent="1-1"/>
 <wire x1="81.28" y1="3.175" x2="78.74" y2="3.175" width="0" layer="19" extent="1-1"/>
-<wire x1="90.17" y1="5.235" x2="81.28" y2="3.175" width="0" layer="19" extent="1-1"/>
-<wire x1="96.52" y1="5.08" x2="90.17" y2="5.235" width="0" layer="19" extent="1-1"/>
+<wire x1="85.725" y1="7.775" x2="81.28" y2="3.175" width="0" layer="19" extent="1-1"/>
+<wire x1="97.79" y1="3.81" x2="85.725" y2="7.775" width="0" layer="19" extent="1-1"/>
 <wire x1="16.51" y1="10.795" x2="27.305" y2="10.795" width="0" layer="19" extent="1-1"/>
 <wire x1="10.795" y1="3.175" x2="16.51" y2="10.795" width="0" layer="19" extent="1-1"/>
 <wire x1="5.715" y1="10.795" x2="10.795" y2="3.175" width="0" layer="19" extent="1-1"/>
@@ -2614,7 +2614,7 @@ design rules under a new name.</description>
 <wire x1="101.6" y1="14.475" x2="97.155" y2="13.84" width="0" layer="19" extent="1-1"/>
 <wire x1="85.725" y1="23.625" x2="93.345" y2="30.35" width="0" layer="19" extent="1-1"/>
 <wire x1="85.09" y1="13.205" x2="85.725" y2="23.625" width="0" layer="19" extent="1-1"/>
-<wire x1="88.77" y1="1.905" x2="85.09" y2="13.205" width="0" layer="19" extent="1-1"/>
+<wire x1="85.725" y1="5.21" x2="85.09" y2="13.205" width="0" layer="19" extent="1-1"/>
 <wire x1="72.39" y1="28.575" x2="85.725" y2="23.625" width="0" layer="19" extent="1-1"/>
 <wire x1="72.39" y1="48.26" x2="72.39" y2="28.575" width="0" layer="19" extent="1-1"/>
 <wire x1="52.07" y1="48.26" x2="72.39" y2="48.26" width="0" layer="19" extent="1-1"/>
@@ -2871,7 +2871,7 @@ design rules under a new name.</description>
 <signal name="N$29">
 <contactref element="U$14" pad="5V_1"/>
 <contactref element="U$15" pad="P2"/>
-<wire x1="94.488" y1="5.08" x2="19.939" y2="17.145" width="0" layer="19" extent="1-1"/>
+<wire x1="95.758" y1="3.81" x2="19.939" y2="17.145" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$78">
 <contactref element="ARDUINO-MEGA" pad="SCL"/>
@@ -2908,7 +2908,7 @@ design rules under a new name.</description>
 <signal name="N$89">
 <contactref element="R15" pad="2"/>
 <contactref element="LED6" pad="C"/>
-<wire x1="90.17" y1="8.735" x2="91.57" y2="1.905" width="0" layer="19" extent="1-1"/>
+<wire x1="85.725" y1="11.275" x2="85.725" y2="2.41" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$92">
 <contactref element="U$6" pad="AI1"/>
@@ -3146,17 +3146,32 @@ design rules under a new name.</description>
 <signal name="DRAIN">
 <contactref element="Q1" pad="3"/>
 </signal>
-<signal name="N$129">
+<signal name="SERVO4">
 <contactref element="D4" pad="C"/>
 </signal>
-<signal name="N$130">
+<signal name="SERVO3">
 <contactref element="D3" pad="C"/>
 </signal>
-<signal name="N$131">
+<signal name="SERVO2">
 <contactref element="D2" pad="C"/>
 </signal>
-<signal name="N$132">
+<signal name="SERVO1">
 <contactref element="D1" pad="C"/>
+</signal>
+<signal name="N$129">
+<contactref element="U$9" pad="E9"/>
+</signal>
+<signal name="N$130">
+<contactref element="U$9" pad="E10"/>
+</signal>
+<signal name="N$131">
+<contactref element="U$9" pad="E11"/>
+</signal>
+<signal name="N$132">
+<contactref element="U$9" pad="E12"/>
+</signal>
+<signal name="N$133">
+<contactref element="U$9" pad="E13"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
