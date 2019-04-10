@@ -2046,6 +2046,35 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 </package3d>
 </packages3d>
 </library>
+<library name="zetex" urn="urn:adsk.eagle:library:418">
+<description>&lt;b&gt;Zetex Power MOS FETs, Bridges, Diodes&lt;/b&gt;&lt;p&gt;
+http://www.zetex.com&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SOD323" urn="urn:adsk.eagle:footprint:30969/1" library_version="1">
+<description>&lt;b&gt;Small Outline Diode&lt;/b&gt;</description>
+<wire x1="-0.8" y1="0.575" x2="0.8" y2="0.575" width="0.2032" layer="51"/>
+<wire x1="0.8" y1="0.575" x2="0.8" y2="-0.575" width="0.2032" layer="51"/>
+<wire x1="0.8" y1="-0.575" x2="-0.8" y2="-0.575" width="0.2032" layer="51"/>
+<wire x1="-0.8" y1="-0.575" x2="-0.8" y2="0.575" width="0.2032" layer="51"/>
+<smd name="1" x="-1.1" y="0" dx="1" dy="0.6" layer="1"/>
+<smd name="2" x="1.1" y="0" dx="1" dy="0.6" layer="1"/>
+<text x="-0.9" y="0.78" size="1.016" layer="25">&gt;NAME</text>
+<text x="-0.9" y="-1.805" size="1.016" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.35" y1="-0.2" x2="-0.9" y2="0.2" layer="51"/>
+<rectangle x1="0.9" y1="-0.2" x2="1.35" y2="0.2" layer="51"/>
+<rectangle x1="-0.75" y1="-0.575" x2="-0.375" y2="0.575" layer="51"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="SOD323" urn="urn:adsk.eagle:package:30992/1" type="box" library_version="1">
+<description>Small Outline Diode</description>
+<packageinstances>
+<packageinstance name="SOD323"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2343,6 +2372,18 @@ design rules under a new name.</description>
 <element name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" package="M1206" package3d_urn="urn:adsk.eagle:package:23566/1" value="" x="90.17" y="1.905">
 <attribute name="SPICEPREFIX" value="R" x="83.82" y="8.255" size="1.778" layer="27" display="off"/>
 </element>
+<element name="D1" library="zetex" library_urn="urn:adsk.eagle:library:418" package="SOD323" package3d_urn="urn:adsk.eagle:package:30992/1" value="" x="99.06" y="44.45">
+<attribute name="MF" value="" x="99.06" y="44.45" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="CDSOD323-T05C" x="99.06" y="44.45" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="1824860" x="99.06" y="44.45" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="79R6078" x="99.06" y="44.45" size="1.778" layer="27" display="off"/>
+</element>
+<element name="D2" library="zetex" library_urn="urn:adsk.eagle:library:418" package="SOD323" package3d_urn="urn:adsk.eagle:package:30992/1" value="" x="97.155" y="47.625">
+<attribute name="MF" value="" x="97.155" y="47.625" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="CDSOD323-T05C" x="97.155" y="47.625" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="1824860" x="97.155" y="47.625" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="79R6078" x="97.155" y="47.625" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="VCC">
@@ -2509,22 +2550,30 @@ design rules under a new name.</description>
 <signal name="N$11">
 <contactref element="S1" pad="3"/>
 <contactref element="R6" pad="2"/>
-<wire x1="85.0138" y1="64.4144" x2="85.09" y2="16.005" width="0" layer="19" extent="1-1"/>
+<contactref element="S1" pad="4"/>
+<wire x1="85.0138" y1="64.4144" x2="91.5162" y2="64.4144" width="0" layer="19" extent="1-1"/>
+<wire x1="85.09" y1="16.005" x2="85.0138" y2="64.4144" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$10">
 <contactref element="S2" pad="3"/>
 <contactref element="R7" pad="2"/>
-<wire x1="85.6488" y1="56.7944" x2="101.6" y2="17.275" width="0" layer="19" extent="1-1"/>
+<contactref element="S2" pad="4"/>
+<wire x1="85.6488" y1="56.7944" x2="92.1512" y2="56.7944" width="0" layer="19" extent="1-1"/>
+<wire x1="101.6" y1="17.275" x2="92.1512" y2="56.7944" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$12">
 <contactref element="S3" pad="3"/>
 <contactref element="R8" pad="2"/>
-<wire x1="85.0138" y1="72.0344" x2="97.155" y2="16.64" width="0" layer="19" extent="1-1"/>
+<contactref element="S3" pad="4"/>
+<wire x1="85.0138" y1="72.0344" x2="91.5162" y2="72.0344" width="0" layer="19" extent="1-1"/>
+<wire x1="97.155" y1="16.64" x2="91.5162" y2="72.0344" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$13">
 <contactref element="S4" pad="3"/>
 <contactref element="R9" pad="2"/>
-<wire x1="85.6488" y1="49.1744" x2="96.65" y2="43.815" width="0" layer="19" extent="1-1"/>
+<contactref element="S4" pad="4"/>
+<wire x1="92.1512" y1="49.1744" x2="96.65" y2="43.815" width="0" layer="19" extent="1-1"/>
+<wire x1="85.6488" y1="49.1744" x2="92.1512" y2="49.1744" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$14">
 <contactref element="U$4" pad="IN+"/>
@@ -2580,12 +2629,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="SF">
 <contactref element="U$12" pad="SF"/>
-</signal>
-<signal name="RX0">
-<contactref element="HC-05" pad="RXD"/>
-</signal>
-<signal name="TX0">
-<contactref element="HC-05" pad="TXD"/>
 </signal>
 <signal name="N$15">
 <contactref element="U$2" pad="COM"/>
@@ -2841,6 +2884,84 @@ design rules under a new name.</description>
 <contactref element="R15" pad="2"/>
 <contactref element="LED6" pad="C"/>
 <wire x1="90.17" y1="8.735" x2="91.57" y2="1.905" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$90">
+<contactref element="HC-05" pad="TXD"/>
+<contactref element="D2" pad="2"/>
+<wire x1="98.255" y1="47.625" x2="6.985" y2="71.12" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$91">
+<contactref element="HC-05" pad="RXD"/>
+<contactref element="D1" pad="1"/>
+<wire x1="97.96" y1="44.45" x2="4.445" y2="71.12" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="RX0">
+<contactref element="D2" pad="1"/>
+</signal>
+<signal name="TX0">
+<contactref element="D1" pad="2"/>
+</signal>
+<signal name="N$92">
+<contactref element="U$6" pad="AI1"/>
+<contactref element="U$6" pad="BI1"/>
+<wire x1="5.08" y1="48.26" x2="5.08" y2="53.34" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$93">
+<contactref element="U$6" pad="BI2"/>
+<contactref element="U$6" pad="AI2"/>
+<wire x1="5.08" y1="45.72" x2="5.08" y2="55.88" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$94">
+<contactref element="U$6" pad="AO2"/>
+<contactref element="U$6" pad="BO2"/>
+<wire x1="22.86" y1="53.34" x2="22.86" y2="55.88" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$95">
+<contactref element="U$6" pad="AO1"/>
+<contactref element="U$6" pad="BO1"/>
+<wire x1="22.86" y1="50.8" x2="22.86" y2="58.42" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$96">
+<contactref element="U$6" pad="PWMA"/>
+<contactref element="U$6" pad="PWMB"/>
+<wire x1="5.08" y1="43.18" x2="5.08" y2="58.42" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$97">
+<contactref element="U$3" pad="BI1"/>
+<contactref element="U$3" pad="AI1"/>
+<wire x1="5.08" y1="26.67" x2="5.08" y2="31.75" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$98">
+<contactref element="U$3" pad="AI2"/>
+<contactref element="U$3" pad="BI2"/>
+<wire x1="5.08" y1="24.13" x2="5.08" y2="34.29" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$99">
+<contactref element="U$3" pad="PWMB"/>
+<contactref element="U$3" pad="PWMA"/>
+<wire x1="5.08" y1="21.59" x2="5.08" y2="36.83" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$100">
+<contactref element="U$3" pad="BO2"/>
+<contactref element="U$3" pad="AO2"/>
+<wire x1="22.86" y1="31.75" x2="22.86" y2="34.29" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$101">
+<contactref element="U$3" pad="BO1"/>
+<contactref element="U$3" pad="AO1"/>
+<wire x1="22.86" y1="29.21" x2="22.86" y2="36.83" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$102">
+<contactref element="U$7" pad="OUTB"/>
+</signal>
+<signal name="N$103">
+<contactref element="U$7" pad="OUTA"/>
+</signal>
+<signal name="N$104">
+<contactref element="U$7" pad="M2"/>
+</signal>
+<signal name="N$105">
+<contactref element="U$7" pad="M1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
