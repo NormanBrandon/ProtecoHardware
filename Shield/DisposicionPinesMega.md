@@ -3,6 +3,7 @@
 ## Requerimientos
 
 | 3 Sensores Infrarojos | 3 Pines Analogicos |
+| ------ |------:|
 | 4 Servomotores | 3 Pines Analogicos |
 | 1 Dipswitch de 4 | 3 Pines Analogicos |
 | 3 PushButtons |  3 Pines Analogicos |
