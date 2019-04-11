@@ -19,17 +19,17 @@ Con el proyecto presentado, se pretende cumplir con el objetivo del programa lle
 
 ### _ESTADO DEL ARTE_
 
-1. * Seguidor de línea realizado por Sebástian Agudelo, robotista.*
+1. *Seguidor de línea realizado por Sebástian Agudelo, robotista.*
 
   #### *Materiales*
-- Motores pololu 10:1
-- Soporte para micro motores: Permite fijar el motor a la base del robot, es especial para motores pololu.
-- Regleta Sensores QTR 8A: La regleta contiene sensores ya ensamblados para evitar el asto y el armado. Contiene 8 snesores y son usados para la detección de la línea.
-- Regulador ajustable 2.5-9V : Fue utilizado para no dañar los motores utilizados en el robot, debido a que  funcionan con 5V. El regulador se puede ajustar desde una entrada de 2.5V hasta 9V para que entregue un voltaje de salida de 5V. Se utlizo para remplazar un regulador de 5V (LM7805)
-- Placa baby Orangután: La placa se utilizo para evitar la parte de la electrónica de control, debido a que integra un puente H para no dañar los motores, así mismo contiene un microcontrolador para la programación del robot.
-- Programador AVR Pololu: Es utilizado para programar el Baby Orangután a través de  el AVR Studio o de la interfaz de programación de arduino, que resulta más sencillo sino se está familiarizado con  el programador de AVR.
-- Ruedas para seguidor de línea.
-- Batería 7.4V 300mAH
+- *Motores pololu 10:1*
+- *Soporte para micro motores*: Permite fijar el motor a la base del robot, es especial para motores pololu.
+- *Regleta Sensores QTR 8A*: La regleta contiene sensores ya ensamblados para evitar el asto y el armado. Contiene 8 snesores y son usados para la detección de la línea.
+- *Regulador ajustable 2.5-9V*: Fue utilizado para no dañar los motores utilizados en el robot, debido a que  funcionan con 5V. El regulador se puede ajustar desde una entrada de 2.5V hasta 9V para que entregue un voltaje de salida de 5V. Se utlizo para remplazar un regulador de 5V (LM7805)
+- *Placa baby Orangután*: La placa se utilizo para evitar la parte de la electrónica de control, debido a que integra un puente H para no dañar los motores, así mismo contiene un microcontrolador para la programación del robot.
+- *Programador AVR Pololu*: Es utilizado para programar el Baby Orangután a través de  el AVR Studio o de la interfaz de programación de arduino, que resulta más sencillo sino se está familiarizado con  el programador de AVR.
+- *Ruedas para seguidor de línea*:
+- *Batería 7.4V 300mAH*:
 
 ### _PROPUESTA DE DESARROLLO DE HARDWARE_
 
