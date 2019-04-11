@@ -141,79 +141,79 @@
 </packages>
 <symbols>
 <symbol name="TFT-ARDUINO-UNO-MEGA">
-<wire x1="-33.02" y1="-22.86" x2="35.56" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="35.56" y1="-22.86" x2="35.56" y2="25.4" width="0.254" layer="94"/>
-<wire x1="35.56" y1="25.4" x2="-33.02" y2="25.4" width="0.254" layer="94"/>
-<wire x1="-33.02" y1="25.4" x2="-33.02" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="-25.4" y1="20.32" x2="25.4" y2="20.32" width="0.254" layer="94"/>
-<wire x1="25.4" y1="20.32" x2="30.48" y2="20.32" width="0.254" layer="94"/>
-<wire x1="30.48" y1="20.32" x2="30.48" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="25.4" y1="-17.78" x2="-25.4" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="-25.4" y1="-17.78" x2="-25.4" y2="20.32" width="0.254" layer="94"/>
-<wire x1="25.4" y1="20.32" x2="25.4" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="25.4" y1="-17.78" x2="30.48" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-2.54" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="5.08" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="7.62" x2="-12.7" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="7.62" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="7.62" y1="7.62" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="5.08" x2="10.16" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-2.54" x2="12.7" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-2.54" x2="12.7" y2="5.08" width="0.254" layer="94"/>
-<wire x1="12.7" y1="5.08" x2="15.24" y2="5.08" width="0.254" layer="94"/>
-<wire x1="15.24" y1="5.08" x2="15.24" y2="7.62" width="0.254" layer="94"/>
-<wire x1="15.24" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-31.75" y1="5.08" x2="-27.94" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-27.94" y1="5.08" x2="-27.94" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-27.94" y1="-5.08" x2="-31.75" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-31.75" y1="-5.08" x2="-31.75" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-30.48" y1="2.54" x2="-29.21" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-29.21" y1="2.54" x2="-29.21" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-29.21" y1="-2.54" x2="-30.48" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-30.48" y1="-2.54" x2="-30.48" y2="2.54" width="0.254" layer="94"/>
-<pin name="NC_8" x="-12.7" y="30.48" length="middle" rot="R270"/>
-<pin name="NC_7" x="-10.16" y="30.48" length="middle" rot="R270"/>
-<pin name="SD_SCK" x="-7.62" y="30.48" length="middle" rot="R270"/>
-<pin name="SD_DO" x="-5.08" y="30.48" length="middle" rot="R270"/>
-<pin name="SD_DI" x="-2.54" y="30.48" length="middle" rot="R270"/>
-<pin name="SD_SS" x="0" y="30.48" length="middle" rot="R270"/>
-<pin name="LCD_D1" x="2.54" y="30.48" length="middle" rot="R270"/>
-<pin name="LCD_D0" x="5.08" y="30.48" length="middle" rot="R270"/>
-<pin name="LCD_D7" x="12.7" y="30.48" length="middle" rot="R270"/>
-<pin name="LCD_D6" x="15.24" y="30.48" length="middle" rot="R270"/>
-<pin name="LCD_D5" x="17.78" y="30.48" length="middle" rot="R270"/>
-<pin name="LCD_D4" x="20.32" y="30.48" length="middle" rot="R270"/>
-<pin name="LCD_D3" x="22.86" y="30.48" length="middle" rot="R270"/>
-<pin name="LCD_D2" x="25.4" y="30.48" length="middle" rot="R270"/>
-<pin name="NC_6" x="27.94" y="30.48" length="middle" rot="R270"/>
-<pin name="NC_5" x="30.48" y="30.48" length="middle" rot="R270"/>
-<pin name="NC_4" x="-5.08" y="-27.94" length="middle" rot="R90"/>
-<pin name="3V3" x="-2.54" y="-27.94" length="middle" rot="R90"/>
-<pin name="5V" x="0" y="-27.94" length="middle" rot="R90"/>
-<pin name="NC_3" x="2.54" y="-27.94" length="middle" rot="R90"/>
-<pin name="GND" x="5.08" y="-27.94" length="middle" rot="R90"/>
-<pin name="NC_2" x="7.62" y="-27.94" length="middle" rot="R90"/>
-<pin name="LCD_RD" x="17.78" y="-27.94" length="middle" rot="R90"/>
-<pin name="LCD_WR" x="20.32" y="-27.94" length="middle" rot="R90"/>
-<pin name="LCD_RS" x="22.86" y="-27.94" length="middle" rot="R90"/>
-<pin name="LCD_CS" x="25.4" y="-27.94" length="middle" rot="R90"/>
-<pin name="LCD_RST" x="27.94" y="-27.94" length="middle" rot="R90"/>
-<pin name="NC_1" x="30.48" y="-27.94" length="middle" rot="R90"/>
+<wire x1="0" y1="0" x2="68.58" y2="0" width="0.254" layer="94"/>
+<wire x1="68.58" y1="0" x2="68.58" y2="48.26" width="0.254" layer="94"/>
+<wire x1="68.58" y1="48.26" x2="0" y2="48.26" width="0.254" layer="94"/>
+<wire x1="0" y1="48.26" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="43.18" x2="58.42" y2="43.18" width="0.254" layer="94"/>
+<wire x1="58.42" y1="43.18" x2="63.5" y2="43.18" width="0.254" layer="94"/>
+<wire x1="63.5" y1="43.18" x2="63.5" y2="5.08" width="0.254" layer="94"/>
+<wire x1="58.42" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="43.18" width="0.254" layer="94"/>
+<wire x1="58.42" y1="43.18" x2="58.42" y2="5.08" width="0.254" layer="94"/>
+<wire x1="58.42" y1="5.08" x2="63.5" y2="5.08" width="0.254" layer="94"/>
+<wire x1="20.32" y1="27.94" x2="22.86" y2="27.94" width="0.254" layer="94"/>
+<wire x1="22.86" y1="27.94" x2="22.86" y2="20.32" width="0.254" layer="94"/>
+<wire x1="22.86" y1="20.32" x2="25.4" y2="20.32" width="0.254" layer="94"/>
+<wire x1="25.4" y1="20.32" x2="25.4" y2="27.94" width="0.254" layer="94"/>
+<wire x1="25.4" y1="27.94" x2="27.94" y2="27.94" width="0.254" layer="94"/>
+<wire x1="27.94" y1="27.94" x2="27.94" y2="30.48" width="0.254" layer="94"/>
+<wire x1="27.94" y1="30.48" x2="20.32" y2="30.48" width="0.254" layer="94"/>
+<wire x1="20.32" y1="30.48" x2="20.32" y2="27.94" width="0.254" layer="94"/>
+<wire x1="30.48" y1="20.32" x2="30.48" y2="30.48" width="0.254" layer="94"/>
+<wire x1="30.48" y1="30.48" x2="38.1" y2="30.48" width="0.254" layer="94"/>
+<wire x1="38.1" y1="30.48" x2="38.1" y2="27.94" width="0.254" layer="94"/>
+<wire x1="38.1" y1="27.94" x2="33.02" y2="27.94" width="0.254" layer="94"/>
+<wire x1="33.02" y1="27.94" x2="33.02" y2="25.4" width="0.254" layer="94"/>
+<wire x1="33.02" y1="25.4" x2="35.56" y2="25.4" width="0.254" layer="94"/>
+<wire x1="35.56" y1="25.4" x2="35.56" y2="22.86" width="0.254" layer="94"/>
+<wire x1="35.56" y1="22.86" x2="33.02" y2="22.86" width="0.254" layer="94"/>
+<wire x1="33.02" y1="22.86" x2="33.02" y2="20.32" width="0.254" layer="94"/>
+<wire x1="33.02" y1="20.32" x2="30.48" y2="20.32" width="0.254" layer="94"/>
+<wire x1="40.64" y1="30.48" x2="40.64" y2="27.94" width="0.254" layer="94"/>
+<wire x1="40.64" y1="27.94" x2="43.18" y2="27.94" width="0.254" layer="94"/>
+<wire x1="43.18" y1="27.94" x2="43.18" y2="20.32" width="0.254" layer="94"/>
+<wire x1="43.18" y1="20.32" x2="45.72" y2="20.32" width="0.254" layer="94"/>
+<wire x1="45.72" y1="20.32" x2="45.72" y2="27.94" width="0.254" layer="94"/>
+<wire x1="45.72" y1="27.94" x2="48.26" y2="27.94" width="0.254" layer="94"/>
+<wire x1="48.26" y1="27.94" x2="48.26" y2="30.48" width="0.254" layer="94"/>
+<wire x1="48.26" y1="30.48" x2="40.64" y2="30.48" width="0.254" layer="94"/>
+<wire x1="1.27" y1="27.94" x2="5.08" y2="27.94" width="0.254" layer="94"/>
+<wire x1="5.08" y1="27.94" x2="5.08" y2="17.78" width="0.254" layer="94"/>
+<wire x1="5.08" y1="17.78" x2="1.27" y2="17.78" width="0.254" layer="94"/>
+<wire x1="1.27" y1="17.78" x2="1.27" y2="27.94" width="0.254" layer="94"/>
+<wire x1="2.54" y1="25.4" x2="3.81" y2="25.4" width="0.254" layer="94"/>
+<wire x1="3.81" y1="25.4" x2="3.81" y2="20.32" width="0.254" layer="94"/>
+<wire x1="3.81" y1="20.32" x2="2.54" y2="20.32" width="0.254" layer="94"/>
+<wire x1="2.54" y1="20.32" x2="2.54" y2="25.4" width="0.254" layer="94"/>
+<pin name="NC_8" x="20.32" y="53.34" length="middle" rot="R270"/>
+<pin name="NC_7" x="22.86" y="53.34" length="middle" rot="R270"/>
+<pin name="SD_SCK" x="25.4" y="53.34" length="middle" rot="R270"/>
+<pin name="SD_DO" x="27.94" y="53.34" length="middle" rot="R270"/>
+<pin name="SD_DI" x="30.48" y="53.34" length="middle" rot="R270"/>
+<pin name="SD_SS" x="33.02" y="53.34" length="middle" rot="R270"/>
+<pin name="LCD_D1" x="35.56" y="53.34" length="middle" rot="R270"/>
+<pin name="LCD_D0" x="38.1" y="53.34" length="middle" rot="R270"/>
+<pin name="LCD_D7" x="45.72" y="53.34" length="middle" rot="R270"/>
+<pin name="LCD_D6" x="48.26" y="53.34" length="middle" rot="R270"/>
+<pin name="LCD_D5" x="50.8" y="53.34" length="middle" rot="R270"/>
+<pin name="LCD_D4" x="53.34" y="53.34" length="middle" rot="R270"/>
+<pin name="LCD_D3" x="55.88" y="53.34" length="middle" rot="R270"/>
+<pin name="LCD_D2" x="58.42" y="53.34" length="middle" rot="R270"/>
+<pin name="NC_6" x="60.96" y="53.34" length="middle" rot="R270"/>
+<pin name="NC_5" x="63.5" y="53.34" length="middle" rot="R270"/>
+<pin name="NC_4" x="27.94" y="-5.08" length="middle" rot="R90"/>
+<pin name="3V3" x="30.48" y="-5.08" length="middle" rot="R90"/>
+<pin name="5V" x="33.02" y="-5.08" length="middle" rot="R90"/>
+<pin name="NC_3" x="35.56" y="-5.08" length="middle" rot="R90"/>
+<pin name="GND" x="38.1" y="-5.08" length="middle" rot="R90"/>
+<pin name="NC_2" x="40.64" y="-5.08" length="middle" rot="R90"/>
+<pin name="LCD_RD" x="50.8" y="-5.08" length="middle" rot="R90"/>
+<pin name="LCD_WR" x="53.34" y="-5.08" length="middle" rot="R90"/>
+<pin name="LCD_RS" x="55.88" y="-5.08" length="middle" rot="R90"/>
+<pin name="LCD_CS" x="58.42" y="-5.08" length="middle" rot="R90"/>
+<pin name="LCD_RST" x="60.96" y="-5.08" length="middle" rot="R90"/>
+<pin name="NC_1" x="63.5" y="-5.08" length="middle" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
