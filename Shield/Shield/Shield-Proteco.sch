@@ -14287,18 +14287,10 @@ SERIES 1000MAh</text>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="PUSH-RST" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
 <part name="PUSH2" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
-<part name="PUSH3" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
-<part name="PUSH4" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
 <part name="RPUSH-2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/1"/>
-<part name="R-PUSH3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/1"/>
-<part name="RPUSH-4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/1"/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="P+11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -14331,17 +14323,14 @@ SERIES 1000MAh</text>
 <part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2"/>
 <part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2"/>
 <part name="LED4" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2"/>
-<part name="LED5" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2"/>
 <part name="RLED-1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/1"/>
 <part name="RLED-2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/1"/>
 <part name="RLED-3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/1"/>
 <part name="RLED-4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/1"/>
-<part name="RLED-5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/1"/>
 <part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SERVO_1" library="Motores" deviceset="SERVOMOTORES" device=""/>
 <part name="SERVO_2" library="Motores" deviceset="SERVOMOTORES" device=""/>
 <part name="SERVO_3" library="Motores" deviceset="SERVOMOTORES" device=""/>
@@ -14494,18 +14483,10 @@ SERIES 1000MAh</text>
 <instance part="P+7" gate="VCC" x="-214.63" y="195.58"/>
 <instance part="PUSH-RST" gate="1" x="-165.1" y="133.35"/>
 <instance part="PUSH2" gate="1" x="-138.43" y="133.35"/>
-<instance part="PUSH3" gate="1" x="-111.76" y="133.35"/>
-<instance part="PUSH4" gate="1" x="-83.82" y="133.35"/>
 <instance part="RPUSH-2" gate="G$1" x="-138.43" y="121.92" rot="R90"/>
-<instance part="R-PUSH3" gate="G$1" x="-111.76" y="121.92" rot="R90"/>
-<instance part="RPUSH-4" gate="G$1" x="-83.82" y="121.92" rot="R90"/>
 <instance part="GND9" gate="1" x="-138.43" y="114.3"/>
-<instance part="GND10" gate="1" x="-111.76" y="114.3"/>
-<instance part="GND11" gate="1" x="-83.82" y="114.3"/>
 <instance part="P+8" gate="VCC" x="-165.1" y="143.51"/>
 <instance part="P+9" gate="VCC" x="-138.43" y="143.51"/>
-<instance part="P+10" gate="VCC" x="-111.76" y="143.51"/>
-<instance part="P+11" gate="VCC" x="-83.82" y="143.51"/>
 <instance part="GND12" gate="1" x="-238.76" y="129.54"/>
 <instance part="GND13" gate="1" x="-105.41" y="-1.27"/>
 <instance part="GND14" gate="1" x="-106.68" y="-38.1"/>
@@ -14538,17 +14519,14 @@ SERIES 1000MAh</text>
 <instance part="LED2" gate="G$1" x="-134.62" y="185.42"/>
 <instance part="LED3" gate="G$1" x="-120.65" y="185.42"/>
 <instance part="LED4" gate="G$1" x="-109.22" y="185.42"/>
-<instance part="LED5" gate="G$1" x="-97.79" y="185.42"/>
 <instance part="RLED-1" gate="G$1" x="-148.59" y="172.72" rot="R90"/>
 <instance part="RLED-2" gate="G$1" x="-134.62" y="172.72" rot="R90"/>
 <instance part="RLED-3" gate="G$1" x="-120.65" y="172.72" rot="R90"/>
 <instance part="RLED-4" gate="G$1" x="-109.22" y="172.72" rot="R90"/>
-<instance part="RLED-5" gate="G$1" x="-97.79" y="172.72" rot="R90"/>
 <instance part="GND23" gate="1" x="-148.59" y="165.1"/>
 <instance part="GND24" gate="1" x="-134.62" y="165.1"/>
 <instance part="GND25" gate="1" x="-120.65" y="165.1"/>
 <instance part="GND26" gate="1" x="-109.22" y="165.1"/>
-<instance part="GND27" gate="1" x="-97.79" y="165.1"/>
 <instance part="SERVO_1" gate="G$1" x="-119.38" y="-142.24"/>
 <instance part="SERVO_2" gate="G$1" x="-119.38" y="-172.72"/>
 <instance part="SERVO_3" gate="G$1" x="-119.38" y="-203.2"/>
@@ -14568,7 +14546,7 @@ SERIES 1000MAh</text>
 <instance part="SERVO_4" gate="G$1" x="-119.38" y="-232.41"/>
 <instance part="P+24" gate="VCC" x="-97.79" y="-223.52"/>
 <instance part="GND33" gate="1" x="-99.06" y="-238.76"/>
-<instance part="LOGO1" gate="G$1" x="262.89" y="173.99"/>
+<instance part="LOGO1" gate="G$1" x="224.79" y="-284.48"/>
 <instance part="ADXL335-ACELEROMETER" gate="G$1" x="80.01" y="156.21"/>
 <instance part="HC-05-PROG" gate="G$1" x="-35.56" y="154.94"/>
 <instance part="LINE-SENSOR" gate="G$1" x="261.62" y="142.24" rot="R270"/>
@@ -14661,16 +14639,6 @@ SERIES 1000MAh</text>
 <pinref part="PUSH2" gate="1" pin="S"/>
 <pinref part="P+9" gate="VCC" pin="VCC"/>
 <wire x1="-138.43" y1="138.43" x2="-138.43" y2="140.97" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="PUSH3" gate="1" pin="S"/>
-<pinref part="P+10" gate="VCC" pin="VCC"/>
-<wire x1="-111.76" y1="138.43" x2="-111.76" y2="140.97" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="PUSH4" gate="1" pin="S"/>
-<pinref part="P+11" gate="VCC" pin="VCC"/>
-<wire x1="-83.82" y1="138.43" x2="-83.82" y2="140.97" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+12" gate="VCC" pin="VCC"/>
@@ -14878,14 +14846,6 @@ SERIES 1000MAh</text>
 <pinref part="GND9" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R-PUSH3" gate="G$1" pin="1"/>
-<pinref part="GND10" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="RPUSH-4" gate="G$1" pin="1"/>
-<pinref part="GND11" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="-242.57" y1="137.16" x2="-242.57" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="-242.57" y1="132.08" x2="-238.76" y2="132.08" width="0.1524" layer="91"/>
@@ -14966,10 +14926,6 @@ SERIES 1000MAh</text>
 <segment>
 <pinref part="RLED-4" gate="G$1" pin="1"/>
 <pinref part="GND26" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="RLED-5" gate="G$1" pin="1"/>
-<pinref part="GND27" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="SERVO_3" gate="G$1" pin="GND"/>
@@ -15177,32 +15133,6 @@ SERIES 1000MAh</text>
 <wire x1="-135.89" y1="128.27" x2="-132.08" y2="128.27" width="0.1524" layer="91"/>
 <junction x="-135.89" y="128.27"/>
 <wire x1="-138.43" y1="127" x2="-138.43" y2="128.27" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="PUSH3" class="0">
-<segment>
-<pinref part="PUSH3" gate="1" pin="P"/>
-<pinref part="R-PUSH3" gate="G$1" pin="2"/>
-<wire x1="-111.76" y1="127" x2="-109.22" y2="128.27" width="0.1524" layer="91"/>
-<junction x="-111.76" y="127"/>
-<label x="-105.41" y="128.27" size="1.778" layer="95" xref="yes"/>
-<pinref part="PUSH3" gate="1" pin="P1"/>
-<wire x1="-109.22" y1="128.27" x2="-105.41" y2="128.27" width="0.1524" layer="91"/>
-<junction x="-109.22" y="128.27"/>
-<wire x1="-111.76" y1="127" x2="-111.76" y2="128.27" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="PUSH4" class="0">
-<segment>
-<pinref part="PUSH4" gate="1" pin="P"/>
-<pinref part="RPUSH-4" gate="G$1" pin="2"/>
-<wire x1="-83.82" y1="127" x2="-81.28" y2="128.27" width="0.1524" layer="91"/>
-<junction x="-83.82" y="127"/>
-<label x="-77.47" y="128.27" size="1.778" layer="95" xref="yes"/>
-<pinref part="PUSH4" gate="1" pin="P1"/>
-<wire x1="-81.28" y1="128.27" x2="-77.47" y2="128.27" width="0.1524" layer="91"/>
-<junction x="-81.28" y="128.27"/>
-<wire x1="-83.82" y1="127" x2="-83.82" y2="128.27" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -15753,21 +15683,6 @@ SERIES 1000MAh</text>
 <label x="-114.3" y="193.04" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
-<net name="LED5" class="0">
-<segment>
-<pinref part="LED5" gate="G$1" pin="A"/>
-<wire x1="-97.79" y1="187.96" x2="-101.6" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="-101.6" y1="187.96" x2="-101.6" y2="193.04" width="0.1524" layer="91"/>
-<label x="-101.6" y="193.04" size="1.778" layer="95" rot="R90" xref="yes"/>
-</segment>
-</net>
-<net name="N$88" class="0">
-<segment>
-<pinref part="RLED-5" gate="G$1" pin="2"/>
-<pinref part="LED5" gate="G$1" pin="C"/>
-<wire x1="-97.79" y1="177.8" x2="-97.79" y2="180.34" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$89" class="0">
 <segment>
 <pinref part="RLED-PWR" gate="G$1" pin="2"/>
@@ -16157,6 +16072,13 @@ SERIES 1000MAh</text>
 <pinref part="ARDUINO-MEGA" gate="G$1" pin="9"/>
 <wire x1="110.49" y1="-17.78" x2="114.3" y2="-17.78" width="0.1524" layer="91"/>
 <label x="114.3" y="-17.78" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U$9" gate="G$1" pin="E8"/>
+<wire x1="284.48" y1="-102.87" x2="267.97" y2="-102.87" width="0.1524" layer="91"/>
+<label x="267.97" y="-102.87" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
