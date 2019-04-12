@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -59,26 +59,103 @@
 <library>
 <packages>
 <package name="SLIDE-3">
-<pad name="P$1" x="0" y="0" drill="0.6" diameter="1.6764" shape="long" rot="R90"/>
-<pad name="P$2" x="-2.54" y="0" drill="0.6" diameter="1.6764" shape="long" rot="R90"/>
-<pad name="P$3" x="2.54" y="0" drill="0.6" diameter="1.6764" shape="long" rot="R90"/>
+<pad name="COM" x="0" y="0" drill="0.6" diameter="1.6764" shape="long" rot="R90"/>
+<pad name="P1" x="-2.54" y="0" drill="0.6" diameter="1.6764" shape="long" rot="R90"/>
+<pad name="P2" x="2.54" y="0" drill="0.6" diameter="1.6764" shape="long" rot="R90"/>
 <wire x1="4.445" y1="1.905" x2="4.445" y2="-1.905" width="0.1524" layer="21"/>
 <wire x1="4.445" y1="-1.905" x2="-4.445" y2="-1.905" width="0.1524" layer="21"/>
 <wire x1="-4.445" y1="-1.905" x2="-4.445" y2="1.905" width="0.1524" layer="21"/>
 <wire x1="-4.445" y1="1.905" x2="-0.635" y2="1.905" width="0.1524" layer="21"/>
 <wire x1="-0.635" y1="1.905" x2="0.635" y2="1.905" width="0.1524" layer="21"/>
 <wire x1="0.635" y1="1.905" x2="4.445" y2="1.905" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.905" x2="-0.635" y2="6.985" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="6.985" x2="0.635" y2="6.985" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="6.985" x2="0.635" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.905" x2="-0.635" y2="6.35" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="6.35" x2="0.635" y2="6.35" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="6.35" x2="0.635" y2="1.905" width="0.1524" layer="21"/>
+<text x="-4.445" y="-3.048" size="0.8128" layer="21">&gt;NAME</text>
+</package>
+<package name="1X02" urn="urn:adsk.eagle:footprint:22309/1">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
 </package>
 </packages>
 <symbols>
 <symbol name="SLIDE-3">
+<wire x1="-12.7" y1="-4.445" x2="12.065" y2="-4.445" width="0.1524" layer="94"/>
+<wire x1="12.065" y1="-4.445" x2="12.065" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-12.7" y1="-4.445" x2="-12.7" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-12.7" y1="5.08" x2="-7.62" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="-1.905" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="5.08" x2="1.27" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="12.065" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="5.08" x2="-1.905" y2="16.51" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="16.51" x2="1.27" y2="16.51" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="16.51" x2="1.27" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="1.905" x2="7.62" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="1.905" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
+<pin name="P1" x="-17.78" y="0" length="middle"/>
+<pin name="COM" x="0" y="-9.525" length="middle" rot="R90"/>
+<pin name="P2" x="17.145" y="0" length="middle" rot="R180"/>
+<text x="-12.7" y="10.16" size="1.778" layer="94">&gt;NAME</text>
+</symbol>
+<symbol name="SWITCH-NO">
+<wire x1="-2.54" y1="0" x2="2.54" y2="0.889" width="0.254" layer="94"/>
+<circle x="-2.54" y="0" radius="0.2839" width="0" layer="94"/>
+<circle x="2.54" y="0" radius="0.2839" width="0" layer="94"/>
+<text x="-3.81" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
+<deviceset name="SLIDE-3">
+<description>Interruptor deslizante de uso fácil</description>
+<gates>
+<gate name="G$1" symbol="SLIDE-3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SLIDE-3">
+<connects>
+<connect gate="G$1" pin="COM" pad="COM"/>
+<connect gate="G$1" pin="P1" pad="P1"/>
+<connect gate="G$1" pin="P2" pad="P2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>
