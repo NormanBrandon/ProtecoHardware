@@ -14754,9 +14754,9 @@ grid 2.54 mm</description>
 <label x="-162.56" y="66.04" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="ARDUINO-MEGA" gate="G$1" pin="24"/>
-<wire x1="95.25" y1="-83.82" x2="95.25" y2="-82.55" width="0.1524" layer="91"/>
-<label x="95.25" y="-82.55" size="1.778" layer="95" rot="R90" xref="yes"/>
+<pinref part="ARDUINO-MEGA" gate="G$1" pin="26"/>
+<wire x1="92.71" y1="-83.82" x2="92.71" y2="-72.39" width="0.1524" layer="91"/>
+<label x="92.71" y="-72.39" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="DIP4" class="0">
@@ -14770,9 +14770,9 @@ grid 2.54 mm</description>
 <label x="-157.48" y="62.23" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="ARDUINO-MEGA" gate="G$1" pin="26"/>
-<wire x1="92.71" y1="-83.82" x2="92.71" y2="-72.39" width="0.1524" layer="91"/>
-<label x="92.71" y="-72.39" size="1.778" layer="95" rot="R90" xref="yes"/>
+<pinref part="ARDUINO-MEGA" gate="G$1" pin="24"/>
+<wire x1="95.25" y1="-83.82" x2="95.25" y2="-82.55" width="0.1524" layer="91"/>
+<label x="95.25" y="-82.55" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="GND" class="0">

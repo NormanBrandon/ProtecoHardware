@@ -14335,6 +14335,7 @@ grid 2.54 mm</description>
 <part name="R-LP" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/1"/>
 <part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="P+11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14534,6 +14535,7 @@ grid 2.54 mm</description>
 <instance part="R-LP" gate="G$1" x="208.28" y="-182.88"/>
 <instance part="P+10" gate="VCC" x="220.98" y="-160.02"/>
 <instance part="GND8" gate="1" x="220.98" y="-198.12"/>
+<instance part="P+11" gate="VCC" x="-246.38" y="-20.32"/>
 </instances>
 <busses>
 </busses>
@@ -14709,6 +14711,18 @@ grid 2.54 mm</description>
 <pinref part="P+10" gate="VCC" pin="VCC"/>
 <pinref part="LED_1W" gate="G$1" pin="A"/>
 <wire x1="220.98" y1="-162.56" x2="220.98" y2="-167.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="DRIVER-LEFT" gate="G$1" pin="STBY"/>
+<wire x1="-257.81" y1="0" x2="-252.73" y2="0" width="0.1524" layer="91"/>
+<wire x1="-252.73" y1="0" x2="-252.73" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="DRIVER-RIGHT" gate="G$1" pin="STBY"/>
+<wire x1="-252.73" y1="-27.94" x2="-252.73" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="-252.73" y1="-53.34" x2="-257.81" y2="-53.34" width="0.1524" layer="91"/>
+<pinref part="P+11" gate="VCC" pin="VCC"/>
+<wire x1="-252.73" y1="-27.94" x2="-246.38" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="-246.38" y1="-27.94" x2="-246.38" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="-252.73" y="-27.94"/>
 </segment>
 </net>
 <net name="DIP1" class="0">

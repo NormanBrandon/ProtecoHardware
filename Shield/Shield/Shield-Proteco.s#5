@@ -14823,14 +14823,10 @@ grid 2.54 mm</description>
 <pinref part="LINE-SENSOR" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="-242.57" y1="171.45" x2="-242.57" y2="168.91" width="0.1524" layer="91"/>
-<wire x1="-242.57" y1="168.91" x2="-238.76" y2="168.91" width="0.1524" layer="91"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<pinref part="5V-SOURCE" gate="G$1" pin="GND_1"/>
 <wire x1="-238.76" y1="168.91" x2="-234.95" y2="168.91" width="0.1524" layer="91"/>
 <wire x1="-234.95" y1="168.91" x2="-234.95" y2="171.45" width="0.1524" layer="91"/>
-<pinref part="GND7" gate="1" pin="GND"/>
-<junction x="-238.76" y="168.91"/>
-<pinref part="5V-SOURCE" gate="G$1" pin="GND"/>
-<pinref part="5V-SOURCE" gate="G$1" pin="GND_1"/>
 </segment>
 <segment>
 <pinref part="RPUSH-2" gate="G$1" pin="1"/>
@@ -14838,12 +14834,8 @@ grid 2.54 mm</description>
 </segment>
 <segment>
 <pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="-242.57" y1="137.16" x2="-242.57" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="-242.57" y1="132.08" x2="-238.76" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="-238.76" y1="132.08" x2="-234.95" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="-234.95" y1="132.08" x2="-234.95" y2="137.16" width="0.1524" layer="91"/>
-<junction x="-238.76" y="132.08"/>
-<pinref part="MOTORS-SOURCE" gate="G$1" pin="GND"/>
 <pinref part="MOTORS-SOURCE" gate="G$1" pin="GND_1"/>
 </segment>
 <segment>
