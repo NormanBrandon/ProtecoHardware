@@ -15235,12 +15235,9 @@ grid 2.54 mm</description>
 <label x="39.37" y="-7.62" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PUSH-RST" gate="1" pin="P"/>
-<wire x1="-165.1" y1="128.27" x2="-162.56" y2="128.27" width="0.1524" layer="91"/>
 <label x="-158.75" y="128.27" size="1.778" layer="95" xref="yes"/>
 <pinref part="PUSH-RST" gate="1" pin="P1"/>
 <wire x1="-162.56" y1="128.27" x2="-158.75" y2="128.27" width="0.1524" layer="91"/>
-<junction x="-162.56" y="128.27"/>
 </segment>
 </net>
 <net name="RX0" class="0">
