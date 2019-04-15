@@ -13987,6 +13987,21 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="8.382" y1="4.064" x2="11.684" y2="1.524" width="0.1524" layer="21"/>
 <wire x1="8.382" y1="-4.064" x2="11.684" y2="-1.524" width="0.1524" layer="21"/>
 </package>
+<package name="KK-156-2">
+<description>&lt;b&gt;KK® 396 Header, Vertical, Friction Lock, 2 Circuits, Tin (Sn) Plating&lt;/b&gt;&lt;p&gt;&lt;a href =http://www.molex.com/pdm_docs/sd/026604020_sd.pdf&gt;Datasheet &lt;/a&gt;</description>
+<wire x1="3.81" y1="4.95" x2="2.01" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="2.01" y1="4.95" x2="-1.985" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="-1.985" y1="4.95" x2="-3.785" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="-3.785" y1="4.95" x2="-3.785" y2="-4.825" width="0.2032" layer="21"/>
+<wire x1="-3.785" y1="-4.825" x2="3.81" y2="-4.825" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-4.825" x2="3.81" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="-1.985" y1="2.525" x2="2.01" y2="2.525" width="0.2032" layer="21"/>
+<wire x1="2.01" y1="2.525" x2="2.01" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="-1.985" y1="2.525" x2="-1.985" y2="4.95" width="0.2032" layer="21"/>
+<pad name="VCC" x="-1.98" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
+<pad name="GND" x="1.98" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
+<text x="-4.48" y="-4.445" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ZIPPY-7.4V">
@@ -14040,6 +14055,23 @@ SERIES 1000MAh</text>
 </gates>
 <devices>
 <device name="" package="XT60">
+<connects>
+<connect gate="G$1" pin="7.4V" pad="VCC"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LIPO7.4MOLEX">
+<description>Lipo generica si no se cuenta con xt-60</description>
+<gates>
+<gate name="G$1" symbol="ZIPPY-7.4V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="KK-156-2">
 <connects>
 <connect gate="G$1" pin="7.4V" pad="VCC"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
@@ -14336,6 +14368,7 @@ grid 2.54 mm</description>
 <part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="U$1" library="Baterias" deviceset="LIPO7.4MOLEX" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14536,6 +14569,7 @@ grid 2.54 mm</description>
 <instance part="P+10" gate="VCC" x="220.98" y="-160.02"/>
 <instance part="GND8" gate="1" x="220.98" y="-198.12"/>
 <instance part="P+11" gate="VCC" x="-246.38" y="-20.32"/>
+<instance part="U$1" gate="G$1" x="-292.1" y="93.98" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -14978,6 +15012,10 @@ grid 2.54 mm</description>
 <wire x1="-327.66" y1="180.34" x2="-316.23" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="GND36" gate="1" pin="GND"/>
 <wire x1="-316.23" y1="180.34" x2="-316.23" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<wire x1="-289.56" y1="162.56" x2="-289.56" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="-289.56" y1="180.34" x2="-316.23" y2="180.34" width="0.1524" layer="91"/>
+<junction x="-316.23" y="180.34"/>
 </segment>
 <segment>
 <pinref part="ARDUINO-MEGA" gate="G$1" pin="GND_2"/>
@@ -15199,18 +15237,6 @@ grid 2.54 mm</description>
 <label x="-133.35" y="127" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$14" class="0">
-<segment>
-<wire x1="-261.62" y1="189.23" x2="-257.81" y2="189.23" width="0.1524" layer="91"/>
-<wire x1="-261.62" y1="189.23" x2="-261.62" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="-261.62" y1="154.94" x2="-257.81" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="5V-SOURCE" gate="G$1" pin="VIN"/>
-<pinref part="MOTORS-SOURCE" gate="G$1" pin="VIN"/>
-<pinref part="POWER-SW" gate="G$1" pin="2"/>
-<wire x1="-267.97" y1="189.23" x2="-261.62" y2="189.23" width="0.1524" layer="91"/>
-<junction x="-261.62" y="189.23"/>
-</segment>
-</net>
 <net name="6V-DC-3A" class="0">
 <segment>
 <wire x1="-219.71" y1="154.94" x2="-212.09" y2="154.94" width="0.1524" layer="91"/>
@@ -15361,6 +15387,18 @@ grid 2.54 mm</description>
 <pinref part="ARDUINO-MEGA" gate="G$1" pin="VIN"/>
 <wire x1="46.99" y1="-20.32" x2="29.21" y2="-20.32" width="0.1524" layer="91"/>
 <label x="29.21" y="-20.32" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="-261.62" y1="189.23" x2="-257.81" y2="189.23" width="0.1524" layer="91"/>
+<wire x1="-261.62" y1="189.23" x2="-261.62" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="-261.62" y1="154.94" x2="-257.81" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="5V-SOURCE" gate="G$1" pin="VIN"/>
+<pinref part="MOTORS-SOURCE" gate="G$1" pin="VIN"/>
+<pinref part="POWER-SW" gate="G$1" pin="2"/>
+<wire x1="-267.97" y1="189.23" x2="-261.62" y2="189.23" width="0.1524" layer="91"/>
+<junction x="-261.62" y="189.23"/>
+<wire x1="-261.62" y1="189.23" x2="-261.62" y2="193.04" width="0.1524" layer="91"/>
+<label x="-261.62" y="193.04" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="LCD_RD" class="0">
@@ -16064,11 +16102,13 @@ grid 2.54 mm</description>
 <wire x1="-337.82" y1="173.99" x2="-337.82" y2="189.23" width="0.1524" layer="91"/>
 <pinref part="POWER-SW" gate="G$1" pin="COM"/>
 <wire x1="-273.05" y1="181.61" x2="-273.05" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="-273.05" y1="175.26" x2="-280.67" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="-280.67" y1="175.26" x2="-290.83" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="-290.83" y1="175.26" x2="-290.83" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="-290.83" y1="187.96" x2="-290.83" y2="189.23" width="0.1524" layer="91"/>
-<wire x1="-290.83" y1="189.23" x2="-337.82" y2="189.23" width="0.1524" layer="91"/>
+<wire x1="-273.05" y1="175.26" x2="-290.83" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="-290.83" y1="175.26" x2="-290.83" y2="189.23" width="0.1524" layer="91"/>
+<wire x1="-290.83" y1="189.23" x2="-299.72" y2="189.23" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="7.4V"/>
+<wire x1="-299.72" y1="189.23" x2="-337.82" y2="189.23" width="0.1524" layer="91"/>
+<wire x1="-299.72" y1="162.56" x2="-299.72" y2="189.23" width="0.1524" layer="91"/>
+<junction x="-299.72" y="189.23"/>
 </segment>
 </net>
 <net name="LCD_D1" class="0">

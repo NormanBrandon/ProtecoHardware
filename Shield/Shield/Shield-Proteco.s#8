@@ -15175,17 +15175,17 @@ grid 2.54 mm</description>
 </net>
 <net name="PUSH" class="0">
 <segment>
-<pinref part="RPUSH-2" gate="G$1" pin="2"/>
-<wire x1="-138.43" y1="127" x2="-135.89" y2="128.27" width="0.1524" layer="91"/>
-<label x="-132.08" y="128.27" size="1.778" layer="95" xref="yes"/>
-<pinref part="PUSH" gate="1" pin="P1"/>
-<wire x1="-135.89" y1="128.27" x2="-132.08" y2="128.27" width="0.1524" layer="91"/>
-<junction x="-135.89" y="128.27"/>
-</segment>
-<segment>
 <pinref part="ARDUINO-MEGA" gate="G$1" pin="25"/>
 <wire x1="95.25" y1="-106.68" x2="95.25" y2="-124.46" width="0.1524" layer="91"/>
 <label x="95.25" y="-124.46" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="PUSH" gate="1" pin="P"/>
+<pinref part="RPUSH-2" gate="G$1" pin="2"/>
+<wire x1="-138.43" y1="128.27" x2="-138.43" y2="127" width="0.1524" layer="91"/>
+<wire x1="-138.43" y1="127" x2="-133.35" y2="127" width="0.1524" layer="91"/>
+<junction x="-138.43" y="127"/>
+<label x="-133.35" y="127" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -15235,12 +15235,9 @@ grid 2.54 mm</description>
 <label x="39.37" y="-7.62" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PUSH-RST" gate="1" pin="P"/>
-<wire x1="-165.1" y1="128.27" x2="-162.56" y2="128.27" width="0.1524" layer="91"/>
 <label x="-158.75" y="128.27" size="1.778" layer="95" xref="yes"/>
 <pinref part="PUSH-RST" gate="1" pin="P1"/>
 <wire x1="-162.56" y1="128.27" x2="-158.75" y2="128.27" width="0.1524" layer="91"/>
-<junction x="-162.56" y="128.27"/>
 </segment>
 </net>
 <net name="RX0" class="0">
