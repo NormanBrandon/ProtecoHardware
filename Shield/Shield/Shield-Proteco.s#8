@@ -14823,14 +14823,10 @@ grid 2.54 mm</description>
 <pinref part="LINE-SENSOR" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="-242.57" y1="171.45" x2="-242.57" y2="168.91" width="0.1524" layer="91"/>
-<wire x1="-242.57" y1="168.91" x2="-238.76" y2="168.91" width="0.1524" layer="91"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<pinref part="5V-SOURCE" gate="G$1" pin="GND_1"/>
 <wire x1="-238.76" y1="168.91" x2="-234.95" y2="168.91" width="0.1524" layer="91"/>
 <wire x1="-234.95" y1="168.91" x2="-234.95" y2="171.45" width="0.1524" layer="91"/>
-<pinref part="GND7" gate="1" pin="GND"/>
-<junction x="-238.76" y="168.91"/>
-<pinref part="5V-SOURCE" gate="G$1" pin="GND"/>
-<pinref part="5V-SOURCE" gate="G$1" pin="GND_1"/>
 </segment>
 <segment>
 <pinref part="RPUSH-2" gate="G$1" pin="1"/>
@@ -14838,12 +14834,8 @@ grid 2.54 mm</description>
 </segment>
 <segment>
 <pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="-242.57" y1="137.16" x2="-242.57" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="-242.57" y1="132.08" x2="-238.76" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="-238.76" y1="132.08" x2="-234.95" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="-234.95" y1="132.08" x2="-234.95" y2="137.16" width="0.1524" layer="91"/>
-<junction x="-238.76" y="132.08"/>
-<pinref part="MOTORS-SOURCE" gate="G$1" pin="GND"/>
 <pinref part="MOTORS-SOURCE" gate="G$1" pin="GND_1"/>
 </segment>
 <segment>
@@ -15046,6 +15038,11 @@ grid 2.54 mm</description>
 <pinref part="ARDUINO-MEGA" gate="G$1" pin="A5"/>
 <wire x1="46.99" y1="-38.1" x2="24.13" y2="-38.1" width="0.1524" layer="91"/>
 <label x="24.13" y="-38.1" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$14" gate="G$1" pin="NC_1"/>
+<wire x1="284.48" y1="-2.54" x2="278.13" y2="-2.54" width="0.1524" layer="91"/>
+<label x="278.13" y="-2.54" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SHARP-MIDDLE" class="0">
@@ -15412,13 +15409,6 @@ grid 2.54 mm</description>
 <label x="39.37" y="-35.56" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$38" class="0">
-<segment>
-<pinref part="U$14" gate="G$1" pin="NC_1"/>
-<wire x1="284.48" y1="-2.54" x2="278.13" y2="-2.54" width="0.1524" layer="91"/>
-<label x="278.13" y="-2.54" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="3V3" class="0">
 <segment>
 <pinref part="ARDUINO-MEGA" gate="G$1" pin="3V3"/>
@@ -15735,6 +15725,11 @@ grid 2.54 mm</description>
 <junction x="-246.38" y="-1.27"/>
 <label x="-232.41" y="-1.27" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="ARDUINO-MEGA" gate="G$1" pin="30"/>
+<wire x1="87.63" y1="-83.82" x2="87.63" y2="-54.61" width="0.1524" layer="91"/>
+<label x="87.63" y="-54.61" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="IN2-MOTOR-LEFT" class="0">
 <segment>
@@ -15748,6 +15743,11 @@ grid 2.54 mm</description>
 <wire x1="-241.3" y1="-10.16" x2="-227.33" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="-241.3" y="-10.16"/>
 <label x="-227.33" y="-10.16" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="ARDUINO-MEGA" gate="G$1" pin="28"/>
+<wire x1="90.17" y1="-83.82" x2="90.17" y2="-82.55" width="0.1524" layer="91"/>
+<label x="90.17" y="-82.55" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="OUT2-MOTOR-LEFT" class="0">
@@ -15766,11 +15766,6 @@ grid 2.54 mm</description>
 <wire x1="-111.76" y1="3.81" x2="-97.79" y2="3.81" width="0.1524" layer="91"/>
 <label x="-97.79" y="3.81" size="1.778" layer="95" xref="yes"/>
 </segment>
-<segment>
-<pinref part="ARDUINO-MEGA" gate="G$1" pin="30"/>
-<wire x1="87.63" y1="-83.82" x2="87.63" y2="-54.61" width="0.1524" layer="91"/>
-<label x="87.63" y="-54.61" size="1.778" layer="95" rot="R90" xref="yes"/>
-</segment>
 </net>
 <net name="OUT1-MOTOR-LEFT" class="0">
 <segment>
@@ -15788,11 +15783,6 @@ grid 2.54 mm</description>
 <pinref part="MOTOR_LEFT" gate="G$1" pin="OUTB"/>
 <wire x1="-111.76" y1="6.35" x2="-106.68" y2="6.35" width="0.1524" layer="91"/>
 <label x="-106.68" y="6.35" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="ARDUINO-MEGA" gate="G$1" pin="28"/>
-<wire x1="90.17" y1="-83.82" x2="90.17" y2="-82.55" width="0.1524" layer="91"/>
-<label x="90.17" y="-82.55" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="PWM-MOTOR-LEFT" class="0">
@@ -15824,6 +15814,11 @@ grid 2.54 mm</description>
 <junction x="-248.92" y="-53.34"/>
 <label x="-232.41" y="-53.34" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="ARDUINO-MEGA" gate="G$1" pin="34"/>
+<wire x1="82.55" y1="-83.82" x2="82.55" y2="-54.61" width="0.1524" layer="91"/>
+<label x="82.55" y="-54.61" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="IN1-MOTOR-RIGHT" class="0">
 <segment>
@@ -15836,6 +15831,11 @@ grid 2.54 mm</description>
 <wire x1="-243.84" y1="-46.99" x2="-231.14" y2="-46.99" width="0.1524" layer="91"/>
 <junction x="-243.84" y="-46.99"/>
 <label x="-231.14" y="-46.99" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="ARDUINO-MEGA" gate="G$1" pin="32"/>
+<wire x1="85.09" y1="-83.82" x2="85.09" y2="-82.55" width="0.1524" layer="91"/>
+<label x="85.09" y="-82.55" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="PWM-MOTOR-RIGHT" class="0">
@@ -15871,11 +15871,6 @@ grid 2.54 mm</description>
 <wire x1="-111.76" y1="-31.75" x2="-83.82" y2="-31.75" width="0.1524" layer="91"/>
 <label x="-83.82" y="-31.75" size="1.778" layer="95" xref="yes"/>
 </segment>
-<segment>
-<pinref part="ARDUINO-MEGA" gate="G$1" pin="34"/>
-<wire x1="82.55" y1="-83.82" x2="82.55" y2="-54.61" width="0.1524" layer="91"/>
-<label x="82.55" y="-54.61" size="1.778" layer="95" rot="R90" xref="yes"/>
-</segment>
 </net>
 <net name="OUT1-MOTOR-RIGHT" class="0">
 <segment>
@@ -15893,11 +15888,6 @@ grid 2.54 mm</description>
 <pinref part="MOTOR_RIGHT" gate="G$1" pin="OUTB"/>
 <wire x1="-111.76" y1="-29.21" x2="-105.41" y2="-29.21" width="0.1524" layer="91"/>
 <label x="-105.41" y="-29.21" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="ARDUINO-MEGA" gate="G$1" pin="32"/>
-<wire x1="85.09" y1="-83.82" x2="85.09" y2="-82.55" width="0.1524" layer="91"/>
-<label x="85.09" y="-82.55" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="ENC2-LEFT" class="0">
