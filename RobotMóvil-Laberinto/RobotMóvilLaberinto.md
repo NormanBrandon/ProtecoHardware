@@ -10,7 +10,7 @@
 - Mostrar la planeación, desarrollo y avances del proyecto mediante la actualización de un repositorio en github.
 - Realizar un proyecto creativo, servible e innovador que pueda representar a la sección de hardware del PROTECO en distintas competencias y de manera publica para imagen y muestra del trabajo realizado en el programa. 
 - Al final del proyecto, contar con la documentación necesaria.
-
+- Implementar algorítmos de búsqueda con el objetivo de mostrarlos en los cursos de Inteligencia Artifical así como generar contenido en video mostrando su funcionamiento para publicitar el programa.
 
 ### _JUSTIFICACIÓN_
 
