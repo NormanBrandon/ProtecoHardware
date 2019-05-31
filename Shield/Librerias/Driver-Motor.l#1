@@ -322,7 +322,7 @@
 <description>https://www.pololu.com/product/713
 Esta pequeña placa es una forma fácil de usar el controlador de motor dual TB6612FNG de Toshiba, que puede controlar de forma independiente dos motores de CC bidireccionales o un motor paso a paso bipolar. Una tensión de motor recomendada de 4.5 V a 13.5 V y una salida de corriente pico de 3 A por canal (1 A continuo) hacen de este un excelente controlador de motor para motores de baja potencia.</description>
 <gates>
-<gate name="G$1" symbol="TB6612FNG" x="15.24" y="-2.54"/>
+<gate name="G$1" symbol="TB6612FNG" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="TB6612FNG">

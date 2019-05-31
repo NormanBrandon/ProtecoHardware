@@ -137,7 +137,7 @@
 <wire x1="5.08" y1="22.86" x2="5.08" y2="-17.78" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-17.78" x2="-33.02" y2="-17.78" width="0.254" layer="94"/>
 <wire x1="-33.02" y1="-17.78" x2="-33.02" y2="22.86" width="0.254" layer="94"/>
-<text x="-33.02" y="22.86" size="1.778" layer="94">&gt;NAME</text>
+<text x="-32.512" y="23.622" size="1.778" layer="94">&gt;NAME</text>
 <pin name="VM" x="-38.1" y="20.32" length="middle"/>
 <pin name="VCC" x="-38.1" y="15.24" length="middle"/>
 <pin name="GND" x="-38.1" y="10.16" length="middle"/>

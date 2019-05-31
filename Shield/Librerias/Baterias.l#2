@@ -74,8 +74,8 @@
 <library>
 <packages>
 <package name="XT60">
-<pad name="P$1" x="0" y="0" drill="3.81" diameter="5.588"/>
-<pad name="P$2" x="7.112" y="0" drill="3.81" diameter="5.588"/>
+<pad name="VCC" x="0" y="0" drill="3.81" diameter="5.588"/>
+<pad name="GND" x="7.112" y="0" drill="3.81" diameter="5.588"/>
 <wire x1="8.382" y1="-4.064" x2="-4.572" y2="-4.064" width="0.1524" layer="21"/>
 <wire x1="11.684" y1="-1.524" x2="11.684" y2="1.524" width="0.1524" layer="21"/>
 <wire x1="8.382" y1="4.064" x2="-4.572" y2="4.064" width="0.1524" layer="21"/>
@@ -136,6 +136,10 @@ SERIES 1000MAh</text>
 </gates>
 <devices>
 <device name="" package="XT60">
+<connects>
+<connect gate="G$1" pin="7.4V" pad="VCC"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
