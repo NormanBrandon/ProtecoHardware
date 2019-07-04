@@ -1,4 +1,4 @@
-#include <VarSpeedServo.h>
+/*#include <VarSpeedServo.h>
 VarSpeedServo servoBase;
 VarSpeedServo servoAng;
 VarSpeedServo servo3;
@@ -12,13 +12,14 @@ byte push = 25;
 byte led1w = 45;
 byte buzzer = 35;
 byte m_left_pwm = 44 , m_right_pwm = 46, m_left1 = 30 ,m_left2 = 28, m_right1 = 32 ,m_right2 = 34;
-int enc_right1 = 18 ,enc_right2 = A8, enc_left1 = 14 ,enc_left2 = 15;  
+byte enc_right1 = 18 ,enc_right2 = A8, enc_left1 = 14 ,enc_left2 = 15;  
+byte SF = 48, SCI = 47, SSI = 49, SCD =50 ,SII = 51,SSD = 52 ,SID = 53; 
 
 void setup() {
-  servoBase.attach(sg901);
+ /* servoBase.attach(sg901);
   servoAng.attach(sg902);
   servo3.attach(sg903);
-  servo4.attach(sg904);
+  servo4.attach(sg904);*/
   Serial.begin(115200);
   pinMode(led1,OUTPUT);
   pinMode(led2,OUTPUT);
@@ -31,18 +32,42 @@ void setup() {
   pinMode(dip3,INPUT);
   pinMode(dip4,INPUT);
   pinMode(push,INPUT);
-  pinMode(m_left_pwm,OUTPUT);
-  pinMode(m_right_pwm,OUTPUT);
+
   pinMode(m_left1,OUTPUT);
   pinMode(m_right1,OUTPUT);
   pinMode(m_left2,OUTPUT);
   pinMode(m_right2,OUTPUT);
-  
   pinMode(infraLeft,INPUT);
   pinMode(infraMidd,INPUT);
-  pinMode(infraRight,INPUT);    
+  pinMode(infraRight,INPUT);   
+  pinMode(SF,INPUT);
+  pinMode(SCI,INPUT);
+  pinMode(SSI,INPUT);
+  pinMode(SCD,INPUT);
+  pinMode(SII,INPUT);
+  pinMode(SSD,INPUT);
+  pinMode(SID,INPUT);
+
+   
 }
 
 void loop() {
+
+
+
  
 }
+
+
+void adelante(){
+  digitalWrite(m_left1,HIGH);
+  digitalWrite(m_left2,LOW);
+  digitalWrite(m_right1,HIGH);
+  digitalWrite(m_right2,LOW);
+  }
+void atras(){
+  digitalWrite(m_left1,LOW);
+  digitalWrite(m_left2,HIGH);
+  digitalWrite(m_right1,LOW);
+  digitalWrite(m_right2,HIGH);
+  }

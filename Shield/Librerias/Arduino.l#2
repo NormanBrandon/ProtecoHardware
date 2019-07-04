@@ -280,113 +280,113 @@
 </packages>
 <symbols>
 <symbol name="ARDUINO_MEGA">
-<wire x1="-55.88" y1="-25.4" x2="-55.88" y2="-22.225" width="0.254" layer="94"/>
-<wire x1="-55.88" y1="-22.225" x2="-55.88" y2="-13.335" width="0.254" layer="94"/>
-<wire x1="-55.88" y1="-13.335" x2="-55.88" y2="6.985" width="0.254" layer="94"/>
-<wire x1="-55.88" y1="6.985" x2="-55.88" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-55.88" y1="7.62" x2="-55.88" y2="18.415" width="0.254" layer="94"/>
-<wire x1="-55.88" y1="18.415" x2="-55.88" y2="20.32" width="0.254" layer="94"/>
-<wire x1="-55.88" y1="20.32" x2="-55.88" y2="27.94" width="0.254" layer="94"/>
-<wire x1="-55.88" y1="-25.4" x2="42.672" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="42.672" y1="-25.4" x2="55.88" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="55.88" y1="-25.4" x2="55.88" y2="27.94" width="0.254" layer="94"/>
-<wire x1="55.88" y1="27.94" x2="42.672" y2="27.94" width="0.254" layer="94"/>
-<wire x1="42.672" y1="27.94" x2="-55.88" y2="27.94" width="0.254" layer="94"/>
-<wire x1="-55.88" y1="-22.225" x2="-57.912" y2="-22.225" width="0.254" layer="94"/>
-<wire x1="-57.912" y1="-22.225" x2="-57.912" y2="-13.335" width="0.254" layer="94"/>
-<wire x1="-57.912" y1="-13.335" x2="-55.88" y2="-13.335" width="0.254" layer="94"/>
-<wire x1="-55.88" y1="18.415" x2="-63.5" y2="18.415" width="0.254" layer="94"/>
-<wire x1="-63.5" y1="18.415" x2="-63.5" y2="7.112" width="0.254" layer="94"/>
-<wire x1="-63.5" y1="7.112" x2="-63.5" y2="6.985" width="0.254" layer="94"/>
-<wire x1="-63.5" y1="6.985" x2="-55.88" y2="6.985" width="0.254" layer="94"/>
-<wire x1="42.672" y1="27.94" x2="42.672" y2="-25.4" width="0.254" layer="94"/>
-<pin name="21-SCL" x="22.86" y="33.02" length="middle" rot="R270"/>
-<pin name="20-SDA" x="20.32" y="33.02" length="middle" rot="R270"/>
-<pin name="19-RX1" x="17.78" y="33.02" length="middle" rot="R270"/>
-<pin name="18-TX1" x="15.24" y="33.02" length="middle" rot="R270"/>
-<pin name="17-RX2" x="12.7" y="33.02" length="middle" rot="R270"/>
-<pin name="16-TX2" x="10.16" y="33.02" length="middle" rot="R270"/>
-<pin name="15-RX3" x="7.62" y="33.02" length="middle" rot="R270"/>
-<pin name="14-TX3" x="5.08" y="33.02" length="middle" rot="R270"/>
-<pin name="0-RX0" x="-2.54" y="33.02" length="middle" rot="R270"/>
-<pin name="1-TX0" x="-5.08" y="33.02" length="middle" rot="R270"/>
-<pin name="2" x="-7.62" y="33.02" length="middle" rot="R270"/>
-<pin name="3" x="-10.16" y="33.02" length="middle" rot="R270"/>
-<pin name="4" x="-12.7" y="33.02" length="middle" rot="R270"/>
-<pin name="5" x="-15.24" y="33.02" length="middle" rot="R270"/>
-<pin name="6" x="-17.78" y="33.02" length="middle" rot="R270"/>
-<pin name="7" x="-20.32" y="33.02" length="middle" rot="R270"/>
-<pin name="8" x="-25.4" y="33.02" length="middle" rot="R270"/>
-<pin name="9" x="-27.94" y="33.02" length="middle" rot="R270"/>
-<pin name="10" x="-30.48" y="33.02" length="middle" rot="R270"/>
-<pin name="11" x="-33.02" y="33.02" length="middle" rot="R270"/>
-<pin name="12" x="-35.56" y="33.02" length="middle" rot="R270"/>
-<pin name="13" x="-38.1" y="33.02" length="middle" rot="R270"/>
-<pin name="GND" x="-40.64" y="33.02" length="middle" rot="R270"/>
-<pin name="AREF" x="-43.18" y="33.02" length="middle" rot="R270"/>
-<pin name="SDA" x="-45.72" y="33.02" length="middle" rot="R270"/>
-<pin name="SCL" x="-48.26" y="33.02" length="middle" rot="R270"/>
-<pin name="5V_3" x="38.1" y="22.86" length="middle"/>
-<pin name="5V_2" x="60.96" y="25.4" length="middle" rot="R180"/>
-<pin name="22" x="38.1" y="20.32" length="middle"/>
-<pin name="23" x="60.96" y="20.32" length="middle" rot="R180"/>
-<pin name="24" x="38.1" y="17.78" length="middle"/>
-<pin name="25" x="60.96" y="17.78" length="middle" rot="R180"/>
-<pin name="26" x="38.1" y="15.24" length="middle"/>
-<pin name="28" x="38.1" y="12.7" length="middle"/>
-<pin name="30" x="38.1" y="10.16" length="middle"/>
-<pin name="32" x="38.1" y="7.62" length="middle"/>
-<pin name="34" x="38.1" y="5.08" length="middle"/>
-<pin name="36" x="38.1" y="2.54" length="middle"/>
-<pin name="38" x="38.1" y="0" length="middle"/>
-<pin name="40" x="38.1" y="-2.54" length="middle"/>
-<pin name="42" x="38.1" y="-5.08" length="middle"/>
-<pin name="44" x="38.1" y="-7.62" length="middle"/>
-<pin name="46" x="38.1" y="-10.16" length="middle"/>
-<pin name="48" x="38.1" y="-12.7" length="middle"/>
-<pin name="50" x="38.1" y="-15.24" length="middle"/>
-<pin name="52" x="38.1" y="-17.78" length="middle"/>
-<pin name="GND_4" x="38.1" y="-20.32" length="middle"/>
-<pin name="27" x="60.96" y="15.24" length="middle" rot="R180"/>
-<pin name="29" x="60.96" y="12.7" length="middle" rot="R180"/>
-<pin name="31" x="60.96" y="10.16" length="middle" rot="R180"/>
-<pin name="33" x="60.96" y="7.62" length="middle" rot="R180"/>
-<pin name="35" x="60.96" y="5.08" length="middle" rot="R180"/>
-<pin name="37" x="60.96" y="2.54" length="middle" rot="R180"/>
-<pin name="39" x="60.96" y="0" length="middle" rot="R180"/>
-<pin name="41" x="60.96" y="-2.54" length="middle" rot="R180"/>
-<pin name="43" x="60.96" y="-5.08" length="middle" rot="R180"/>
-<pin name="45" x="60.96" y="-7.62" length="middle" rot="R180"/>
-<pin name="47" x="60.96" y="-10.16" length="middle" rot="R180"/>
-<pin name="49" x="60.96" y="-12.7" length="middle" rot="R180"/>
-<pin name="51" x="60.96" y="-15.24" length="middle" rot="R180"/>
-<pin name="53" x="60.96" y="-17.78" length="middle" rot="R180"/>
-<pin name="GND_3" x="60.96" y="-22.86" length="middle" rot="R180"/>
-<pin name="A8" x="5.08" y="-30.48" length="middle" rot="R90"/>
-<pin name="A9" x="7.62" y="-30.48" length="middle" rot="R90"/>
-<pin name="A10" x="10.16" y="-30.48" length="middle" rot="R90"/>
-<pin name="A11" x="12.7" y="-30.48" length="middle" rot="R90"/>
-<pin name="A12" x="15.24" y="-30.48" length="middle" rot="R90"/>
-<pin name="A13" x="17.78" y="-30.48" length="middle" rot="R90"/>
-<pin name="A14" x="20.32" y="-30.48" length="middle" rot="R90"/>
-<pin name="A15" x="22.86" y="-30.48" length="middle" rot="R90"/>
-<pin name="A0" x="-20.32" y="-30.48" length="middle" rot="R90"/>
-<pin name="A1" x="-17.78" y="-30.48" length="middle" rot="R90"/>
-<pin name="A2" x="-15.24" y="-30.48" length="middle" rot="R90"/>
-<pin name="A3" x="-12.7" y="-30.48" length="middle" rot="R90"/>
-<pin name="A4" x="-10.16" y="-30.48" length="middle" rot="R90"/>
-<pin name="A5" x="-7.62" y="-30.48" length="middle" rot="R90"/>
-<pin name="A6" x="-5.08" y="-30.48" length="middle" rot="R90"/>
-<pin name="A7" x="-2.54" y="-30.48" length="middle" rot="R90"/>
-<pin name="NC" x="-43.18" y="-30.48" length="middle" rot="R90"/>
-<pin name="IOREF" x="-40.64" y="-30.48" length="middle" rot="R90"/>
-<pin name="RESET" x="-38.1" y="-30.48" length="middle" rot="R90"/>
-<pin name="3V3" x="-35.56" y="-30.48" length="middle" rot="R90"/>
-<pin name="5V_1" x="-33.02" y="-30.48" length="middle" rot="R90"/>
-<pin name="GND_2" x="-30.48" y="-30.48" length="middle" rot="R90"/>
-<pin name="GND_1" x="-27.94" y="-30.48" length="middle" rot="R90"/>
-<pin name="VIN" x="-25.4" y="-30.48" length="middle" rot="R90"/>
-<text x="-48.26" y="15.24" size="1.778" layer="94">&gt;NAME</text>
+<wire x1="0" y1="0" x2="0" y2="3.175" width="0.254" layer="94"/>
+<wire x1="0" y1="3.175" x2="0" y2="12.065" width="0.254" layer="94"/>
+<wire x1="0" y1="12.065" x2="0" y2="32.385" width="0.254" layer="94"/>
+<wire x1="0" y1="32.385" x2="0" y2="33.02" width="0.254" layer="94"/>
+<wire x1="0" y1="33.02" x2="0" y2="43.815" width="0.254" layer="94"/>
+<wire x1="0" y1="43.815" x2="0" y2="45.72" width="0.254" layer="94"/>
+<wire x1="0" y1="45.72" x2="0" y2="53.34" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="98.552" y2="0" width="0.254" layer="94"/>
+<wire x1="98.552" y1="0" x2="111.76" y2="0" width="0.254" layer="94"/>
+<wire x1="111.76" y1="0" x2="111.76" y2="53.34" width="0.254" layer="94"/>
+<wire x1="111.76" y1="53.34" x2="98.552" y2="53.34" width="0.254" layer="94"/>
+<wire x1="98.552" y1="53.34" x2="0" y2="53.34" width="0.254" layer="94"/>
+<wire x1="0" y1="3.175" x2="-2.032" y2="3.175" width="0.254" layer="94"/>
+<wire x1="-2.032" y1="3.175" x2="-2.032" y2="12.065" width="0.254" layer="94"/>
+<wire x1="-2.032" y1="12.065" x2="0" y2="12.065" width="0.254" layer="94"/>
+<wire x1="0" y1="43.815" x2="-7.62" y2="43.815" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="43.815" x2="-7.62" y2="32.512" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="32.512" x2="-7.62" y2="32.385" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="32.385" x2="0" y2="32.385" width="0.254" layer="94"/>
+<wire x1="98.552" y1="53.34" x2="98.552" y2="0" width="0.254" layer="94"/>
+<pin name="21-SCL" x="78.74" y="58.42" length="middle" rot="R270"/>
+<pin name="20-SDA" x="76.2" y="58.42" length="middle" rot="R270"/>
+<pin name="19-RX1" x="73.66" y="58.42" length="middle" rot="R270"/>
+<pin name="18-TX1" x="71.12" y="58.42" length="middle" rot="R270"/>
+<pin name="17-RX2" x="68.58" y="58.42" length="middle" rot="R270"/>
+<pin name="16-TX2" x="66.04" y="58.42" length="middle" rot="R270"/>
+<pin name="15-RX3" x="63.5" y="58.42" length="middle" rot="R270"/>
+<pin name="14-TX3" x="60.96" y="58.42" length="middle" rot="R270"/>
+<pin name="0-RX0" x="53.34" y="58.42" length="middle" rot="R270"/>
+<pin name="1-TX0" x="50.8" y="58.42" length="middle" rot="R270"/>
+<pin name="2" x="48.26" y="58.42" length="middle" rot="R270"/>
+<pin name="3" x="45.72" y="58.42" length="middle" rot="R270"/>
+<pin name="4" x="43.18" y="58.42" length="middle" rot="R270"/>
+<pin name="5" x="40.64" y="58.42" length="middle" rot="R270"/>
+<pin name="6" x="38.1" y="58.42" length="middle" rot="R270"/>
+<pin name="7" x="35.56" y="58.42" length="middle" rot="R270"/>
+<pin name="8" x="30.48" y="58.42" length="middle" rot="R270"/>
+<pin name="9" x="27.94" y="58.42" length="middle" rot="R270"/>
+<pin name="10" x="25.4" y="58.42" length="middle" rot="R270"/>
+<pin name="11" x="22.86" y="58.42" length="middle" rot="R270"/>
+<pin name="12" x="20.32" y="58.42" length="middle" rot="R270"/>
+<pin name="13" x="17.78" y="58.42" length="middle" rot="R270"/>
+<pin name="GND" x="15.24" y="58.42" length="middle" rot="R270"/>
+<pin name="AREF" x="12.7" y="58.42" length="middle" rot="R270"/>
+<pin name="SDA" x="10.16" y="58.42" length="middle" rot="R270"/>
+<pin name="SCL" x="7.62" y="58.42" length="middle" rot="R270"/>
+<pin name="5V_3" x="93.98" y="48.26" length="middle"/>
+<pin name="5V_2" x="116.84" y="50.8" length="middle" rot="R180"/>
+<pin name="22" x="93.98" y="45.72" length="middle"/>
+<pin name="23" x="116.84" y="45.72" length="middle" rot="R180"/>
+<pin name="24" x="93.98" y="43.18" length="middle"/>
+<pin name="25" x="116.84" y="43.18" length="middle" rot="R180"/>
+<pin name="26" x="93.98" y="40.64" length="middle"/>
+<pin name="28" x="93.98" y="38.1" length="middle"/>
+<pin name="30" x="93.98" y="35.56" length="middle"/>
+<pin name="32" x="93.98" y="33.02" length="middle"/>
+<pin name="34" x="93.98" y="30.48" length="middle"/>
+<pin name="36" x="93.98" y="27.94" length="middle"/>
+<pin name="38" x="93.98" y="25.4" length="middle"/>
+<pin name="40" x="93.98" y="22.86" length="middle"/>
+<pin name="42" x="93.98" y="20.32" length="middle"/>
+<pin name="44" x="93.98" y="17.78" length="middle"/>
+<pin name="46" x="93.98" y="15.24" length="middle"/>
+<pin name="48" x="93.98" y="12.7" length="middle"/>
+<pin name="50" x="93.98" y="10.16" length="middle"/>
+<pin name="52" x="93.98" y="7.62" length="middle"/>
+<pin name="GND_4" x="93.98" y="5.08" length="middle"/>
+<pin name="27" x="116.84" y="40.64" length="middle" rot="R180"/>
+<pin name="29" x="116.84" y="38.1" length="middle" rot="R180"/>
+<pin name="31" x="116.84" y="35.56" length="middle" rot="R180"/>
+<pin name="33" x="116.84" y="33.02" length="middle" rot="R180"/>
+<pin name="35" x="116.84" y="30.48" length="middle" rot="R180"/>
+<pin name="37" x="116.84" y="27.94" length="middle" rot="R180"/>
+<pin name="39" x="116.84" y="25.4" length="middle" rot="R180"/>
+<pin name="41" x="116.84" y="22.86" length="middle" rot="R180"/>
+<pin name="43" x="116.84" y="20.32" length="middle" rot="R180"/>
+<pin name="45" x="116.84" y="17.78" length="middle" rot="R180"/>
+<pin name="47" x="116.84" y="15.24" length="middle" rot="R180"/>
+<pin name="49" x="116.84" y="12.7" length="middle" rot="R180"/>
+<pin name="51" x="116.84" y="10.16" length="middle" rot="R180"/>
+<pin name="53" x="116.84" y="7.62" length="middle" rot="R180"/>
+<pin name="GND_3" x="116.84" y="2.54" length="middle" rot="R180"/>
+<pin name="A8" x="60.96" y="-5.08" length="middle" rot="R90"/>
+<pin name="A9" x="63.5" y="-5.08" length="middle" rot="R90"/>
+<pin name="A10" x="66.04" y="-5.08" length="middle" rot="R90"/>
+<pin name="A11" x="68.58" y="-5.08" length="middle" rot="R90"/>
+<pin name="A12" x="71.12" y="-5.08" length="middle" rot="R90"/>
+<pin name="A13" x="73.66" y="-5.08" length="middle" rot="R90"/>
+<pin name="A14" x="76.2" y="-5.08" length="middle" rot="R90"/>
+<pin name="A15" x="78.74" y="-5.08" length="middle" rot="R90"/>
+<pin name="A0" x="35.56" y="-5.08" length="middle" rot="R90"/>
+<pin name="A1" x="38.1" y="-5.08" length="middle" rot="R90"/>
+<pin name="A2" x="40.64" y="-5.08" length="middle" rot="R90"/>
+<pin name="A3" x="43.18" y="-5.08" length="middle" rot="R90"/>
+<pin name="A4" x="45.72" y="-5.08" length="middle" rot="R90"/>
+<pin name="A5" x="48.26" y="-5.08" length="middle" rot="R90"/>
+<pin name="A6" x="50.8" y="-5.08" length="middle" rot="R90"/>
+<pin name="A7" x="53.34" y="-5.08" length="middle" rot="R90"/>
+<pin name="NC" x="12.7" y="-5.08" length="middle" rot="R90"/>
+<pin name="IOREF" x="15.24" y="-5.08" length="middle" rot="R90"/>
+<pin name="RESET" x="17.78" y="-5.08" length="middle" rot="R90"/>
+<pin name="3V3" x="20.32" y="-5.08" length="middle" rot="R90"/>
+<pin name="5V_1" x="22.86" y="-5.08" length="middle" rot="R90"/>
+<pin name="GND_2" x="25.4" y="-5.08" length="middle" rot="R90"/>
+<pin name="GND_1" x="27.94" y="-5.08" length="middle" rot="R90"/>
+<pin name="VIN" x="30.48" y="-5.08" length="middle" rot="R90"/>
+<text x="7.62" y="40.64" size="1.778" layer="94">&gt;NAME</text>
 </symbol>
 <symbol name="NANO">
 <description>Arduino en su version nano, ATmega328, 8 entradas analogicas, miniusb, 6 salidas PWM</description>
