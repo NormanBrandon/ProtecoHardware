@@ -3841,6 +3841,19 @@ design rules under a new name.</description>
 <contactref element="U$14" pad="9"/>
 <contactref element="ARDUINO-MEGA" pad="9"/>
 </signal>
+<<<<<<< HEAD
+<signal name="N$106">
+<contactref element="U$8" pad="OUTA"/>
+</signal>
+<signal name="N$107">
+<contactref element="U$8" pad="OUTB"/>
+</signal>
+<signal name="N$108">
+<contactref element="U$8" pad="M2"/>
+</signal>
+<signal name="N$109">
+<contactref element="U$8" pad="M1"/>
+=======
 <signal name="A14">
 <contactref element="ARDUINO-MEGA" pad="A14"/>
 <contactref element="U$9" pad="E12"/>
@@ -3902,6 +3915,7 @@ design rules under a new name.</description>
 <signal name="NC">
 <contactref element="U$14" pad="NC"/>
 <contactref element="ARDUINO-MEGA" pad="NC"/>
+>>>>>>> 32289dc7623abd72827f35a87078b449b2134c4d
 </signal>
 <signal name="GND2">
 <polygon width="0.1524" layer="16" isolate="0.6096">

@@ -1,0 +1,136 @@
+Conversión de STEP a Solid Edge
+Fecha: miércoles,mayo 29,2019 04:28p. m.
+Archivo fuente: C:\Users\NormanBrandon\Downloads\Arduino_Mega_2560.step
+Autor: kicad StepUp
+Organización: ksu MCAD
+Sistema de origen: FreeCAD
+
+Equipo:
+Procesador: AMD A8-6410 APU with AMD Radeon R5 Graphics    
+Sistema operativo: Windows 8
+Memoria instalada: 6.96 GB
+
+Información del software
+Versión de Parasolid: 29.0.122
+Versión de PSBodyShop: 29.0.68
+Versión de Step Adapter: 2.0.152
+Versión de Solid Edge: 109.00.00.111 x64
+
+Opciones de importación de STEP
+Importar cuerpos facetados: Activado
+Importar cuerpos revisados: Desactivado
+Importar curvas: Activado
+Importar sin guardar: Activado
+Importar varios cuerpos como archivo de una pieza: Activado
+Importar superficies unidas: Activado
+Importar sólidos booleanos: Activado
+Crear operación base: Activado
+Simplificar geometría: Activado
+Importar curvas estampadas: Activado
+Importar unidad de disco: C:
+Importar superficies unidas: Activado
+Importar superficies: Activado
+Importar vía de acceso de salida: C:\Users\NormanBrandon\Downloads
+Importar con vía de acceso de salida predeterminada habilitada: Activado
+Importar vía de acceso: 
+
+Convirtiendo a tipos de datos Parasolid...
++Empezar conjunto: 1
++Creado archivo de conjunto SE C:\Users\NormanBrandon\Downloads\Arduino_Mega_2560.asm
+|--+Empezar conjunto: 2
+|--+Creado archivo de conjunto SE C:\Users\NormanBrandon\Downloads\Board_Geoms.asm
+|  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\Pcb.par
+|  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\topTracks.par
+|  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\botTracks.par
+|  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\topSilks.par
+|--+Piezas totales: 2,290
+|--+Conjuntos: 0
+|--+Cuerpos sólidos: 2
+|--+Cuerpos de hoja: 2,288
+|--+Terminar conjunto: 2
+|--+Empezar conjunto: 2
+|--+Creado archivo de conjunto SE C:\Users\NormanBrandon\Downloads\Step_Models.asm
+|  |--+Empezar conjunto: 3
+|  |--+Creado archivo de conjunto SE C:\Users\NormanBrandon\Downloads\Top.asm
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\X2_USB_type_b_5C806054.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\ICSP2_PinHeader_2x03_P254mm_Vertical_5C805C79.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\PWML1_8_PORT_HEADER_5C805C9E.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\PWMH1_8_PORT_HEADER_5C805CEA.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\PC1__47uf_CAP_Dcase_cp_5C805D36.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\PC2__47uf_CAP_Dcase_cp_5C805D50.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\ON1_LED-WR-1206-GREEN_5C805D6A.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\D1_m7_diode_5C805D76.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\X1_Power_jack_5C805D85.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\IC1_Circuit_integre_LD50_5C805DB9.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\POWER1_6_PORT_HEADER_5C805DD0.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\C3_CAPA-0603_5C805E0A[2].par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\C6_CAPA-0603_5C805E18.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\C2_CAPA-0603_5C805E26.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\ADCL1_8_PORT_HEADER_5C805E34.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\COM_8_PORT_HEADER_5C805E80.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\IC3_ATMEGA2560-16AU_5C805ECC.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\C5_CAPA-0603_5C805FAA.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\C4_CAPA-0603_5C805FB8.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\ADCH1_8_PORT_HEADER_5C805FC6.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\C1_CAPA-0603_5C806012.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\C8_CAPA-0603_5C806020.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\C13_CAPA-0603_5C80602E.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\RX1_LED-WR-1206-Yellow_5C80603C.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\TX1_LED-WR-1206-Yellow_5C806048.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\F1_Fusible_rearmable_mf-msmf050-2_5C806061.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\C9_CAPA-0603_5C80606A.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\L2_LED-WR-1206-Yellow_5C806078.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\C7_CAPA-0603_5C806084.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\T2_Semiconducteur_Fairchild_5C806092.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\IC5_LMH6658MA_NOPB_5C80609F.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\C12_CAPA-0603_5C8060B9.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\C11_CAPA-0603_5C8060C7.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\XIOH1_PinSocket_2x08_P254mm_Vertical_5C8060D5.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\XIOL1_PinSocket_2x08_P254mm_Vertical_5C806131.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\JP1_PinSocket_1x01_P254mm_Vertical_5C80618D.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\JP2_PinSocket_1x01_P254mm_Vertical_5C80619A.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\JP3_PinSocket_1x01_P254mm_Vertical_5C8061A7.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\JP4_PinSocket_1x01_P254mm_Vertical_5C8061B4.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\C10_CAPA-0603_5C8061D3.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\IC4_atmega16u2_5C8061E1.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\IC4_ATMEGA16U2_5C8061E1[2].par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\ICSP1_PinHeader_2x03_P254mm_Vertical_5C806266.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\Y2_Quartz_16MHz_5C80628B.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\L1_blm21_5C8062A9.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\Z1_VARISTOR_CG0603MLC-05E_5C8062B5.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\Z2_VARISTOR_CG0603MLC-05E_5C8062C0.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\Y1_Quartz_16MHz_5C8062DD.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\R1_Resistance_105_5C8062E9.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\RN4_R_Array_Convex_4x0603_5C8062F7.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\RN1_R_Array_Convex_4x0603_5C806331.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\RN3_R_Array_Convex_4x0603_5C806350.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\RN2_R_Array_Convex_4x0603_5C806371.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\RESET1_RESET_BUTTON_5C80638C.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\R2_Resistance_105_5C8063AC.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\Q1_A68B7E88-986F-45B9-BD79-59358D84B993_5C8063BA.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\Q2_A68B7E88-986F-45B9-BD79-59358D84B993_5C8063C7.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\C14_CAPA-0603_5C8063D4.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\C14_CAPA-0603_5C8063D4[2].par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\C15_CAPA-0603_5C8063E2.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\C16_Condensateur_MLC_5C8063F0.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\C17_Condensateur_MLC_5C8063FE.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\IC6_lmv358_5C80640C.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\R3_R_0603_1608Metric_5C806424.par
+|  |  |--+Creado archivo de pieza SE C:\Users\NormanBrandon\Downloads\R4_RESC-0603_5C806432.par
+|  |--+Piezas totales: 600
+|  |--+Conjuntos: 0
+|  |--+Cuerpos sólidos: 600
+|  |--+Cuerpos de hoja: 0
+|  |--+Terminar conjunto: 3
+|--+Piezas totales: 1
+|--+Conjuntos: 1
+|--+Cuerpos sólidos: 0
+|--+Cuerpos de hoja: 0
+|--+Terminar conjunto: 2
++Piezas totales: 2
++Conjuntos: 2
++Cuerpos sólidos: 0
++Cuerpos de hoja: 0
++Terminar conjunto: 1
+Proceso de conversión completado
+Tiempo total requerido para convertir y posprocesar:00 : 11 : 13
