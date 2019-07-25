@@ -1,0 +1,39 @@
+Conversión de STEP a Solid Edge
+Fecha: Saturday,July 20,2019 06:46PM
+Archivo fuente: C:\Users\NormanBrandon\Desktop\ProtecoHadware\RobotMóvil-Autonomo\DiseñoMecánico\DipSW.STEP
+Autor: UTILISATEUR
+Organización: Hewlett-Packard Company
+Sistema de origen: SolidWorks 2016
+
+Equipo:
+Procesador: AMD A8-6410 APU with AMD Radeon R5 Graphics    
+Sistema operativo: Windows 8
+Memoria instalada: 6.96 GB
+
+Información del programa
+Versión de Parasolid: 30.1.256
+Versión de PSBodyShop: 30.1.94
+Versión de Step Adapter: 4.0.40
+Versión de Solid Edge: 219.00.01.006 x64
+
+Opciones de importación de STEP
+Importar cuerpos facetados: Activado
+Importar cuerpos revisados: Desactivado
+Importar curvas: Activado
+Importar sin guardar: Activado
+Importar varios cuerpos como archivo de una pieza: Activado
+Importar superficies unidas: Activado
+Importar sólidos booleanos: Activado
+Crear operación base: Activado
+Simplificar geometría: Activado
+Importar curvas estampadas: Activado
+Importar unidad de disco: C:
+Importar superficies unidas: Activado
+Importar superficies: Activado
+Importar vía de acceso de salida: C:\Users\NormanBrandon\Desktop\ProtecoHadware\RobotMóvil-Autonomo\DiseñoMecánico
+Importar con vía de acceso de salida predeterminada habilitada: Activado
+Importar vía de acceso: 
+
+Convirtiendo a tipos de datos Parasolid...
+Proceso de conversión completado
+Tiempo total requerido para convertir y posprocesar:00 : 00 : 04

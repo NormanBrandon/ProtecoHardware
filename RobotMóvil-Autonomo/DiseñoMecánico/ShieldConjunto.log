@@ -1,0 +1,31 @@
+Traducción de Solid Edge a STL
+Fecha: domingo,julio 21,2019 10:06p. m.
+Archivo fuente:C:\Users\NormanBrandon\Desktop\ProtecoHadware\RobotMóvil-Autonomo\DiseñoMecánico\ShieldConjunto.par.asm
+Archivo de salida: C:\Users\NormanBrandon\Desktop\ProtecoHadware\RobotMóvil-Autonomo\DiseñoMecánico\ShieldConjunto.stl
+Sistema fuente: SOLID EDGE
+
+Hardware:
+Procesador: AMD A8-6410 APU with AMD Radeon R5 Graphics    
+Sistema operativo: Windows 8
+Memoria: 6.96 GB
+
+Información sobre el software:
+Versión de Parasolid: 30.1.256
+Versión de BodyShop: 30.1.94
+Versión de Solid Edge: 219.00.01.006 x64
+
+Opciones de exportación de STL:
+Formato de la carpeta de salida:BINARY
+Exportar las piezas visualizadas: Desactivado
+Opción estructural: Monolithic
+Exportar unidades: Inch
+Exportar el valor de la tolerancia:0.050000
+Exportar el tipo de tolerancia: Custom
+Exportar el valor del ángulo plano de superficie:0.523599
+
+Avance en la traducción:
+Fase 1 de 2 recuperando la información sobre Parasolid...
+Fase 2 de 2 traduciendo Parasolid a tipos de datos externos...
+Número de archivos STL creados: 1
+Se completó el proceso de traducción
+Tiempo necesario para traducir:00 : 00 : 10
