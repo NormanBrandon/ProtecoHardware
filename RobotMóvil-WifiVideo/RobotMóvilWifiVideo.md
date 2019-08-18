@@ -43,13 +43,17 @@ Debido a que la mayoría de robots los patrones para hacer que el robot se mueva
 
 ### Primer Propuesta Video-Server
 Como lo dice su nombre se hace un servidor donde se transmita video por medio de una red Wifi local.
+
 #### Material
 ##### Requerido
-- Raspberry Pi 3 B/B+ ó Raspberry Pi 4
-- Módulo de cámara para Raspberry ó una USB Webcam 
+- Raspberry Pi 3 B/B+ ó Raspberry Pi 4.
+- Módulo de cámara para Raspberry ó una USB Webcam. 
+- Conexión a internet.
 ##### El que se utilizó
-- Raspberry Pi 3 B+
-- Módulo de cámara para Raspberry v2
+- Raspberry Pi 3 B+.
+- Módulo de cámara para Raspberry v2.
+- Conexión a internet.
+
 #### Desarrollo
 Para poder iniciar debemos conectar nuestra Rapsberry a todos los perifericos necesarios para poder usarla (Monitor, teclado, mouse,etc.) incluyendo la cámara que vayamos a usar.
 
@@ -105,5 +109,18 @@ Pero si quieres entrar a la configuracion durante la transmisión:
 1. Verifica la ip de tu raspberry con **ifconfig**.
 2. En tu raspberry o cualquier otro dispositivo (Según se haya configurado), en un navegador poner la ip de la raspberry con el puerto de la transmisión, en mi caso fue **192.168.0.11:8080**.
 3. Con eso ya puedes configurar la transmision en vivo.
+
+---
+
+### Segunda Propuesta Vlc-Raspivid
+Como esta en el titulo usaremos Vlc (un reproductor multimedia) y raspivid (comando base para usar el modulo de cámara) para hacer una transmisión de video por medio de una red Wifi local.
+
+#### Material
+- Raspberry Pi 3 B/B+ ó Raspberry Pi 4.
+- Módulo de cámara para Raspberry.
+- Conexión a internet.
+
+#### Desarrollo
+
 
 ---
