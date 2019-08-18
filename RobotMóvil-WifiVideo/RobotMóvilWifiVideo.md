@@ -78,7 +78,7 @@ Es recomendable hacer un respaldo del archivo original por si un problema llegas
 
 #### Capture device options
 - **width**.- Largo de las imágenes del video en pixeles. (640).
-- **height**.- Ancho de las imágenes del video en pixeles. (48.
+- **height**.- Ancho de las imágenes del video en pixeles. (480).
 - **framerate**.- Rango de FPS entre 2-100 pero especifica que no hay limites ya que dependerá de la cámara y la velocidad de la conexion. (100).
 - **brightness**.- Brillo de las imágenes del video. (100).
 
@@ -121,6 +121,60 @@ Como esta en el titulo usaremos Vlc (un reproductor multimedia) y raspivid (coma
 - Conexión a internet.
 
 #### Desarrollo
+Para poder iniciar debemos conectar nuestra Rapsberry a todos los perifericos necesarios para poder usarla (Monitor, teclado, mouse,etc.) incluyendo la cámara que vayamos a usar.
+
+Prendemos la Raspberry y una vez encendida lo primero que haremos sera conectarla a una red de internet y luego conectaremos la cámara y verificamos que este habilitada en **Preferencias > Configuración de la Raspberry Pi > Interfaces** , si no la habilitamos.
+
+Luego procederemoa a actualizar los repositorios (en caso de no se haya actualizado hace mucho), abrimos la terminal **Ctrl+t** y tecleamos **sudo apt-get update**. 
+
+Una vez ya actualizados nuestros repositorios instalaremos **VLC** con el comando **sudo apt-get install vlc**. Es lo único que los instalaremos ya que **raspivid** es un comando por defecto de Raspbian.
+
+Luego ejecutaremos el siguiente comando para realizar la trasnmisión:
+- **raspivid -o - -t 0 -n -hf -w 640 -h 480 -fps 30|cvlc -vvv stream:///dev/stdin --sout '#standard{access=http,mux=ts,dst=:8080}' :demux=h264**
+
+Donde:
+- **-o -**  -> Le especificamos que no guardara en ningun lado el video a grabar.
+- **-t**  -> Bandera para especificar el tiempo de grabacion, en este caso 0 para que sea infinito.
+- **-n**  -> Bandera para especificar que no mande el video a la salida de HDMI, en caso de verla se debera omitir.
+- **-hf**  -> Asignamos el video de manera horizontal.
+- **-w**  -> Largo de las imágenes del video en pixeles en este caso 640.
+- **-h**  -> Ancho de las imágenes del video en pixeles en este caso 480.
+- **-fps**  -> Fps en los que se transmitira entre un rango de 2-30 fps, en este caso se usó 30.
+- **|**  -> Redirige el flujo de datos de todo lo anterior a el siguiente comando **cvlc**.
+- **cvlc**  -> Es el comando para la consola de vlc.
+- **-vvv**  -> Bandera para especificar de donde tomar el archivo para transmitir, en este caso la entrada estandar **stream:///dev/stdin** (la cámara y raspivid).
+- **--sout**  -> Especifica la salida de la transmision, en este caso por el protocolo http usando la ip de la Raspberry y el puerto 8080, **'#standard{access=http,mux=ts,dst=:8080}'**.
+- **:demux=h264**  -> Especifica como esta codificado el video que se transmite para poder decodificarlo, en este caso se codifica como un video H264.
+
+Para más info en:
+- **raspivid**  -> Teclear en terminal **raspivid -?**.
+- **cvlc**  -> Teclear en terminal **man cvlc**.
+- [**H264**](https://fileinfo.com/extension/h264).
+
+Ya para vizualizar la transmisión se debe saber la ip de la Rapsberry (**ifconfig**) e instalar VLC en:
+#### PC (Windows,Mac ó Linux)
+- Descargar e instalar [**VLC**](https://www.videolan.org/vlc/).
+- Ejecutar VLC e irnos a **Media > Open Network Stream > Network**.
+- Ya una vez en Network teclearemos **http://xxx.xxx.xxx.xxx:pppp**. 
+  - Donde **xxx.xxx.xxx.xxx** es la dirección ip de nuestra Raspberry y **pppp** el puerto por donde sale la transmión.
+- Le daremos al boton de play y listo, visualizaremos la transmisión en nuestra Pc.
+
+#### Movil (Android ó IOS)
+- Descargar e instalar **VLC**.
+  - [**Android**](https://play.google.com/store/apps/details?id=org.videolan.vlc) ó [**IOS**](https://apps.apple.com/app/apple-store/id650377962).
+- Abrir la app e irnos a la sección de **Stream**.
+- Ya una vez en Stream teclearemos **http://xxx.xxx.xxx.xxx:pppp**. 
+  - Donde **xxx.xxx.xxx.xxx** es la dirección ip de nuestra Raspberry y **pppp** el puerto por donde sale la transmión.
+- Le daremos al boton de play y listo, visualizaremos la transmisión en nuestro movil.
+
+Notas:
+- No solo es indispensable el uso de VLC para visualizar la transmisión, puede hacerse con cualquier software que soporte este tipo de transmisión, un ejemplo es la app que hizo este [chico](http://helloraspberrypi.blogspot.com/2016/07/stream-video-from-raspberry-pi-3-camera.html) que se probó y resulto efectiva aunque el video tenia un leve retraso (lag).
+- Se intentó demonizar el comando dentro de un script de shell, pero no se logro por falta de tiempo, así que esta son refencias para no olvidar el punto donde se quedó este paso.
+  - http://www.diegoacuna.me/how-to-run-a-script-as-a-service-in-raspberry-pi-raspbian-jessie/
+  - https://bash.cyberciti.biz/guide/Daemons
+
+
+
 
 
 ---
