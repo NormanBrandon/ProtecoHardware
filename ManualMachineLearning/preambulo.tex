@@ -1,0 +1,37 @@
+\lstset{language=Matlab}
+\lhead{\textit{Facultad de Ingeniería}}
+\rhead{\textit{Programa de Tecnología en Cómputo}}
+\pagestyle{fancy}
+
+\usepackage{color}
+
+\definecolor{miverde}{rgb}{0,0.6,0}
+\definecolor{migris}{rgb}{0.5,0.5,0.5}
+\definecolor{mimalva}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+	backgroundcolor=\color{white},   % Indica el color de fondo; necesita que se añada \usepackage{color} o \usepackage{xcolor}
+	captionpos=b,                    % Establece la posición de la leyenda del cuadro de código
+	commentstyle=\color{miverde},    % Estilo de los comentarios
+	escapeinside={\%*}{*)},          % Si quieres incorporar LaTeX dentro del propio código
+	extendedchars=true,              % Permite utilizar caracteres extendidos no-ASCII; solo funciona para codificaciones de 8-bits; para UTF-8 no funciona. En xelatex necesita estar a true para que funcione.
+	frame=single,	                   % Añade un marco al código
+	%keepspaces=true,                 % Mantiene los espacios en el texto. Es útil para mantener la indentación del código(puede necesitar columns=flexible).
+	keywordstyle=\color{blue},       % estilo de las palabras clave
+	language=Matlab,                 % El lenguaje del código
+	otherkeywords={*,...},           % Si se quieren añadir otras palabras clave al lenguaje
+	numbers=left,                    % Posición de los números de línea (none, left, right).
+	numbersep=5pt,                   % Distancia de los números de línea al código
+	numberstyle=\small\color{migris}, % Estilo para los números de línea
+	rulecolor=\color{black},         % Si no se activa, el color del marco puede cambiar en los saltos de línea entre textos que sea de otro color, por ejemplo, los comentarios, que están en verde en este ejemplo
+	%showspaces=true,                % Si se activa, muestra los espacios con guiones bajos; sustituye a 'showstringspaces'
+	showstringspaces=false,          % subraya solamente los espacios que estén en una cadena de esto
+	%showtabs=true,                  % muestra las tabulaciones que existan en cadenas de texto con guión bajo
+	stepnumber=1,                    % Muestra solamente los números de línea que corresponden a cada salto. En este caso: 1,3,5,...
+	stringstyle=\color{mimalva},     % Estilo de las cadenas de texto
+	tabsize=2,	                   % Establece el salto de las tabulaciones a 2 espacios
+	title=\lstname                   % muestra el nombre de los ficheros incluidos al utilizar \lstinputlisting; también se puede utilizar en el parámetro caption
+}
+
+\author{Armando Rivera}
+\title{Machine Learning}
