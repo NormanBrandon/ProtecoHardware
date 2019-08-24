@@ -1,2 +1,2 @@
-# ProtecoHadware
-Repositorio Provisional del Proyecto de La sección de Hadware
+# ProtecoHardware
+Repositorio Provisional del Proyecto de La sección de Hardware
