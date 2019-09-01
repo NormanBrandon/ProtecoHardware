@@ -73,7 +73,7 @@ Existen diferentes bibliotecas dedicadas al uso de la TFT LCD Shield. Y dependie
 #include <SPFD5408_TouchScreen.h>      //Para acciones del touch
 ```
 
-Descargar: [biblioteca SPFD5408](https://github.com/JoaoLopesF/SPFD5408)
+Descargar: [biblioteca SPFD5408](https://github.com/JoaoLopesF/SPFD5408)    
 Es una modificación de la biblioteca de Adafruit
 
 Luego definimos los pines de la LCD. Asignamos los valores predeterminados. Usaremos estas definiciones para iniciar la comunicación con la pantalla
@@ -99,7 +99,7 @@ Para comenzar el programa, hay dos métodos importantes que debemos usar, los cu
 void setup() {
   
   tft.reset(); //Reseteamos 
-  tft.begin(0x9341); // My LCD uses LIL9341 Interface driver IC
+  tft.begin(0x9341);
 
 }
 ```
@@ -130,7 +130,11 @@ ST7781 240x320 ID = 0x7783
 ST7789V 240x320 ID = 0x7789
 ```
 
-[Subir](#top)
+La pantalla puede tener diferentes rotaciones, las cuales están asociadas con índices: 0 -> vertical, 1 -> horizontal, 2 -> vertical invertida, 3 -> horizontal invertida. Por defecto tenemos el valor de 0, pero podemos modificarlo al inicio del programa, en el *setup()* mediante la siguiente función:
+
+```C++
+tft.setRotation(indice);
+```
 
 <a name="graficos"></a>
 ### Gráficos
@@ -151,12 +155,167 @@ Algunos ejemplos de colores básicos que podemos usar son:
 
 #### Texto
 
+Por defecto tenemos un *tamaño* 1, que equivale a 7 pixeles de altura; los diferentes tamaños están asociados a números enteros a partir del 1; cada tamaño aumenta 7 pixeles a la altura del texto. *El cursor* posee una coordenada asociada a la esquina superior izquierda del texto por escribir; inicialmente es de (0,0). Y en cuanto al *color*, es negro por default. Podemos cambiar cualquiera de los valores anteriores con las siguientes funciones:
+
+```C++
+tft.setCursor(posicionX, posicionY); //Cambiamos la coordenada del cursor
+tft.setTextSize(int_tamano); //Cambiamos el tamaño del texto
+tft.setTextColor(color); //Cambiamos el color del texto
+```
+
+Para mostrar el texto en pantalla tenemos dos opciones:
+
+```C++
+tft.print("texto 1");
+tft.println("texto con salto de línea al final")
+```
+
+Si el texto llega al borde de la pantalla, se cortará y continuará una línea abajo.
+
 #### Figuras
 
-[Subir](#top)
+Podemos **dibujar** diferentes elementos de manera muy sencilla, indicando sus coordenadas y el color de la línea.
+
+```C++
+//Para dibujar una línea, indicamos las coordenadas donde comienza y donde termina, así como el color
+tft.drawLine(X0, Y0, Xf, Yf, color);
+//La línea puede ser Vertical u Horizontal, entonces sólo será necesario indicar el punto de partida, la longitud y el color
+tft.drawFastVLine(X0, Y0, longitud, color);
+tft.drawFastHLine(X0, Y0, longitud, color);
+//Para dibujar un círculo indicamos las coordenadas del centro, el radio en pixeles, y el color;
+tft.drawCircle(Xcentro, Ycentro, radio, color);
+//Para dibujar un rectángulo damos la coordenadas de la esquina superior izquierda, base y altura en pixeles, y color
+tft.drawRect(X0, Y0, base, altura, color);
+//Podemos hacer un retángulo con esquinas redondeadas agregando el radio de dicha curvatura
+tft.drawRoundRect(X0, Y0, base, altura, radioCurva, color);
+//Para el caso de triángulo indicamos las cordenadas de sus tres vertices y el color
+tft.drawTriangle(X1, Y1, X2, Y2, X3, Y3, color);
+```
+
+Si deseamos "**pintar las figuras**", sólo cambiamos *draw* por *fill*
+
+```C++
+//Si quisieramos darle color a toda la pantalla podríamos pintar un rectángulo enorme, de 240x320
+//Otra ocpión más simple es usar la siguiente función:
+tft.fillScreen(color);
+//Para dibujar un círculo indicamos las coordenadas del centro, el radio en pixeles, y el color;
+tft.fillCircle(Xcentro, Ycentro, radio, color);
+//Para dibujar un rectángulo damos la coordenadas de la esquina superior izquierda, base y altura en pixeles, y color
+tft.fillRect(X0, Y0, base, altura, color);
+//Podemos hacer un retángulo con esquinas redondeadas agregando el radio de dicha curvatura
+tft.fillRoundRect(X0, Y0, base, altura, radioCurva, color);
+//Para el caso de triángulo indicamos las cordenadas de sus tres vertices y el color
+tft.fillTriangle(X1, Y1, X2, Y2, X3, Y3, color);
+```
+
+#### Botones
+
+Otra interesante opción es la de **dibujar botones**. En la biblioteca podemos encontrar a la clase *Adafruit_GFX_Button*, que hace más sencillo este proceso.    
+Para instanciarlo, el primer argumento es un apuntor a *Adafruit_GFX*, donde le mandaremos la dirección de la *Adafruit_TFTLCD* que instanciamos al inicio del programa, *tft*, como lo hemos estado manejando en el manual. El resto es como dibujar un rectangulo redondeado, sólo que agregamos los colores de fondo y de relieve del botón, el tamaño y el color del texto, y la cadena que será escrita.
+
+Primero lo declaramos, fuera del *setup* y del *loop* para poder ocuparlo en ambas funciones:
+```C++
+Adafruit_GFX_Button btn1 = Adafruit_GFX_Button();
+```
+
+Entonces debemos llamar otros dos métodos antes de poder usar el botón. Uno para inicilizarlo y luego otro para dibujarlo
+
+```C++
+void initButton(&tft, X0, Y0, base, altura, colorRelieve, colorFondo, colorTexto, "Texto del boton", tamanoTexto);
+void drawButton();
+```
+
+Es importante considerar el orden en el que mostramos texto o diferentes figuras, ya que todo lo que se mande a la pantalla será sobrepuesto.
 
 <a name="touch"></a>
 ### Touch
+
+Para poder trabajar con el panel táctil usamos la biblioteca *SPFD5408_TouchScreen.h*. Una vez incluida, lo primero que debemos de hacer para poder leer las pulsaciones es instanciar el panel. Recordemos algunos de las definiciones que hicimos de los pines que vamos a ocupar.
+
+```C++
+#define YP A1
+#define XM A2
+#define YM 7
+#define XP 6
+
+//Instanciamos el panel
+TouchScreen ts = TouchScreen(XP, YP, XM, YM, 300);
+```
+
+El último parámetro del constructor de *TouchScreen* se asocia a la sensibilidad del panel. Entre más preciso sea el valor, mejor detectadas serán las pulsaciones. Puede medirse con ayuda de un multímetro, revisando con la resistencia que hay entre XP(el pin digital 6) y XM(el pin analógico 2).
+
+Otras definiciones importantes son los valores de calibración para la lectura de pulsaciones en el panel, ya que lo primero que se nos devolverá serán valores entre 0 1023, los cuales debemos asociar a coordenadas en la pantalla, para saber dónde se presionó. Para el caso de nuestra TFT, los valores son los siguientes:
+
+```C++
+#define TS_MIN_X 125
+#define TS_MIN_Y 85
+#define TS_MAX_X 965
+#define TS_MAX_Y 905
+
+//Igualmente podemos dar valores mínimo y máximo de presión en z
+#define PRESION_MIN 10
+#define PRESION_MAX 1000
+
+//Declaramos variables para los valores de coordenada que tendrán las pulsaciones
+int X, Y;
+```
+
+***Nota:*** estos valores cambian según la rotación de la pantalla; los anteriores corresponden a una de índice 2. Podemos elegir la rotación que deseemos e indicarlo en el *setup()* del código, pero es importante incluir la instrucción `tft.setRotation(2);` al principio del *loop()*. Esto no cambiará la rotación inicial, pero hará que la calibración se efectúe de manera correcta, según los valores que estamos usando.
+
+Finalmente debemos de obtener las coordenadas del punto en el que se haga presión sobre el panel de la TFT. Por buenas prácticas, agruparemos el código necesario en una función, la cual devolverá un objeto de la clase TSPoint. 
+
+```C++
+TSPoint obtenerPunto() {
+  TSPoint p; //Instanciamos un objeto de la clase TSPoint
+  
+  do {
+    p = ts.getPoint(); //Tomamos los valores de coordenadas, que inicialmente erán valores entre 0 y 1023
+    //Los pines XM y YP son usados por la biblioteca como pines de salida
+    pinMode(XM, OUTPUT);
+    pinMode(YP, OUTPUT);
+  } while((p.z < PRESION_MIN ) || (p.z > PRESION_MAX)); //Revisamos que los valores de presión se encuentre en el rango
+
+  //Modificaremos los valores de p.x y p.y con un mapeo,
+  //considerando nuestros valores de calibración y las dimensiones de la LCD
+  p.x = map(p.x, TS_MIN_X, TS_MAX_X, 0, 320);
+  p.y = map(p.y, TS_MIN_Y, TS_MAX_Y, 0, 240);
+  
+  //Finalmente retornamos el punto modificado
+  return p;
+}
+```
+
+Así, en nuetro *loop()* sólo debería de ir lo suiguiente:
+
+```C++
+TSPoint p = obtenerPunto();
+X = p.y; //Invertimos los valores por el comportamiento que tiene nuestro modelo de TFT
+Y = p.x; //para que la lectura se haga de manera correcta. Esto varía de un modelo a otro
+```
+
+#### Botones
+
+En la parte de gráficos se mencionó la posibilidad de dibujar botones, sin embargo no hay un método incluido en la clase para detectar directamente si se presionó o no. Para esto debemos de revisar si los valores de coordenada de una pulsación se encuentran dentro del dibujo del botón. De ahí, hay un método para indicarle al botón que fue pulsado, y otro para saber si está presionado. Recoordemos la instancia del botón y pensemos en un ejemplo.
+
+```C++
+void initButton(&tft, X0, Y0, base, altura, colorRelieve, colorFondo, colorTexto, "Texto del boton", tamanoTexto);
+```
+
+```C++
+if(X > X0 && X < X0+base && Y > Y0 && Y < Y0+altura){ //Si los valores de coordenada de la pulsación están dentro del botón
+  btn1.press(true); //Le indicamos al botón que fue presionado
+} else {
+  btn1.press(false); //Pensemos que si se toca en cualquier otro lado, el botón deja de estar presionado
+}
+  
+if(btn1.isPressed()){ //isPressed arroja un booleano, según esté o no presionado el botón
+  Serial.println("El botón está presionado");
+}else{
+  Serial.println("El botón no está presionado");
+}
+```
+
+### SD. Visualización de imágenes
 
 //
 
@@ -165,10 +324,10 @@ Algunos ejemplos de colores básicos que podemos usar son:
 <a name="referencias"></a>
 ## Referencias
 
-https://www.ecured.cu/LCD_(pantalla_de_cristal_l%C3%ADquido)#Inconvenientes
-http://www.informaticamoderna.com/Pantalla_TFT.htm#ani
-https://electronicavm.wordpress.com/2015/03/05/tft-lcd-touch-2-4-shield-para-arduino-uno/#more-2209
-https://circuitdigest.com/microcontroller-projects/arduino-touch-screen-calculator-tft-lcd-project-code
-https://github.com/JoaoLopesF/SPFD5408
+https://www.ecured.cu/LCD_(pantalla_de_cristal_l%C3%ADquido)#Inconvenientes    
+http://www.informaticamoderna.com/Pantalla_TFT.htm#ani    
+https://electronicavm.wordpress.com/2015/03/05/tft-lcd-touch-2-4-shield-para-arduino-uno/#more-2209    
+https://circuitdigest.com/microcontroller-projects/arduino-touch-screen-calculator-tft-lcd-project-code    
+https://github.com/JoaoLopesF/SPFD5408    
 
 [Subir](#top)
