@@ -8,6 +8,7 @@
 * [Programación](#programacion)
     * [Gráficos](#graficos)
     * [Touch](#touch)
+* [Visualización de imágenes](#sd)
 * [Referencias](#referencias)
 
 <a name="que_es_y_como_funciona"></a>
@@ -58,7 +59,6 @@ Así, para el caso del Arduino Uno, sólo nos quedan libres los pines A5, 0 (Tx)
 
 * **Limpieza.** La manera recomendada para la limpieza de pantallas TFT es simplemente humedecer con agua corriente un paño limpio, suave y sin hilos, y frotar suavemente la pantalla evitando rociarla, ya que esto puede causar que el líquido se introduzca por los bordes de la pantalla y dañar el equipo. Aunque en general debería de bastar con un trapo limpio y seco para limpiar el polvo y la grasa de los dedos. Por esto último, es recomendable usar un lápiz táctil en lugar de los dedos de las manos.
 * **Montar y desmontar.** En general es un dispositivo delicado, y no cuenta con un soporte muy rígido, por lo cual hay que evitar presionarla demasiado fuerte por la parte central. Para colocarla en el arduino se debe sobre poner, revisando que coincidan adecuadamente los pines (revisar [correspondencia de pines](#sobre_la_shield)), y posteriormente hacer presión sobre los costados donde se encuentran los pines, ambos lados al mismo tiempo. Para retirarla se puede tomar el arduino con una mano y con la otra las cuatro esquinas de la shield, jalando todas al mismo tiempo, sin presionar nunca en el centro.
-* **Pero lo más importante.** Nunca la dejes demasiado tiempo en manos de un Tensin.
 
 [Subir](#top)
 
@@ -130,11 +130,13 @@ ST7781 240x320 ID = 0x7783
 ST7789V 240x320 ID = 0x7789
 ```
 
-La pantalla puede tener diferentes rotaciones, las cuales están asociadas con índices: 0 -> vertical, 1 -> horizontal, 2 -> vertical invertida, 3 -> horizontal invertida. Por defecto tenemos el valor de 0, pero podemos modificarlo al inicio del programa, en el *setup()* mediante la siguiente función:
+La pantalla puede tener diferentes rotaciones, las cuales están asociadas con índices: 0 -> vertical, 1 -> horizontal, 2 -> vertical invertida, 3 -> horizontal invertida. Por defecto tenemos el valor de 0, pero podemos modificarlo a lo largo del programa mediante la siguiente función:
 
 ```C++
 tft.setRotation(indice);
 ```
+
+Cabe mencionar que esta función no rotará lo que ya se encuentra en la pantalla al momento de usarla, sino que servirá de guía para lo que se dibuje despues de.
 
 <a name="graficos"></a>
 ### Gráficos
@@ -143,14 +145,27 @@ Lo primero que deberíamos de hacer es definir los colores que vamos a usar. Par
 Algunos ejemplos de colores básicos que podemos usar son:
 
 ```C++
-#define BLANCO    0x0000 //Negro -> Blanco
-#define AMARILLO  0x001F //Azul -> Amarillo
-#define CYAN      0xF800 //Rojo -> Cyan
-#define ROSA      0x07E0 //Verde -> Rosa
-#define ROJO      0x07FF //Cyan -> Rojo
-#define VERDE     0xF81F //Rosa -> Verde 
-#define AZUL      0xFFE0 //Amarillo -> Azul
-#define NEGRO     0xFFFF //Blanco -> Negro
+#define BLANCO       0x0000 //Negro -> Blanco
+#define NEGRO        0xFFFF //Blanco -> Negro
+#define CYAN         0xF800 //Rojo -> Cyan
+#define MAGENTA      0x07E0 //Verde -> Rosa
+#define AMARILLO     0x001F //Azul -> Amarillo
+#define ROJO         0x07FF //Cyan -> Rojo
+#define AZUL         0xFFE0 //Amarillo -> Azul
+#define VERDE        0xF81F //Rosa -> Verde 
+#define NARANJA      0x03FF //BLUE3 -> NARANJA
+#define PURPURA      0x9FE0 // NEOYELLOW -> PURPURA
+
+#define LILA            0x6BC3 //OLIVE -> LILA
+#define MENTA           0x8888 //BROWN2 -> VERDE AGUA
+#define ROSA            0x05E5 //EMERALD -> ROSA
+#define SIENA           0x3333 //ROYALBLUE -> SIENA
+#define AZUL_CLARO      0xFC80 //ORANGE -> AZUL CLARO
+#define AZUL_PASTEL     0x7083 //BROWN1 -> AZUL_PASTEL
+#define VERDE_PISTACHE  0xF811 //SIENNA -> VERDE PISTACHE
+#define VERDE_LIMON     0x781F //PURPLE -> VERDE CLARO
+#define VERDE_OSCURO    0xFADF //PINK -> VERDE2 UN POCO OSCURO
+#define VERDE_ESMERALDA 0xFCDF //DKPINK -> ESMERALDA
 ```
 
 #### Texto
@@ -218,7 +233,7 @@ Primero lo declaramos, fuera del *setup* y del *loop* para poder ocuparlo en amb
 Adafruit_GFX_Button btn1 = Adafruit_GFX_Button();
 ```
 
-Entonces debemos llamar otros dos métodos antes de poder usar el botón. Uno para inicilizarlo y luego otro para dibujarlo
+Entonces debemos llamar otros dos métodos antes de poder usar el botón. Uno para inicializarlo y luego otro para dibujarlo
 
 ```C++
 void initButton(&tft, X0, Y0, base, altura, colorRelieve, colorFondo, colorTexto, "Texto del boton", tamanoTexto);
@@ -242,9 +257,9 @@ Para poder trabajar con el panel táctil usamos la biblioteca *SPFD5408_TouchScr
 TouchScreen ts = TouchScreen(XP, YP, XM, YM, 300);
 ```
 
-El último parámetro del constructor de *TouchScreen* se asocia a la sensibilidad del panel. Entre más preciso sea el valor, mejor detectadas serán las pulsaciones. Puede medirse con ayuda de un multímetro, revisando con la resistencia que hay entre XP(el pin digital 6) y XM(el pin analógico 2).
+El último parámetro del constructor de *TouchScreen* se asocia a la sensibilidad del panel. Entre más preciso sea el valor, mejor detectadas serán las pulsaciones. Puede medirse con ayuda de un multímetro, revisando la resistencia que hay entre XP(el pin digital 6) y XM(el pin analógico 2).
 
-Otras definiciones importantes son los valores de calibración para la lectura de pulsaciones en el panel, ya que lo primero que se nos devolverá serán valores entre 0 1023, los cuales debemos asociar a coordenadas en la pantalla, para saber dónde se presionó. Para el caso de nuestra TFT, los valores son los siguientes:
+Otras definiciones importantes son los valores de calibración para la lectura de pulsaciones en el panel, ya que lo primero que se nos devolverá serán valores entre 0 y 1023, los cuales debemos asociar a coordenadas en la pantalla, para saber dónde se presionó. Para el caso de nuestra TFT, los valores son los siguientes:
 
 ```C++
 #define TS_MIN_X 125
@@ -260,7 +275,7 @@ Otras definiciones importantes son los valores de calibración para la lectura d
 int X, Y;
 ```
 
-***Nota:*** estos valores cambian según la rotación de la pantalla; los anteriores corresponden a una de índice 2. Podemos elegir la rotación que deseemos e indicarlo en el *setup()* del código, pero es importante incluir la instrucción `tft.setRotation(2);` al principio del *loop()*. Esto no cambiará la rotación inicial, pero hará que la calibración se efectúe de manera correcta, según los valores que estamos usando.
+***Nota:*** estos valores cambian según la rotación de la pantalla; los anteriores corresponden a la de índice 2. Podemos elegir la rotación que deseemos indicándolo en cualquier parte del código sin problema, pero es importante incluir la instrucción `tft.setRotation(2)` justo antes de obtener una pulsación para que funcione de manera correcta, así como regresar a la rotación anterior después para que el programa se comporte de la manera que queremos.
 
 Finalmente debemos de obtener las coordenadas del punto en el que se haga presión sobre el panel de la TFT. Por buenas prácticas, agruparemos el código necesario en una función, la cual devolverá un objeto de la clase TSPoint. 
 
@@ -293,9 +308,13 @@ X = p.y; //Invertimos los valores por el comportamiento que tiene nuestro modelo
 Y = p.x; //para que la lectura se haga de manera correcta. Esto varía de un modelo a otro
 ```
 
+Al usar `getPoint()` el programa se queda en pausado en espera de una pulsación, lo cuál se verá reflejado en `obtenerPunto()`.
+
 #### Botones
 
-En la parte de gráficos se mencionó la posibilidad de dibujar botones, sin embargo no hay un método incluido en la clase para detectar directamente si se presionó o no. Para esto debemos de revisar si los valores de coordenada de una pulsación se encuentran dentro del dibujo del botón. De ahí, hay un método para indicarle al botón que fue pulsado, y otro para saber si está presionado. Recoordemos la instancia del botón y pensemos en un ejemplo.
+En la parte de gráficos se mencionó la posibilidad de dibujar botones, sin embargo no hay un método incluido en la clase para detectar directamente si se presionó o no. Para esto debemos de revisar si los valores de coordenada* de una pulsación se encuentran dentro del dibujo del botón. De ahí, hay un método para indicarle al botón que fue pulsado, y otro para saber si está presionado. Recordemos la instancia del botón, y pensemos en un ejemplo.
+
+\*Recordemos que debemos hacer dicha consideración de acuerdo a la rotación de índice 2.
 
 ```C++
 void initButton(&tft, X0, Y0, base, altura, colorRelieve, colorFondo, colorTexto, "Texto del boton", tamanoTexto);
@@ -315,9 +334,193 @@ if(btn1.isPressed()){ //isPressed arroja un booleano, según esté o no presiona
 }
 ```
 
+<a name="sd"></a>
 ### SD. Visualización de imágenes
 
-//
+En la parte inferior, del lado del botón de reset, la TFT cuenta con una ranura para tarjeta de memoria micro SD. Podemos usarla para almacenar imágenes, las cuales pudrán ser visualizadas en la pantalla. Para esto, debemos de tener ciertas consideraciones:
+
+* Recordemos que el controlador de nuestro modelo representa los colores invertidos, por lo que cualquier imagen que deseemos usar, para verla de manera correcta, debemos almacenar una versión en negativo de la misma.
+* *El tamaño sí importa*, y nuestra TFT lo sabe. Nuestro modelo tiene dimensiones de 240x320 pixeles, y si la imagen es de mayor tamaño se verá cortada; si es menor, no llenará todo el espacio, aunque puede que en algunos casos sea lo que queramos.
+* Y bueno, el formato debe ser bmp. En internet hay varias páginas para hacer estas conversiones de manera fácil. De cualquier manera, en algunos casos, al intentar mostrar la imágen en pantalla, me marcaba "Formato no reconocido"
+
+En cuanto al código, primero irá un poco de lo que ya hemos usado. Incluiremos dos nuevas bibliotecas y una definicón más
+
+```C++
+#include <SPFD5408_Adafruit_GFX.h>     // Para los gráficos
+#include <SPFD5408_Adafruit_TFTLCD.h>  // Específica del hardware
+#include <SD.h>
+#include <SPI.h>
+
+#define LCD_RESET A4
+#define LCD_CS A3
+#define LCD_CD A2
+#define LCD_WR A1
+#define LCD_RD A0
+#define SD_CS 10
+
+Adafruit_TFTLCD tft(LCD_CS, LCD_CD, LCD_WR, LCD_RD, LCD_RESET);
+```
+
+Entonces, en el *setup()* verificaremos la conexión con la tajeta SD; si falla finalizamos el programa. En el *loop()* usaremos `bmpDraw()` para mostrar la imagen, donde indicaremos el nombre, con ruta de ser necesario, y las coordenadas donde será mostrada.
+
+```C++
+void setup()
+{
+  //Usaremos el monitor serial para detectar posibles errores o ver que todo marche bien
+  Serial.begin(9600);
+  
+  //Reseteamos e iniciamos comunicación con la TFT
+  tft.reset();
+  tft.begin(0x9341);
+
+  Serial.print(F("Iniciando tarjeta SD..."));
+  if (!SD.begin(SD_CS)) { //begin instanciará la SD. Si todo sale bien arrojará un true, en otro caso, un false
+    Serial.println("Fallido");
+    return;
+  }
+  Serial.println("Completado");
+}
+
+void loop()
+{
+  tft.setRotation(0);
+  bmpDraw("1.bmp", 0, 0); //Indicamos el nombre del archivo, y sus coordeanadas x,y
+  delay(2000);
+  
+  tft.setRotation(1);
+  bmpDraw("/img/2.bmp", 50, 50); //De esta manera podemos indicar la ruta. Recordar iniciar con /
+  delay(2000);
+}
+```
+
+`bmpDraw()` no está incluida en las bibliotecas que hemos usado, pero la podemos encontrar en uno de los ejemplo que nos ofrece la biblioteca y funciona muy bien. Bastará con incluir dicha fracción del código en nuestro programa. Se las dejo por si no la quieren buscar. *Créditos a Adafruit*:
+
+```C++
+#define BUFFPIXEL 20
+
+void bmpDraw(char *filename, int x, int y) {
+
+  File     bmpFile;
+  int      bmpWidth, bmpHeight;
+  uint8_t  bmpDepth;
+  uint32_t bmpImageoffset;
+  uint32_t rowSize;
+  uint8_t  sdbuffer[3*BUFFPIXEL];
+  uint16_t lcdbuffer[BUFFPIXEL];
+  uint8_t  buffidx = sizeof(sdbuffer);
+  boolean  goodBmp = false;
+  boolean  flip    = true;
+  int      w, h, row, col;
+  uint8_t  r, g, b;
+  uint32_t pos = 0, startTime = millis();
+  uint8_t  lcdidx = 0;
+  boolean  first = true;
+
+  if((x >= tft.width()) || (y >= tft.height())) return;
+
+  Serial.println();
+  Serial.print(F("Loading image '"));
+  Serial.print(filename);
+  Serial.println('\'');
+  if ((bmpFile = SD.open(filename)) == NULL) {
+    Serial.println(F("File not found"));
+    return;
+  }
+
+  if(read16(bmpFile) == 0x4D42) {
+    Serial.println(F("File size: ")); Serial.println(read32(bmpFile));
+    (void)read32(bmpFile);
+    bmpImageoffset = read32(bmpFile);
+    Serial.print(F("Image Offset: ")); Serial.println(bmpImageoffset, DEC);
+    // Read DIB header
+    Serial.print(F("Header size: ")); Serial.println(read32(bmpFile));
+    bmpWidth  = read32(bmpFile);
+    bmpHeight = read32(bmpFile);
+    if(read16(bmpFile) == 1) {
+      bmpDepth = read16(bmpFile);
+      Serial.print(F("Bit Depth: ")); Serial.println(bmpDepth);
+      if((bmpDepth == 24) && (read32(bmpFile) == 0)) {
+
+        goodBmp = true;
+        Serial.print(F("Image size: "));
+        Serial.print(bmpWidth);
+        Serial.print('x');
+        Serial.println(bmpHeight);
+
+        rowSize = (bmpWidth * 3 + 3) & ~3;
+
+        if(bmpHeight < 0) {
+          bmpHeight = -bmpHeight;
+          flip      = false;
+        }
+
+        w = bmpWidth;
+        h = bmpHeight;
+        if((x+w-1) >= tft.width())  w = tft.width()  - x;
+        if((y+h-1) >= tft.height()) h = tft.height() - y;
+
+        tft.setAddrWindow(x, y, x+w-1, y+h-1);
+
+        for (row=0; row<h; row++) {
+          
+          if(flip)
+            pos = bmpImageoffset + (bmpHeight - 1 - row) * rowSize;
+          else
+            pos = bmpImageoffset + row * rowSize;
+          if(bmpFile.position() != pos) {
+            bmpFile.seek(pos);
+            buffidx = sizeof(sdbuffer);
+          }
+
+          for (col=0; col<w; col++) {
+            
+            if (buffidx >= sizeof(sdbuffer)) {
+              if(lcdidx > 0) {
+                tft.pushColors(lcdbuffer, lcdidx, first);
+                lcdidx = 0;
+                first  = false;
+              }
+              bmpFile.read(sdbuffer, sizeof(sdbuffer));
+              buffidx = 0;
+            }
+
+            b = sdbuffer[buffidx++];
+            g = sdbuffer[buffidx++];
+            r = sdbuffer[buffidx++];
+            lcdbuffer[lcdidx++] = tft.color565(r,g,b);
+          }
+        }
+        
+        if(lcdidx > 0) {
+          tft.pushColors(lcdbuffer, lcdidx, first);
+        } 
+        Serial.print(F("Loaded in "));
+        Serial.print(millis() - startTime);
+        Serial.println(" ms");
+      }
+    }
+  }
+
+  bmpFile.close();
+  if(!goodBmp) Serial.println(F("BMP format not recognized."));
+}
+
+uint16_t read16(File f) {
+  uint16_t result;
+  ((uint8_t *)&result)[0] = f.read();
+  ((uint8_t *)&result)[1] = f.read();
+  return result;
+}
+
+uint32_t read32(File f) {
+  uint32_t result;
+  ((uint8_t *)&result)[0] = f.read();
+  ((uint8_t *)&result)[1] = f.read();
+  ((uint8_t *)&result)[2] = f.read();
+  ((uint8_t *)&result)[3] = f.read();
+  return result;
+}
+```
 
 [Subir](#top)
 
