@@ -395,7 +395,7 @@ void loop()
 
 `bmpDraw()` no está incluida en las bibliotecas que hemos usado, pero la podemos encontrar en uno de los ejemplo que nos ofrece la biblioteca de Adafruit y funciona muy bien. Bastará con incluir dicha fracción del código en nuestro programa. En la carpeta *ProtecoHardware/Uso de Hardware/TFT* podemos encontrar un ejemplo completo del uso de la SD en la TFT. Las imágenes usadas pueden encontrarlas en *ProtecoHardware/Uso de Hardware/TFT/img*, y el resultado debería de ser el siguiente:
 
-![tftSD_ejemplo](/img/tftSD_ejemplo.jpg "Ejemplo. Uso de la SD en la TFT")
+![tftSD_ejemplo](./img/tftSD_ejemplo.jpg "Ejemplo. Uso de la SD en la TFT")
 
 El programa hace una secuencia de imágenes que se va repitiendo indefinidamente. Podemos apreciar cómo al visualizar una foto, la anterior no se borra, sólo se sobreponen. Además no giran cuando hacemos una rotación en el código. Recordemos que `tft.setRotation()` sólo sirve para indicar cómo será visualizado el contenido que se indique después. A propósito inlcuyo las imágenes en su color original y en negativo, para hacer la comparación viéndolas en la pantalla de la TFT y en algún otro visor cualquiera.
 
