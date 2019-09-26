@@ -22,19 +22,17 @@
 #define TS_MIN_Y 85
 #define TS_MAX_X 965
 #define TS_MAX_Y 905
-//*/
 
-#define BLANCO       0x0000 //Negro -> Blanco
-#define NEGRO        0xFFFF //Blanco -> Negro
-#define CYAN         0xF800 //Rojo -> Cyan
-#define MAGENTA      0x07E0 //Verde -> Rosa
-#define AMARILLO     0x001F //Azul -> Amarillo
-#define ROJO         0x07FF //Cyan -> Rojo
-#define AZUL         0xFFE0 //Amarillo -> Azul
-#define VERDE        0xF81F //Rosa -> Verde 
-#define NARANJA      0x03FF //BLUE3 -> NARANJA
-#define PURPURA      0x9FE0 // NEOYELLOW -> PURPURA
-
+#define BLANCO          0x0000 //Negro -> Blanco
+#define NEGRO           0xFFFF //Blanco -> Negro
+#define CYAN            0xF800 //Rojo -> Cyan
+#define MAGENTA         0x07E0 //Verde -> Rosa
+#define AMARILLO        0x001F //Azul -> Amarillo
+#define ROJO            0x07FF //Cyan -> Rojo
+#define AZUL            0xFFE0 //Amarillo -> Azul
+#define VERDE           0xF81F //Rosa -> Verde 
+#define NARANJA         0x03FF //BLUE3 -> NARANJA
+#define PURPURA         0x9FE0 // NEOYELLOW -> PURPURA
 #define LILA            0x6BC3 //OLIVE -> LILA
 #define MENTA           0x8888 //BROWN2 -> VERDE AGUA
 #define ROSA            0x05E5 //EMERALD -> ROSA
@@ -56,7 +54,7 @@ void setup()
   Serial.begin(9600); //Usaremos el monitor serial para detectar posibles errores o ver que todo marche bien
   tft.reset(); //Reseteamos e iniciamos comunicación con la TFT
   tft.begin(0x9341); //Iniciamos indicando el controlador correspondiente
-  pinMode(SD_SS, OUTPUT);
+  pinMode(SD_SS, OUTPUT); //Declaramos el pin SD_SS como de salida
   Serial.print(F("Iniciando tarjeta SD..."));
   if (!SD.begin(SD_SS)) { //begin instanciará la SD. Si todo sale bien arrojará un true, en otro caso, un false
     Serial.println("Fallido");
@@ -66,8 +64,9 @@ void setup()
 
   tft.setRotation(1);
   tft.fillScreen(NEGRO);
-  //bmpDraw("fondo.bmp", 0, 0);
-  bmpDraw("lccfb.bmp", 265, 19);
+  
+  /*Dibujamos los 'botones' usando imagenes pequeñas*/
+  bmpDraw("lccfb.bmp", 265, 19); //(nombreImagen, x, y)
   bmpDraw("lccfn.bmp", 265, 74);
   bmpDraw("lnc.bmp", 265, 128);
   bmpDraw("lbc.bmp", 265, 183);
@@ -75,44 +74,37 @@ void setup()
 
 void loop()
 { 
-  /*
-  bmpDraw("lcfn.bmp", 5, 5); //Nos posicionamos en la posición (0,0), esta vez con respecto a la rotación 1
-  delay(1500);
-  bmpDraw("lcfb.bmp", 5, 5); //Nos posicionamos en la posición (0,0), esta vez con respecto a la rotación 1
-  delay(1500);
-  bmpDraw("lb.bmp", 5, 5); //Nos posicionamos en la posición (0,0), esta vez con respecto a la rotación 1
-  delay(1500);
-  bmpDraw("ln.bmp", 5, 5); //Nos posicionamos en la posición (0,0), esta vez con respecto a la rotación 1
-  delay(1500);
-  */
+  //Cambiamos la rotación sólo para obtener la pulsación touch
+  //Porque son los valores que de calibración que tenemos
   tft.setRotation(2);
   
   TSPoint p = obtenerPunto();
-  X = p.y; //Invertimos los valores por el comportamiento que tiene nuestro modelo de TFT
-  Y = p.x; //para que la lectura se haga de manera correcta. Esto varía de un modelo a otro
+  /*Invertimos los valores por el comportamiento que tiene nuestro modelo de TFT
+  para que la lectura se haga de manera correcta. Esto varía de un modelo a otro*/
+  X = p.y;
+  Y = p.x;
 
-  // /*
+  tft.setRotation(1); //Cambiamos nuevamente la rotación para que los siguientes dibujos correspondan a la orientación que queremos
+  
+  //Revisamos si la pulsación corresponde a la ubicación de alguno de los botones
+  //En todo caso, resaltamos dicho botón y plasmamos la imagen correspondiete
   if(X > 13 && X < 13+48 && Y > 10 && Y < 10+50){ //Si los valores de coordenada de la pulsación están dentro del botón
-    tft.setRotation(1);
     resaltarBoton(1);
     bmpDraw("lcfb.bmp", 5, 5);    
   } else if(X > 69 && X < 69+48 && Y > 10 && Y < 10+50){
-    tft.setRotation(1);
     resaltarBoton(2);
     bmpDraw("lcfn.bmp", 5, 5);
   } else if(X > 123 && X < 123+48 && Y > 10 && Y < 10+50){
-    tft.setRotation(1);
     resaltarBoton(3);
     bmpDraw("ln.bmp", 5, 5);
   } else if(X > 178 && X < 178+48 && Y > 10 && Y < 10+50){
-    tft.setRotation(1);
     resaltarBoton(4);
     bmpDraw("lb.bmp", 5, 5);
-  }//*/
+  }
 
 }
 
-/*-------------------------------*/
+/*-----FUNCIONES-----*/
 
 TSPoint obtenerPunto() {
   //tft.setRotation(2);
@@ -133,8 +125,10 @@ TSPoint obtenerPunto() {
   return p;
 }
 
-void resaltarBoton(int indice){
+void resaltarBoton(int indice){ //Recibimos el índice del botón que queremos resaltar
   switch(indice){
+    /*Dibujamos un rectángulo color menta alrededor del botón seleccionado
+    Los demás los pintamos en negro para "desaparecer" el anterior que estuviera visible*/
     case 1:
       tft.drawRect(260, 14, 50, 48, MENTA);
       tft.drawRect(260, 69, 50, 48, NEGRO);
@@ -154,20 +148,15 @@ void resaltarBoton(int indice){
       tft.drawRect(260, 178, 50, 48, NEGRO);
       break;
     case 4:
-    tft.drawRect(260, 14, 50, 48, NEGRO);
+      tft.drawRect(260, 14, 50, 48, NEGRO);
       tft.drawRect(260, 69, 50, 48, NEGRO);
       tft.drawRect(260, 123, 50, 48, NEGRO);
-      tft.drawRect(260, 178, 50, 48, MENTA    
-      
-      
-       
-       
-       );
+      tft.drawRect(260, 178, 50, 48, MENTA);
       break;
   }
 }
 
-/*Función bmpDraw. Aquí no necesitamos moverle nada*/
+/*---Función bmpDraw()---*/ //Aquí no necesitamos moverle nada
 
 #define BUFFPIXEL 20
 
