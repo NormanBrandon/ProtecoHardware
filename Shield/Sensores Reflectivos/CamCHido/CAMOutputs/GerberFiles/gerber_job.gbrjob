@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-09-23T01:55:41Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.4.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "CNY70.dev"
+        },
+        "Owner": "Norman Brandon Saldaa Hernandez <normanbrandons11@gmail.com>",
+        "Size": {
+            "X": 44.938,
+            "Y": 47.676
+        }
+    }
+}

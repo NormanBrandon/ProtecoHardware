@@ -1,3 +1,6 @@
+
+
+
 #include <SPFD5408_Adafruit_GFX.h>     // Para los gráficos
 #include <SPFD5408_Adafruit_TFTLCD.h>  // Específica del hardware
 #include <SPFD5408_TouchScreen.h>
